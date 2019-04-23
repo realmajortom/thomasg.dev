@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <Title>Count My Beans! | Thomas Girgenti</Title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body type="container">
+    <header id="header">
+      <h1>Count My Beans!</h1>
+      <h2>High-precision coffee calculator</h2>
+    </header>
+
+    <main>
+      <div>
+        <p id="explanation">When measuring coffee for your morning brew, a solid starting place is <wbr
+            style="font-weight: bold">60 grams
+            of coffee per liter of water.</wbr><br>If brewing via immersion (french press, cold brew, aeropress), it's
+          recommended to increase your bean-count by 25%.
+        </p>
+      </div>
+      <div>
+        <h3>Answer the following questions to get the perfect cup of joe:</h3>
+
+        <form action="/submit arguments to counting script">
+          <fieldset>
+            <legend>Brew method:</legend>
+            <label for="immersion">
+              <input id="immersion" type="radio" name="brew-method"> Immersion
+            </label>
+            <label for="percolator">
+              <input id="percolator" type="radio" name="brew-method"> Percolation
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Desired strength:</legend>
+            <label for="strong">
+              <input id="strong" type="radio" name="strength"> Strong
+            </label>
+            <label for="medium">
+              <input id="medium" type="radio" name="strength"> Medium
+            </label>
+            <label for="mild">
+              <input id="mild" type="radio" name="strength"> Mild
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Water measured in ounces or liters?</legend>
+            <label for="ounce">
+              <input id="ounce" type="radio" name="unit"> Ounce
+            </label>
+            <label for="liter">
+              <input id="liter" type="radio" name="unit"> Liter
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quantity of water:</legend>
+            <input type="text" placeholder="ounces/liters" id="quant-field">
+          </fieldset>
+        </form>
+
+        <p id="submission"><input type="submit" value="Submit"></p>
+
+        <p id="outcome"></p>
+        <script src="bean-counter.js"></script>
+      </div>
+    </main>
+
+    <footer>
+      Check out <a href="https://www.github.com/tggir1" target="_blank">my other tools on Github</a>
+    </footer>
+  </body>
+
+</html>
