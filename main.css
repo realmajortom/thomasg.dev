@@ -1,7 +1,61 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  margin-left: 6vw;
+  width: 86vw;
+  margin: auto;
 }
 h1, h2 {
   font-family: 'IBM Plex Mono', monospace;
+}
+header {
+  margin: 0;
+  min-width: 320px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.project-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40vw;
+  width: 40vw;
+  max-width: 299px;
+  max-height: 299px;
+  min-width: 128px;
+  min-height: 128px;
+  margin: 
+}
+
+#count-my-beans {
+  background-color: blanchedalmond;
+  font-family: Lobster, sans-serif;
+  font-size: 48px;
+  color: brown;
+}
+
+#tribute-to-robin-williams {
+  background-color: dodgerblue;
+  font-family: Caveat, sans-serif;
+  font-size: 55px;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  .container {
+    gap: 2vw;
+  }
+  #tribute-to-robin-williams {
+    font-size: 32px;
+  }
+}
+@media (max-width: 470px) {
+  #count-my-beans {
+    font-size: 32px;
+  }
 }
