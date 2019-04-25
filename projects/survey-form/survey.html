@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<hmtl>
+
+  <head>
+    <title>Survey Form</title>
+    <link href="survey.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <div id="title-split">Are You</div>...Boring?
+      </h1>
+    </header>
+
+    <main>
+      <p id="description">Something something lorem ipsum bla bla bla.</p>
+      <form id="survey-form">
+
+        <fieldset id="required-fields">
+          <legend>General Q's</legend>
+
+          <label for="name" id="name-label" class="rfield">What is your name?
+            <input id="name" type="text" placeholder="First name only" required>
+          </label>
+
+          <label for="email" id="email-label" class="rfield">Enter an email address:
+            <input id="email" type="email" placeholder="ladeeda@woopdeedoo.com" required>
+          </label>
+
+          <label for="number" id="number-label" class="rfield">Favorite number?
+            <input id="number" type="number" placeholder="Not 3" min="3" max="3" required>
+          </label>
+        </fieldset>
+
+        <fieldset id="dropdown">
+          <legend>Dropdown Time</legend>
+          <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option vlaue="option3">Option 3</option>
+          </select>
+        </fieldset>
+
+        <fieldset id="radio-gaga" required>
+          <legend>Pick a Radio</legend>
+
+          <label for="rad1" class="rad-choice">
+            <input id="rad1" type="radio" name="rad" value="1">Radio 1
+          </label>
+
+          <label for="rad2" class="rad-choice">
+            <input id="rad2" type="radio" name="rad" value="2">Radio 2
+          </label>
+
+          <label for="rad3" class="rad-choice">
+            <input id="rad3" type="radio" name="rad" value="3">Radio 3
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select All That Apply:</legend>
+
+          <label for="check1" class="checks">
+            <input id="check1" type="checkbox" value="a">a
+          </label>
+
+          <label for="check2" class="checks">
+            <input id="check3" type="checkbox" value="b">b
+          </label>
+
+          <label for="check3" class="checks">
+            <input id="check3" type="checkbox" value="c">c
+          </label>
+        </fieldset>
+
+        <div class="comment-area">
+          <legend>Any other comments to convince the committee of your undullness?</legend>
+          <textarea style="height:90px; width: 314px; margin-top: 12px;"></textarea>
+        </div>
+
+        <input type="submit" id="submit-button" value="Submit">
+      </form>
+    </main>
+
+  </body>
+</hmtl>
