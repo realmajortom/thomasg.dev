@@ -63,6 +63,12 @@ footer {
 .footer-content {
   margin: 10px;
 }
+a {
+  color: darkorchid;
+}
+a:hover {
+  color: dodgerblue;
+}
 
 
 @media (min-width: 1250px) {

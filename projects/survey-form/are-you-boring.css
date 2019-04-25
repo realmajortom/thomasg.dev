@@ -1,7 +1,7 @@
 body {
   background-color: black;
   color: #E0E0E0;
-  font-family: "Cutive Mono", monospace;
+  font-family: "Inconsolata", monospace;
   font-size: large;
 }
 
@@ -9,25 +9,33 @@ header {
   text-align: center;
 }
 
-#title-split {
-  display: inline-block;
-}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/************* form display *************/
+footer {
+  margin: 4vh 0 4vh 0;
+  text-align: center;
+}
+a {
+  color: #6e5494;
+}
+a:hover {
+  color: #6cc644;
+}
+
+/************* form *************/
 form {
-  margin-top: 25px;
+  margin-top: 2vh;
 }
 fieldset {
   display: flex;
   flex-flow: row wrap;
   width: 60vw;
   min-width: 667px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   border-color: #80C0C0;
   border-width: 1px;
   border-radius: 0px;
@@ -35,7 +43,6 @@ fieldset {
 legend {
   font-size: 18px;
 }
-
 .rfield {
   display: flex;
   flex-direction: column;
@@ -45,24 +52,19 @@ legend {
 .rad-choice {
   margin: 5px 15px 10px 0px;
 }
-
 .checks {
   margin: 5px 15px 10px 0px;
 }
-
-
 .comment-area {
   display: flex;
   flex-direction: column;
 }
-
 #submit-button {
   display: block;
-  margin-top: 35px;
+  margin-top: 2vh;
   margin-left: 50%;
   margin-right: 50%;
 }
-
 
 
 /*************** media ***************/
