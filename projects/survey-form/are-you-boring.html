@@ -3,6 +3,7 @@
 
   <head>
     <title>Are You...Boring? | Thomas Girgenti</title>
+    <meta charset="UTF-8">
     <link href="are-you-boring.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,16 +48,18 @@
         </fieldset>
 
         <fieldset id="radio-gaga" required>
-          <legend>"Never Have I Ever?"</legend>
+          <legend>Yes or No?</legend>
 
           <label for="rad1" class="rad-choice">
-            <input id="rad1" type="radio" name="rad" value="1">"Groan, <i>this</i> again?"
+            <input id="rad1" type="radio" name="rad" value="1">Yes
           </label>
 
           <label for="rad2" class="rad-choice">
-            <input id="rad2" type="radio" name="rad" value="2">"Yeah, yeah I have.""
-            <div style="margin-top: 16px; font-size: smaller;"><i>To win the game, one must lose at
-                life.</i>
+            <input id="rad2" type="radio" name="rad" value="2">No
+            <div style="margin-top: 15px; font-size: smaller; justify-self: left; ">
+              <p><i>If you don’t know where you are
+                  going, it doesn’t
+                  matter the road you take, does it?</i></p><br>--Cheshire Cat
             </div>
           </label>
 
@@ -87,15 +90,18 @@
         </fieldset>
 
         <div class="comment-area">
-          <legend>Any other comments to unconvince the committee of your dullness?</legend>
-          <textarea style="height:90px; width: 314px; margin-top: 12px;"></textarea>
+          <legend>Any other comments to convince the committee that you're "trill"?</legend>
+          <textarea style="height:90px; width: 300px; margin-top: 12px;"></textarea>
         </div>
 
-        <input type="submit" id="submit-button" value="Submit">
+        <button id="submit-button" onclick="alert('If you have to ask, you already know the answer.')">Submit</button>
+
       </form>
     </main>
 
-    <footer><a href="https://www.github.com/tggir1" target="_blank">Check out my other projects on Github</a></footer>
+    <footer>
+      <a href="https://www.github.com/tggir1" target="_blank">Check out my other projects on Github</a>
+    </footer>
 
   </body>
 </hmtl>

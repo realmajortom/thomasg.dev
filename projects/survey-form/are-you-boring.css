@@ -29,6 +29,8 @@ a:hover {
 /************* form *************/
 form {
   margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
 }
 fieldset {
   display: flex;
@@ -60,10 +62,8 @@ legend {
   flex-direction: column;
 }
 #submit-button {
-  display: block;
   margin-top: 2vh;
-  margin-left: 50%;
-  margin-right: 50%;
+  align-self: center;
 }
 
 
