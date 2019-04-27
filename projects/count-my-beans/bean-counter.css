@@ -1,0 +1,105 @@
+body {
+    background-color: floralwhite;
+    font-family: "Muli", Helvetica;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/************ header ************/
+header {
+  width: 100vw;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(241, 184, 165, 0.3);
+  box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+}
+h1 {
+    margin: 0px;
+    color: brown;
+    font-size: 48px;
+    font-family: Lobster, monospace;
+}
+h2 {
+  margin: 0px;
+}
+
+/************ main ************/
+main {
+  margin-top: 2vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  line-height: 25px;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sets {
+  display: flex;
+  flex-wrap: wrap;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-width: 0px;
+}
+legend {
+  font-weight: bold
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+/************ footer ************/
+footer {
+  margin: 20vh 0 2vh 0;
+  text-align: center;
+  opacity: 0.6;
+}
+a {
+  color: #6e5494;
+}
+a:hover {
+  color: #6cc644;
+}
+
+/************ @media ************/
+
+@media (max-width: 700px) {
+  footer {
+    margin-top: 4vh;
+  }
+}
+@media  (max-width: 414px) {
+  main {
+    margin-top: 2vh;
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  main {
+    width: 96%
+    font-size: 14px;
+  }
+}
+
+
+

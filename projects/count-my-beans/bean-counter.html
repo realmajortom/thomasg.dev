@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <Title>Count My Beans | Thomas Girgenti</Title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bean-counter.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+  </head>
+
+  <!------- body ------->
+
+  <body type="container">
+    <header id="header">
+      <h1>Count My Beans!</h1>
+      <h2>High-precision coffee calculator</h2>
+    </header>
+
+    <main>
+      <div>
+        <p id="explanation">When measuring coffee for your morning brew, a solid starting place is <strong>60 grams
+            of coffee per liter of water.</strong><br>If brewing via immersion (french press, cold brew, aeropress),
+          it's
+          recommended to increase your bean-count by 25%.
+        </p>
+      </div>
+
+      <div>
+        <h3>Answer the following questions to get the perfect cup of joe:</h3>
+        <form id="bean-form">
+          <div class="sets">
+            <fieldset>
+              <legend>Brew method:</legend>
+              <div class="labels">
+                <label for="immersion">
+                  <input id="immersion" type="radio" name="brew-method"> Immersion
+                </label>
+                <label for="percolator">
+                  <input id="percolator" type="radio" name="brew-method"> Percolation
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Desired strength:</legend>
+              <div class="labels">
+                <label for="strong">
+                  <input id="strong" type="radio" name="strength"> Strong
+                </label>
+                <label for="medium">
+                  <input id="medium" type="radio" name="strength"> Medium
+                </label>
+                <label for="mild">
+                  <input id="mild" type="radio" name="strength"> Mild
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Water measured in ounces or liters?</legend>
+              <div class="labels">
+                <label for="ounce">
+                  <input id="ounce" type="radio" name="unit"> Ounce
+                </label>
+                <label for="liter">
+                  <input id="liter" type="radio" name="unit"> Liter
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Quantity of water:</legend>
+              <input type="text" placeholder="ounces/liters" id="quant-field">
+            </fieldset>
+          </div>
+          <div>
+            <button id="submit-button"
+              onclick="alert('App not fully functional. Will be up and running soon!')">Submit</button>
+          </div>
+        </form>
+
+    </main>
+
+    <footer>
+      <a href="https://www.github.com/tggir1" target="_blank">Check out my other projects on Github</a>
+    </footer>
+  </body>
+
+</html>
