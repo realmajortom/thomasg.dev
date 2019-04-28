@@ -1,3 +1,6 @@
+var didScroll = false;
+
+window.onscroll = function () { adjustHeader(); };
 function adjustHeader() {
   let header = document.getElementById('header');
   let image = document.getElementById('header-img');
@@ -15,6 +18,11 @@ function adjustHeader() {
     mainTitle.classList.remove('title-small');
     subTitle.classList.remove('subtitle-small');
   }
+  didScroll = true;
 }
 
-window.onscroll = function () { adjustHeader(); };
+setInterval(function () {
+  if (didScroll) {
+    didScroll = false;
+  }
+}, 100);

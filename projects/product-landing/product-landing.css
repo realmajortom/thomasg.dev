@@ -9,7 +9,8 @@ body {
   align-items: center;
   margin: 0;
 }
-/************** header **************/
+
+/******************* header *******************/
 header {
   background-color: #f9f9fa;
   position: fixed;
@@ -36,13 +37,11 @@ header {
   margin-right: 3vh;
   border-radius: 8px;
 }
-
 #title {
   font-family: Righteous, Helvetica, monospace;
   display: inline-block;
   margin: 0;
 }
-/*** nav-bar ***/
 #nav-bar {
   min-width: 300px;
   font-size: 18px;
@@ -64,42 +63,45 @@ ul {
   color: #900013;
 }
 
-/*********** body ***********/
+/******************* main ********************/
 
 .main {
   padding-top: 120px;
-  height: 150vh;
   width: 76vw;
   max-width: 1260px;
   min-width: 990px;
   margin: auto;
+  height: 200vh;
 }
 
+
 /*********** shrink header ***********/
+/*** large header */
 .header-large {
   height: 110px;
-  transition: 0.45s;
+  transition: 0.3s;
 }
 .image-large {
   height: 110px;
-  transition: 0.45s;
+  transition: 0.3s;
 }
 .title-large {
   font-size: 60px;
-  transition: 0.45s;
+  transition: 0.3s;
 }
 .subtitle-large {
   display: block;
   margin: 0;
   font-size: 30px;
-  transition: 0.45s;
+  transition: 0.3s;
 }
 
+/*** small header */
 .header-small {
   height: 40px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #aeaeae;
+  border-bottom-color: #c0c0c0;
 }
 .image-small {
   height: 40px;
