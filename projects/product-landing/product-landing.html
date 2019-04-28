@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Righteous" rel="stylesheet">
     <link href="product-landing.css" rel="stylesheet">
+
   </head>
 
   <body>
-    <header id="main-header">
-      <div id="flexible-header">
+    <header id="header" class="header-large">
+      <div id="flex-header">
         <div id="title-box">
-          <img id="header-img" src="mic.png">
-          <div id="titles">
-            <h1 class="title" id="main-title">The Talk Back App</h1>
-            <p class="title" id="subtitle">The AI That Talks Back to Toddlers</p>
+          <img id="header-img" src="mic.png" class="image-large">
+          <div>
+            <h1 id="title" class="title-large">The Talk Back App</h1>
+            <p id="subtitle" class="subtitle-large">The AI That Talks Back to Toddlers</p>
           </div>
         </div>
-        <nav class="nav-bar">
+        <nav id="nav-bar">
           <ul>
             <li><a class="nav-link" href="#use-cases">Use Cases</a></li>
             <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
@@ -28,7 +29,7 @@
         </nav>
       </div>
     </header>
-
+    <script src="shrink-header.js" rel="text/javascript"></script>
     <main class="main">
       <div class="subsection" id="use-cases">
         <h2>Use Cases</h2>
@@ -46,6 +47,5 @@
       </div>
     </main>
   </body>
-
 
 </html>
