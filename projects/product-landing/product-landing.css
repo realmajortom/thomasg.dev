@@ -8,7 +8,8 @@ body {
   align-items: center;
   margin: 0;
 }
-/******************* header *******************/
+
+/*********** header ************/
 header {
   background-color: #f9f9fa;
   position: fixed;
@@ -19,9 +20,9 @@ header {
 }
 #flex-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  min-width: 1100px;
   max-width: 1260px;
   width: 76vw;
   margin: auto;
@@ -35,10 +36,18 @@ header {
   margin-right: 3vh;
   border-radius: 8px;
 }
+#titles-container {
+  display: flex;
+  flex-direction: column;
+}
 #title {
-  font-family: Righteous, Helvetica, monospace;
-  display: inline-block;
+  font-family: Righteous, monospace;
   margin: 0;
+  padding: 0;
+}
+#subtitle {
+  margin: 0;
+  padding: 0;
 }
 #nav-bar {
   min-width: 300px;
@@ -60,75 +69,8 @@ header {
 .nav-link:hover {
   color: #A714D4;
 }
-
-/******************** main ********************/
-.main {
-  padding-top: 100px;
-  height: 200vh;
-  width: 100vw;
-}
-.subsection {
-  padding-top: 60px;
-  width: 76vw;
-  margin: auto;
-  min-width: 1100px;
-  max-width: 1260px;
-}
-h2 {
-  padding: 0 0 20px 0;;
-  margin: 0;
-  font-size: 30px;
-}
-#package-background {
-  background-image: url("night-sky.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-#packages {
-  margin-top: 60px;
-  padding-bottom: 80px;
-}
-#package-container {
-  min-width: 938px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#package-heading {
-  color: #f9f9fa;
-}
-.package {
-  background-color: #f9f9fa;
-  height: 22vw;
-  width: 22vw;
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  min-height: 300px;
-}
-legend {
-  padding-top: 6px;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: underline solid #c0c0c0;
-  text-align: center;
-}
-.package-list {
-  padding: 0;
-  margin: 12px;
-  display: block;
-  list-style-type: none;
-  color: #434343;
-  line-height: 32px;
-}
-
-
-
-
-
-
-/************* shrinking header *************/
-/*** large header */
+/* shrinking header */
+/* large */
 .header-large {
   height: 110px;
   transition: 0.3s;
@@ -147,8 +89,7 @@ legend {
   font-size: 30px;
   transition: 0.3s;
 }
-
-/*** small header */
+/* small */
 .header-small {
   height: 40px;
   border-bottom-width: 1px;
@@ -167,7 +108,247 @@ legend {
   opacity: 0;
 }
 
+/*********** main ***********/
+.main {
+  padding-top: 100px;
+  width: 100vw;
+}
+.subsection, .cNa {
+  padding-top: 60px;
+  width: 76vw;
+  margin: auto;
+  max-width: 1260px;
+}
+h2 {
+  padding: 0 0 20px 0;;
+  margin: 0;
+  font-size: 30px;
+}
+#package-background {
+  background-image: url("night-sky.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+#packages {
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+#package-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#package-heading, #package-pricing {
+  color: #f9f9fa;
+}
+.package {
+  background-color: #f9f9fa;
+  height: 22vw;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 330px;
+  min-height: 330px;
+  margin-right: 20px;
+}
+legend {
+  padding-top: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline solid #c0c0c0;
+  text-align: center;
+}
+.package-list {
+  padding: 0;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  color: #434343;
+  line-height: 32px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin-top: 0;
+  padding-top: 0;
+}
+input {
+  margin-bottom: 15px;
+}
+textarea {
+  margin-bottom: 15px;
+}
+#submit {
+  width: 80px;
+}
+#bottom-third {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+#about {
+  max-width: 600px;
+  margin-right: 70px;
+}
+
+/*********** footer ***********/
+footer {
+  width: 100vw;
+  text-align: center;
+  background-color: #434343;
+}
+#foot-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#footer-link {
+  color: #cdaaff;
+}
+#footer-link:hover {
+  color: #6cc644;
+}
+
+
 
 /*************** @media **************/
+@media (max-width: 1450px) {
+  .subtitle-large {
+    font-size: 20px;
+  }
+  .subtitle-small {
+    font-size: 1px;
+  }
+}
+@media (max-width: 1260px) {
+  #flex-header {
+    width: 88vw;
+  }
+  .subsection, .cNa {
+    width: 88vw;
+  }
+}
+@media (max-width: 1110px) {
+  #flex-header {
+    width: 96vw;
+  }
+  .subsection, .cNa {
+    width: 96vw;
+  }
+}
+@media (max-width: 1063px) {
+  #package-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .package {
+    background-color: #f9f9fa;
+    height: 100px;
+    width: 96vw;
+    min-width: none;
+    min-height: none;
+    margin-bottom: 20px;
+  }
+  #about {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 948px) {
+  .main {
+    padding-top: 60px;
+  }
+  .header-large {
+    height: 70px;
+    transition: 0.3s;
+  }
+  .image-large {
+    height: 70px;
+    transition: 0.3s;
+  }
+  .title-large {
+    font-size: 40px;
+    transition: 0.3s;
+  }
+  .subtitle-large {
+    font-size: 15px;
+  }
+  .header-small {
+    height: 40px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c0c0c0;
+    min-width: 0;
+  }
+  .image-small {
+    height: 40px;
+  }
+  .title-small {
+    font-size: 30px;
+  }
+  .subtitle-small {
+    font-size: 1px;
+    opacity: 0;
+  }
+}
 
+@media (max-width: 863px) {
+  #bottom-third {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #contact, #about {
+    width: 96%;
+  }
+  #contact-heading {
+    padding: 30px 0 0 0;
+  }
+  #about-heading {
+    padding: 0;
+  }
+}
 
+@media (max-width: 780px) {
+  #nav-bar {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 0px;
+  }
+  #nav-items {
+    min-width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+  }
+  .header-small {
+    height: 60px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c0c0c0;
+    min-width: 0;
+  }
+  .image-small {
+    height: 60px;
+  }
+}
+
+@media (max-width: 560px) {
+.title-large {
+    font-size: 26px;
+    transition: 0.3s;
+  }
+  .subtitle-large {
+    display:none;
+  }
+  #header-image {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  #titles-container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
