@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>The Talk Back App | Thomas Girgenti</title>
+    <title>Selenity Travels | Thomas Girgenti</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Righteous" rel="stylesheet">
@@ -14,39 +14,80 @@
     <header class="header-large" id="header">
       <div id="flex-header">
         <div id="title-box">
-          <img class="image-large" id="header-img" src="mic.png">
+          <img class="image-large" id="header-img" src="space-icon.png">
           <div>
             <h1 class="title-large" id="title">Selenity Travels</h1>
-            <p class="subtitle-large" id="subtitle">The All-Inclusive Moon Vacation Service</p>
+            <p class="subtitle-large" id="subtitle">Your All-Inclusive Extra-Terrestrial Travel Provider</p>
           </div>
         </div>
         <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#use-cases">Packages</a></li>
+          <ul id="nav-items">
+            <li><a class="nav-link" href="#why-this-matters">Why This Matters</a></li>
+            <li><a class="nav-link" href="#packages">Packages</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-
     <main class="main">
-      <div class="subsection" id="how-it-works">
-        <h2>How It Works</h2>
-        <video width="360" src="firework.mov" type="video/mp4" controls>
-          Your browser does not support the video tag.
-        </video>
+      <div class="sub-background">
+        <div class="subsection" id="why-this-matters">
+          <h2>Why This Matters</h2>
+          <video width=1000 src="why-space.mp4" type="video/mp4" controls>
+            Oops! Look like your browser does not support this video.
+          </video>
+          <p><i>2016 TED talk from Stephen Hawking on the importance of space travel</i></p>
+        </div>
       </div>
-      <div class="subsection" id="packages">
-        <h2>Travel Packages</h2>
+      <div class="sub-background" id="package-background">
+        <div class="subsection" id="packages">
+          <h2 id="package-heading">Travel Packages</h2>
+          <div id="package-container">
+            <div id="package1" class="package">
+              <legend>Over The Moon</legend>
+              <ul class="package-list">
+                <li>5 Day Space Tour</li>
+                <li class="package-item"></li>3 Nights at the <i>TerreView Moon Resort</i></li>
+                <li class="package-item">3 hour moon walk each day</li>
+                <li class="package-item">Room for up to 1Lb of space rocks</li>
+                <li class="package-item">Spacewalk during refuel at ISS</li>
+                <li class="package-item">All-you-can-eat freeze-dried ice cream!</li>
+              </ul>
+            </div>
+            <div id="package2" class="package">
+              <legend>Stellar</legend>
+              <ul class="package-list">
+                <li>8 Day Space Tour</li>
+                <li class="package-item"></li>6 Nights at the <i>TerreView Moon Resort</i></li>
+                <li class="package-item">5 hour moon walk each day</li>
+                <li class="package-item">Room for up to 3Lbs of space rocks</li>
+                <li class="package-item">Unlimited WiFi service during flight</li>
+                <li class="package-item">All meal and snack costs included!</li>
+              </ul>
+            </div>
+            <div id="package3" class="package">
+              <legend>Interstellar</legend>
+              <ul class="package-list">
+                <li><strong>Everything from the <i>Stellar</i> package plus:</strong></li>
+                <li>12 Day Space Tour</li>
+                <li class="package-item"></li>10 Nights at the <i>TerreView Moon Resort</i></li>
+                <li>Guided tour of the ISS and Moon Base with the astronaut of your choice</li>
+                <li class="package-item">Unlimited room for space artifacts</li>
+                <li class="package-item">Equipment provided for research</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="subsection" id="contact">
-        <h2>Contact</h2>
-        <form id="form">
-          <input id="email" type="email" placeholder="Enter Valid Email Address">
-          <input id="submit" type="submit" value="Submit">
-        </form>
+      <div class="sub-background">
+        <div class="subsection" id="contact">
+          <h2>Contact</h2>
+          <form id="form">
+            <input id="email" type="email" placeholder="Enter Valid Email Address">
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </main>
   </body>

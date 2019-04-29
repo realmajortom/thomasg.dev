@@ -2,14 +2,12 @@ html {
   font-family: 'Open Sans', Helvetica, sans-serif;
   background-color: #f9f9fa;
 }
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
 }
-
 /******************* header *******************/
 header {
   background-color: #f9f9fa;
@@ -23,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  min-width: 990px;
+  min-width: 1100px;
   max-width: 1260px;
   width: 76vw;
   margin: auto;
@@ -47,7 +45,7 @@ header {
   font-size: 18px;
   align-self: flex-end;
 }
-ul {
+#nav-items {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,22 +58,76 @@ ul {
   text-decoration-line: none;
 }
 .nav-link:hover {
-  color: #900013;
+  color: #A714D4;
 }
 
-/******************* main ********************/
-
+/******************** main ********************/
 .main {
-  padding-top: 120px;
-  width: 76vw;
-  max-width: 1260px;
-  min-width: 990px;
-  margin: auto;
+  padding-top: 100px;
   height: 200vh;
+  width: 100vw;
+}
+.subsection {
+  padding-top: 60px;
+  width: 76vw;
+  margin: auto;
+  min-width: 1100px;
+  max-width: 1260px;
+}
+h2 {
+  padding: 0 0 20px 0;;
+  margin: 0;
+  font-size: 30px;
+}
+#package-background {
+  background-image: url("night-sky.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+#packages {
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+#package-container {
+  min-width: 938px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#package-heading {
+  color: #f9f9fa;
+}
+.package {
+  background-color: #f9f9fa;
+  height: 22vw;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 300px;
+}
+legend {
+  padding-top: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline solid #c0c0c0;
+  text-align: center;
+}
+.package-list {
+  padding: 0;
+  margin: 12px;
+  display: block;
+  list-style-type: none;
+  color: #434343;
+  line-height: 32px;
 }
 
 
-/*********** shrink header ***********/
+
+
+
+
+/************* shrinking header *************/
 /*** large header */
 .header-large {
   height: 110px;
@@ -102,6 +154,7 @@ ul {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #c0c0c0;
+  min-width: 0;
 }
 .image-small {
   height: 40px;
@@ -113,4 +166,8 @@ ul {
   font-size: 1px;
   opacity: 0;
 }
+
+
+/*************** @media **************/
+
 
