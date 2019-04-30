@@ -1,5 +1,5 @@
 function toggleDark() {
-  const body = document.getElementById('big-body');
+  const body = document.getElementById('body');
   const codeBlocks = document.getElementsByClassName('code-container');
   if (body.classList.contains('body-dark')) {
     body.classList.remove('body-dark');

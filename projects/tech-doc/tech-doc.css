@@ -3,7 +3,7 @@ body {
   color: black;
   background-color: #f9f9fa;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -35,16 +35,23 @@ nav header {
 }
 nav li {
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  /* padding: 10px 20px 10px 20px; */
+  padding: 0;
 }
 nav li a {
+  margin: 0;
   color: #f9f9fa;
   text-decoration: none;
+  display: block;
+  width: 220px;
+  height: 50px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  padding-left: 20px;
 }
 .nav-link:hover {
-  color: #F7A9FF;
+  color: #00ffa6;
 }
-
 #github-link {
   color: #E1CDFF;
 }
@@ -60,13 +67,14 @@ nav li a {
 /************ main ************/
 main {
   font-family: 'Open Sans', sans-serif;
-  margin: 0px 0 0 270px;
+  margin: 0px 30px 0 290px;
   height: 100%;
   padding-bottom: 50px;
 }
 .main-section {
   padding-top: 10px;
   margin-bottom: 50px;
+  max-width: 1100px;
 }
 .main-header {
   font-weight: 500;
@@ -74,22 +82,26 @@ main {
 }
 hr {
   color: black;
-  margin-right: 35px;
+}
+.code-title {
+  margin: 30px 0 0 30px;
+  padding: 0;
+  line-height: 1;
+  font-size: 14px;
 }
 .code-container {
+  display: inline-block;
   background-color: #d3d3d3;
-  width: 30vw;
-  min-width: 290px;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  min-width: 300px;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0px;
   margin-left: 30px;
   border-radius: 6px;
 }
-code {
-  margin-left: 20px;
+ul {
+  padding-left: 45px;
 }
-
-
 /************ @media ************/
 @media (max-width: 950px) {
   nav {
@@ -105,7 +117,7 @@ code {
 
 /** Dark Mode **/
 .body-dark {
-  color: #BABABA;
+  color: #c7c7c7;
   background-color: #151515;
 }
 .code-dark {
