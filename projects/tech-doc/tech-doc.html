@@ -3,73 +3,93 @@
   <header>
     <title>Technical Documentation | Thomas Girgenti</title>
     <link href="tech-doc.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200|Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <script src="toggleDark.js" rel="javascript/text"></script>
   </header>
 
-  <body>
+  <body id="big-body">
+
     <nav id="navbar">
-      <header>Description of Technical Documentation</header>
-      <ul id="page-links">
+      <div id="nav-top">
+        <header>Technical Docs</header>
         <li><a class="nav-link" href="#george">George</a></li>
         <li><a class="nav-link" href="#ringo">Ringo</a></li>
         <li><a class="nav-link" href="#john">John</a></li>
         <li><a class="nav-link" href="#paul">Paul</a></li>
         <li><a class="nav-link" href="#beetle">Beetle</a></li>
-      </ul>
+        <li><button id="dark-button" onclick="toggleDark();">Toggle Dark Mode</button></li>
+      </div>
+      <div id="nav-bottom">
+        <p style="text-align: center;"><a href="https://github.com/tggir1" target="_blank" id="github-link">Check out my
+            other projects on
+            Github</a></p>
+      </div>
     </nav>
-
 
     <main id="main-doc">
       <section class="main-section" id="george">
         <header class="main-header">George</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <div id="code1" class="code-container">
+          <code>function one() { doSomething };</code>
+        </div>
         <ul>
-          <li></li>
+          <li>List 1</li>
         </ul>
       </section>
+      <hr>
       <section class="main-section" id="ringo">
         <header class="main-header">Ringo</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>paragraph 3</p>
+        <p> paragraph 4</p>
+        <div id="code2" class="code-container">
+          <code>function two() { doSomething };</code>
+        </div>
         <ul>
-          <li></li>
+          <li>List 2</li>
         </ul>
       </section>
+      <hr>
       <section class="main-section" id="john">
         <header class="main-header">John</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>paragraph 5</p>
+        <p>paragraph 6</p>
+        <div id="code3" class="code-container">
+          <code>function three() { doSomething };</code>
+        </div>
         <ul>
-          <li></li>
+          <li>List 3</li>
         </ul>
       </section>
+      <hr>
       <section class="main-section" id="paul">
         <header class="main-header">Paul</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>paragraph 7</p>
+        <p>paragraph 8</p>
+        <div id="code" class="code-container">
+          <code>function four() { doSomething };</code>
+        </div>
         <ul>
-          <li></li>
+          <li>List 4</li>
         </ul>
       </section>
+      <hr>
       <section class="main-section" id="beetle">
         <header class="main-header">Beetle</header>
-        <p></p>
-        <p></p>
-        <code></code>
+        <p>paragraph 9</p>
+        <p>paragraph 10</p>
+        <div id="code5" class="code-container">
+          <code>function five() { doSomething };</code>
+        </div>
         <ul>
-          <li></li>
+          <li>List 5</li>
         </ul>
       </section>
+      <hr>
     </main>
-
-    <footer>
-      <p><a href="https://github.com/tggir1" target="_blank">Check out my othe projects on Github</a></p>
-    </footer>
   </body>
+
 </html>
