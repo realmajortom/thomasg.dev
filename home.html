@@ -6,47 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link href="main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <h1>Thomas Girgenti</h1>
+    <header id="header-container" class="header-large">
+      <div id="header-text" class="header-text-large">
+        <div id="my-name" class="my-name-large">Thomas Girgenti</div>
+        <div id="my-title" class="my-title-large">FULL-STACK DEVELOPER</div>
+      </div>
+      <nav id="navbar" class="nav-large">
+        <li><a class="nav-link-large" id="about-link" href="#about">ABOUT</a></li>
+        <li><a class="nav-link-large" id="projects-link" href="#project-section">PROJECTS</a></li>
+        <li><a class="nav-link-large" id="contact-link" href="#contact">CONTACT</a></li>
+      </nav>
     </header>
 
     <main>
-      <div class="container" id="projects">
-        <div class="project-box">
-          <a href="projects/selenity-travels/product-landing.html"><img src="link-imgs/night-sky.png"
-              alt="Selenity Travels"></a>
+      <div id="project-section">
+        <div id="projects-heading">
+          <h1>Projects</h1>
         </div>
-        <div class="project-box">
-          <a href="projects/count-my-beans/bean-counter.html"><img src="link-imgs/countmybeans.jpeg"
-              alt="Count My Beans"></a>
-        </div>
-        <div class="project-box">
-          <a href="projects/tech-doc/tech-doc.html"><img src="link-imgs/tech-doc.png"
-              alt="Technical Documentation Site"></a>
-        </div>
-        <div class="project-box">
-          <a href="projects/survey-form/are-you-boring.html"><img src="link-imgs/survey.jpeg"
-              alt="Are You...Boring?"></a>
-        </div>
-        <div class="project-box">
-          <a href="projects/tribute-to-robin-williams/r-williams.html"><img src="link-imgs/r-williams.png"
-              alt="Tribute to Robin Williams"></a>
+        <div id="project-container">
+          <div class="project-tile">
+            <a href="projects/selenity-travels/product-landing.html"><img src="link-imgs/night-sky.png"
+                alt="Selenity Travels"></a>
+          </div>
+          <div class="project-tile">
+            <a href="projects/count-my-beans/bean-counter.html"><img src="link-imgs/countmybeans.jpeg"
+                alt="Count My Beans"></a>
+          </div>
+          <div class="project-tile">
+            <a href="projects/tech-doc/tech-doc.html"><img src="link-imgs/tech-doc.png"
+                alt="Technical Documentation Site"></a>
+          </div>
+          <div class="project-tile">
+            <a href="projects/survey-form/are-you-boring.html"><img src="link-imgs/survey.jpeg"
+                alt="Are You...Boring?"></a>
+          </div>
+          <div class="project-tile">
+            <a href="projects/tribute-to-robin-williams/r-williams.html"><img src="link-imgs/r-williams.png"
+                alt="Tribute to Robin Williams"></a>
+          </div>
         </div>
       </div>
+    </main>
+
+
+    <footer>
       <div id="disclaimer">
         <p>Note to all visitors: This website is currently under major construction. An updated version will be
           published
           shortly!</p>
       </div>
-
-    </main>
-    <footer><a href="https://www.github.com/tggir1" target="_blank">Check out my other projects on Github</a></footer>
+      <a href="https://www.github.com/tggir1" target="_blank" id="profile-link">Check out my other projects on
+        Github</a>
+    </footer>
   </body>
+  <script src="home.js" rel="javascript/text"></script>
 
 </hmtl>

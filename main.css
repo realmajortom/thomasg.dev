@@ -1,47 +1,139 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  width: 100vw;
-}
-h1, h2 {
+html, body {
   font-family: 'IBM Plex Mono', monospace;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
+/******* splash ********/
 header {
-  width: 86vw;
-  margin: auto;
+  color: white;
 }
 
-main {
-  width: 86vw;
-  margin: auto;
+/** full header **/
+.header-large {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(vscode-image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.header-text-large {
+  padding-top: 40vh;
+  text-align: center;
+}
+.my-name-large {
+  font-size: 36pt;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+}
+.my-title-large {
+  font-size: 14pt;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.nav-large {
+  margin-top: 90vh;
+  margin-left: 60vw;
+}
+.nav-link-large {
+  font-size: 1pt;
+  color: transparent;
 }
 
-.container {
-  margin-top: 50px;
-  margin-right: 0;
+/** small header **/
+.header-small {
+  background-image: url(vscode-image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 60px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
 }
-.project-box {
-  margin: .5vw;
+.header-text-small {
+  padding-top: 0;
+  text-align: start;
+  margin-left: 44px;
+  transition: 0.3s;
+}
+.my-name-small {
+  font-size: 24pt;
+  font-weight: 200;
+  transition: 0.3s;
+}
+.my-title-small {
+  display: none;
+}
+.nav-small {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-right: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  transition: 0.3s;
+}
+.nav-link-small {
+  color: white;
+  font-size: 14pt;
+  font-weight: 400;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li {
+  list-style-type: none;
+}
+
+/******** main ********/
+main {
+  padding-top: 60px;
+}
+h1 {
+  margin-left: 44px;
+  font-weight: 200;
+}
+#project-section {
+  height: 100vh;
+  padding-top: 60px;
+}
+#project-container {
+  width: 96vw;
+  margin: 0 2vw 0 2vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+.project-tile {
+  /* width: 17.8vw;
+  height: 17.8vw; */
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
 }
 img {
-  width: 20vw;
-  height: 20vw;
-  max-width: 400px;
-  max-height: 400px;
-  min-width: 230px;
-  min-height: 230px;
+  /*width: 17.8vw;
+  height: 17.8vw; */
+  max-width: 300px;
+  max-height: 300px;
 }
-.project-box:hover {
+.project-tile:hover {
   transform: scale(1.0175);
 }
 
+/******** footer ********/
 footer {
-  width: 86vw;
-  margin: auto;
-  margin: 4vh 0 4vh 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 a {
   color: #6e5494;
@@ -50,28 +142,64 @@ a:hover {
   color: #6cc644;
 }
 
+/******** @media ********/
 
-@media (max-width: 834px) {
+@media (max-width: 1334px) {
+  .project-tile {
+    width: 22vw;
+    height: 22vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
   img {
-   width: 25vw;
-   height: 25vw;
-   min-width: 170px;
-   min-height: 170px;
+    width: 22vw;
+    height: 22vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media (max-width: 1000px) {
+    .project-tile {
+    width: 29vw;
+    height: 29vw;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+  }
+  img {
+    width: 29vw;
+    height: 29vw;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
-@media (max-width: 430px) {
-  .container {
-    margin-top: 20px;
+@media (max-width: 666px) {
+  .project-tile {
+    width: 43vw;
+    height: 43vw;
+    margin: 10px;
   }
   img {
-    width: 35vw;
-    height: 35vw;
-    min-width: 128px;
-    min-height: 128px;
-    margin-right: 2.5vw;;
-    margin-bottom: 1.5vw;
-    margin-top: 0;
-    margin-left: 0;
+    width: 43vw;
+    height: 43vw;
   }
+}
+
+@media (max-width: 399px) {
+    .project-tile {
+    width: 46vw;
+    height: 46vw;
+    margin: 5px;
+  }
+  img {
+    width: 46vw;
+    height: 46vw;
+  }
+  #project-container {
+  width: 98vw;
+  margin: 0 1vw 0 1vw;
+  display: flex;
+  flex-flow: row wrap;
+}
 }
