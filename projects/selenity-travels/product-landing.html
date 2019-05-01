@@ -12,16 +12,16 @@
 
   <body>
     <header class="header-large" id="header">
-      <div id="flex-header">
-        <div id="title-box">
+      <div class="header-container">
+        <div class="icon-title-container">
           <img class="image-large" id="header-img" src="space-icon.png">
-          <div id="titles-container">
+          <div>
             <h1 class="title-large" id="title">Selenity Travels</h1>
             <p class="subtitle-large" id="subtitle">Your All-Inclusive Extra-Terrestrial Travel Provider</p>
           </div>
         </div>
         <nav id="nav-bar">
-          <ul id="nav-items">
+          <ul class="nav-container">
             <li><a class="nav-link" href="#why-this-matters">Why This Matters</a></li>
             <li><a class="nav-link" href="#packages">Packages</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -31,23 +31,21 @@
     </header>
 
     <main class="main">
-      <div class="sub-background">
-        <div class="subsection" id="why-this-matters">
-          <h2>Why This Matters</h2>
-          <div style="display: flex; flex-direction: column; align-items: center;">
-            <div>
-              <video style=" width: 88vw; max-width: 1000px;" src="why-space.mp4" type="video/mp4" controls>
-                Oops! Look like your browser does not support this video.
-              </video>
-              <p><i>2016 TED talk from Stephen Hawking on the importance of space travel</i></p>
-            </div>
+      <div class="subsection" id="why-this-matters">
+        <h2>Why This Matters</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <div>
+            <video style=" width: 88vw; max-width: 1100px;" src="why-space.mp4" type="video/mp4" controls>
+              Oops! Look like your browser does not support this video.
+            </video>
+            <p><i>2016 TED talk from Stephen Hawking on the importance of space travel</i></p>
           </div>
         </div>
       </div>
-      <div class="sub-background" id="package-background">
+      <div class="package-background">
         <div class="subsection" id="packages">
           <h2 id="package-heading">Travel Packages</h2>
-          <div id="package-container">
+          <div class="package-container">
             <div id="package1" class="package">
               <legend>Over The Moon</legend>
               <ul class="package-list">
@@ -85,35 +83,34 @@
           <p id="package-pricing"><i>*Fill contact form below for pricing information.</i></p>
         </div>
       </div>
-      <div class="sub-background" id="contact-about-background">
-        <div class="subsection" id="bottom-third">
-          <div id="about">
-            <h2 id="about-heading">About</h2>
-            <p>The founders (brothers Pete and Tom) of Selenity grew up in Houston, TX--home of NASA's Mission Control
-              at the Johnson Space Center. They spent they're childhoods dressing up as astronauts, launching Estes
-              rockets, and making handy inventions to use on the space station. As space flight has become commerical
-              and more affordable, the geniuses have seized the opportunity to explorte their dreams and bring the same
-              thrill to others.
-            </p>
-            <p>Backed by our generation's greatest engineers, scientists, and designers, we provide a world-class
-              service unlike any other. We hope you enjoy your flight and choose us again.</p>
-            <pc>Over and out.</p>
-          </div>
-          <div id="contact">
-            <h2 id="contact-heading">Contact</h2>
-            <p>To reserve a flight, please fill the contact form below:</p>
-            <form id="form" action="" method="">
-              <label for="name">Name:</label>
-              <input id="name" type="text" placeholder="Name" required>
-              <label for="email">Email:</label>
-              <input id="email" type="email" placeholder="loremipsum@dolor.sit">
-              <label for="other">Other information:</label>
-              <textarea style="width: 300px; height: 150px;"></textarea>
-              <input id="submit" type="submit" value="Submit">
-            </form>
-          </div>
-
+      <div class="subsection" id="bottom-third">
+        <div id="about">
+          <h2 id="about-heading">About</h2>
+          <p>The founders (brothers Pete and Tom) of Selenity grew up in Houston, TX--home of NASA's Mission Control
+            at the Johnson Space Center. They spent they're childhoods dressing up as astronauts, launching Estes
+            rockets, and making handy inventions to use on the space station. As space flight has become commerical
+            and more affordable, the geniuses have seized the opportunity to explorte their dreams and bring the same
+            thrill to others.
+          </p>
+          <p>Backed by our generation's greatest engineers, scientists, and designers, we provide a world-class
+            service unlike any other. We hope you enjoy your flight and choose us again.</p>
+          <pc>Over and out.</p>
         </div>
+        <div id="contact">
+          <h2 id="contact-heading">Contact</h2>
+          <p>To reserve a flight, please fill the contact form below:</p>
+          <form id="form" action="" method="">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="loremipsum@dolor.sit">
+            <label for="other">Other information:</label>
+            <textarea style="width: 300px; height: 150px;"></textarea>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
+
+      </div>
       </div>
     </main>
 
