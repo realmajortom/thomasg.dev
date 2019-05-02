@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<hmtl>
+<html>
 
   <head>
     <title>Thomas Girgenti | Home</title>
@@ -8,35 +8,40 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hamburgers.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400" rel="stylesheet">
-    <script src="js/home.js" rel="javascript/text"></script>
   </head>
+  <!--scroll="no" style="overflow: hidden;"-->
 
-  <body>
-    <header id="header-container" class="header-large">
-      <div id="header-text" class="header-text-large">
-        <div id="my-name" class="my-name-large">Thomas Girgenti</div>
-        <div id="my-title" class="my-title-large">FULL-STACK DEVELOPER</div>
-        <a class="email-button" href="mailto:thomas@thomasg.dev"><img id="mail-icon" src="icons/mail-icon.png"
-            alt="Email Me" class="mail-large"></a>
+  <body id="body" class="scroll-off">
+    <header id="header-container" class="header-fs">
+      <div id="header-text" class="header-text-fs">
+        <div id="my-name" class="my-name-fs"><a href="#projects-heading">Thomas Girgenti</a></div>
+        <div id="my-title" class="my-title-fs">FULL-STACK DEVELOPER</div>
+        <div id="icon-container" class="icon-fs">
+          <a href="mailto:thomas@thomasg.dev" class="icon-link">
+            <img class="icon" id="mail-icon" src="icons/mail-icon.png" alt="Email Me">
+          </a>
+          <a href="https://github.com/tggir1" target="_blank" class="icon-link">
+            <img class="icon" id="github-icon" src="icons/github-icon.png" alt="Link to my Github page">
+          </a>
+        </div>
       </div>
-      <nav id="navbar" class="navbar-large">
-        <li><a class="nav-link-large" id="about-link" href="#about">ABOUT</a></li>
-        <li><a class="nav-link-large" id="projects-link" href="#project-section">PROJECTS</a></li>
-        <li><a class="nav-link-large" id="contact-link" href="#contact">CONTACT</a></li>
+      <nav id="navbar" class="navbar-fs">
+        <li><a class="nav-link-fs" id="about-link" href="#about">ABOUT</a></li>
+        <li><a class="nav-link-fs" id="projects-link" href="#projects-heading">PROJECTS</a></li>
+        <li><a class="nav-link-fs" id="contact-link" href="#contact">CONTACT</a></li>
       </nav>
-      <button class="hamburger hamburger--3dx" type="button">
+
+      <button class="hamburger hamburger--3dx" id="ham-menu" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <script src="js/hamburger.js" rel="javascript/text"></script>
+
     </header>
 
-    <main>
+    <main id="main">
       <div id="project-section">
-        <div id="projects-heading">
-          <h1>PROJECTS</h1>
-        </div>
+        <h1 id="projects-heading">PROJECTS</h1>
         <div id="project-container">
           <div class="project-tile">
             <a href="project-pages/selenity-travels/product-landing.html"><img src="project-tiles/night-sky.png"
@@ -61,8 +66,7 @@
         </div>
       </div>
     </main>
-
-
+    <!--
     <footer>
       <div id="disclaimer">
         <p>Note to all visitors: This website is currently under major construction. An updated version will be
@@ -72,6 +76,9 @@
       <a href="https://www.github.com/tggir1" target="_blank" id="profile-link">Check out my other projects on
         Github</a>
     </footer>
+    -->
   </body>
+  <script src="js/header.js" rel="javascript/text"></script>
+  <script src="js/hamburger.js" rel="javascript/text"></script>
 
-</hmtl>
+</html>
