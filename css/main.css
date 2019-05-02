@@ -4,20 +4,25 @@ html, body {
   margin: 0;
   padding: 0;
 }
-/******* splash ********/
+
 header {
   color: white;
 }
 
-/** full header **/
+/************************************************/
+/************** full-screen header **************/
+/************************************************/
 .header-large {
   width: 100vw;
-  height: 100vh;
-  background-image: url(vscode-image.jpg);
+  height: 110vh;
+  background-image: url(../background-images/vs-dark.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+}
+.mail-large {
+  display: none;
 }
 .header-text-large {
   padding-top: 40vh;
@@ -35,7 +40,7 @@ header {
   padding: 0;
   margin: 0;
 }
-.nav-large {
+.navbar-large {
   margin-top: 90vh;
   margin-left: 60vw;
 }
@@ -43,10 +48,14 @@ header {
   font-size: 1pt;
   color: transparent;
 }
-
-/** small header **/
+.nav-container {
+  display: none;
+}
+/************************************************/
+/**************** pinned header *****************/
+/************************************************/
 .header-small {
-  background-image: url(vscode-image.jpg);
+  background-image: url(../background-images/vs-dark.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
@@ -59,9 +68,13 @@ header {
   top: 0;
   transition: 0.3s;
 }
+.my-title-small {
+  display: none;
+}
 .header-text-small {
+  display: flex;
+  flex-direction: row;
   padding-top: 0;
-  text-align: start;
   margin-left: 44px;
   transition: 0.3s;
 }
@@ -70,10 +83,12 @@ header {
   font-weight: 200;
   transition: 0.3s;
 }
-.my-title-small {
-  display: none;
+.mail-small {
+  display: block;
+  margin: 10px 0 0 30px;
+  height: 25px;
 }
-.nav-small {
+.navbar-small {
   color: white;
   display: flex;
   flex-direction: row;
@@ -90,18 +105,25 @@ header {
   text-decoration: none;
   transition: 0.3s;
 }
-
 li {
   list-style-type: none;
 }
 
-/******** main ********/
+
+/************************************************/
+/************************************************/
+/************************************************/
+/******************* main ***********************/
+/************************************************/
+/************************************************/
+/************************************************/
 main {
   padding-top: 60px;
 }
 h1 {
   margin-left: 44px;
-  font-weight: 200;
+  font-size: 19pt;
+  font-weight: 400;
 }
 #project-section {
   height: 100vh;
@@ -114,15 +136,11 @@ h1 {
   flex-flow: row wrap;
 }
 .project-tile {
-  /* width: 17.8vw;
-  height: 17.8vw; */
   max-width: 300px;
   max-height: 300px;
   margin: 10px;
 }
 img {
-  /*width: 17.8vw;
-  height: 17.8vw; */
   max-width: 300px;
   max-height: 300px;
 }
@@ -130,7 +148,9 @@ img {
   transform: scale(1.0175);
 }
 
-/******** footer ********/
+/**************************************/
+/*************** footer ***************/
+/**************************************/
 footer {
   text-align: center;
   padding-bottom: 20px;
@@ -142,8 +162,11 @@ a:hover {
   color: #6cc644;
 }
 
-/******** @media ********/
+/
 
+/**************************************/
+/*************** @media ***************/
+/**************************************/
 @media (max-width: 1334px) {
   .project-tile {
     width: 22vw;
@@ -151,7 +174,7 @@ a:hover {
     max-width: 300px;
     max-height: 300px;
   }
-  img {
+  .project-img {
     width: 22vw;
     height: 22vw;
     max-width: 300px;
@@ -166,40 +189,40 @@ a:hover {
     max-height: 300px;
     margin: 10px;
   }
-  img {
+  .project-img {
     width: 29vw;
     height: 29vw;
     max-width: 300px;
     max-height: 300px;
   }
 }
-
 @media (max-width: 666px) {
   .project-tile {
     width: 43vw;
     height: 43vw;
     margin: 10px;
   }
-  img {
+  .project-img {
     width: 43vw;
     height: 43vw;
   }
 }
-
 @media (max-width: 399px) {
     .project-tile {
     width: 46vw;
     height: 46vw;
     margin: 5px;
   }
-  img {
+  .project-img {
     width: 46vw;
     height: 46vw;
   }
   #project-container {
-  width: 98vw;
-  margin: 0 1vw 0 1vw;
-  display: flex;
-  flex-flow: row wrap;
+    width: 98vw;
+    margin: 0 1vw 0 1vw;
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
-}
+
+/**************** Menu Icon *************/

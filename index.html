@@ -2,11 +2,13 @@
 <hmtl>
 
   <head>
-    <title>Thomas Girgenti | Portfolio Home</title>
+    <title>Thomas Girgenti | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400" rel="stylesheet">
+    <script src="js/home.js" rel="javascript/text"></script>
   </head>
 
   <body>
@@ -14,39 +16,47 @@
       <div id="header-text" class="header-text-large">
         <div id="my-name" class="my-name-large">Thomas Girgenti</div>
         <div id="my-title" class="my-title-large">FULL-STACK DEVELOPER</div>
+        <a class="email-button" href="mailto:thomas@thomasg.dev"><img id="mail-icon" src="icons/mail-icon.png"
+            alt="Email Me" class="mail-large"></a>
       </div>
-      <nav id="navbar" class="nav-large">
+      <nav id="navbar" class="navbar-large">
         <li><a class="nav-link-large" id="about-link" href="#about">ABOUT</a></li>
         <li><a class="nav-link-large" id="projects-link" href="#project-section">PROJECTS</a></li>
         <li><a class="nav-link-large" id="contact-link" href="#contact">CONTACT</a></li>
       </nav>
+      <button class="hamburger hamburger--3dx" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <script src="js/hamburger.js" rel="javascript/text"></script>
     </header>
 
     <main>
       <div id="project-section">
         <div id="projects-heading">
-          <h1>Projects</h1>
+          <h1>PROJECTS</h1>
         </div>
         <div id="project-container">
           <div class="project-tile">
-            <a href="projects/selenity-travels/product-landing.html"><img src="link-imgs/night-sky.png"
-                alt="Selenity Travels"></a>
+            <a href="project-pages/selenity-travels/product-landing.html"><img src="project-tiles/night-sky.png"
+                alt="Selenity Travels" class="project-img"></a>
           </div>
           <div class="project-tile">
-            <a href="projects/count-my-beans/bean-counter.html"><img src="link-imgs/countmybeans.jpeg"
-                alt="Count My Beans"></a>
+            <a href="project-pages/count-my-beans/bean-counter.html"><img src="project-tiles/countmybeans.jpeg"
+                alt="Count My Beans" class="project-img"></a>
           </div>
           <div class="project-tile">
-            <a href="projects/tech-doc/tech-doc.html"><img src="link-imgs/tech-doc.png"
-                alt="Technical Documentation Site"></a>
+            <a href="project-pages/tech-doc/tech-doc.html"><img src="project-tiles/tech-doc.png"
+                alt="Technical Documentation Site" class="project-img"></a>
           </div>
           <div class="project-tile">
-            <a href="projects/survey-form/are-you-boring.html"><img src="link-imgs/survey.jpeg"
-                alt="Are You...Boring?"></a>
+            <a href="project-pages/survey-form/are-you-boring.html"><img src="project-tiles/survey.jpeg"
+                alt="Are You...Boring?" class="project-img"></a>
           </div>
           <div class="project-tile">
-            <a href="projects/tribute-to-robin-williams/r-williams.html"><img src="link-imgs/r-williams.png"
-                alt="Tribute to Robin Williams"></a>
+            <a href="project-pages/tribute-to-robin-williams/r-williams.html"><img src="project-tiles/r-williams.png"
+                alt="Tribute to Robin Williams" class="project-img"></a>
           </div>
         </div>
       </div>
@@ -63,6 +73,5 @@
         Github</a>
     </footer>
   </body>
-  <script src="home.js" rel="javascript/text"></script>
 
 </hmtl>
