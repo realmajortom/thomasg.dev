@@ -1,7 +1,9 @@
 const hamburger = document.querySelector('.hamburger');
-const navMob = document.getElementById('navbar-mobile');
+const mobileLink = document.getElementsByClassName('mobile-link');
 
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('is-active');
-  navMob.classList.toggle('hide-navbar-mobile');
+  for (let l = 0; l < mobileLink.length; l++) {
+    mobileLink[l].classList.toggle('display-none');
+  }
 });

@@ -5,6 +5,7 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
 .hamburger {
   padding: 18px 15px 5px 15px;
   display: none;
@@ -86,18 +87,9 @@
   transform: translate3d(0, -7px, 0) rotate(-45deg); 
 }
 
-/*
- @media (max-width: 740px) {
-   .hamburger {
-     display: inline-block;
-   }
- }
- */
- .show {
+.show-ham {
    display: inline-block;
  }
-
- 
  @media (min-width: 740px) {
    .hamburger {
      display: none;

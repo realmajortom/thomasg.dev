@@ -12,38 +12,43 @@
   <!--scroll="no" style="overflow: hidden;"-->
 
   <body id="body" class="scroll-off">
-    <header id="header-container" class="header-fs">
-      <div id="header-text" class="header-text-fs">
-        <div id="my-name" class="my-name-fs">Thomas Girgenti</div>
-        <div id="my-title" class="my-title-fs">FULL-STACK DEVELOPER</div>
-        <div id="icon-container" class="icon-fs">
-          <a href="mailto:thomas@thomasg.dev" class="icon-link">
-            <img class="icon" id="mail-icon" src="icons/mail-icon.png" alt="Email Me">
+
+    <header id="header-container" class="header-container-full">
+      <div id="header-text" class="header-text-full">
+        <div id="name-text" class="name-text-full">Thomas Girgenti</div>
+        <div id="job-text" class="">FULL-STACK DEVELOPER</div>
+        <div id="icon-container" class="display-none">
+          <a href="mailto:thomas@thomasg.dev" class="icon-href">
+            <img class="icon-image" id="mail-icon" src="icons/mail-icon.png" alt="Email Me">
           </a>
-          <a href="https://github.com/tggir1" target="_blank" class="icon-link">
-            <img class="icon" id="github-icon" src="icons/github-icon.png" alt="Link to my Github page">
+          <a href="https://github.com/tggir1" target="_blank" class="icon-href">
+            <img class="icon-image" id="github-icon" src="icons/github-icon.png" alt="Link to my Github page">
           </a>
         </div>
       </div>
-      <div id="scroll-link" class="scroll-link">
-        <a href="#projects-heading" id="scroll-href">Click to
-          Continue</a>
-      </div>
-      <nav id="navbar" class="navbar-fs">
-        <li><a class="nav-link-fs" id="about-link" href="#about">ABOUT</a></li>
-        <li><a class="nav-link-fs" id="projects-link" href="#projects-heading">PROJECTS</a></li>
-        <li><a class="nav-link-fs" id="contact-link" href="#contact">CONTACT</a></li>
+
+      <a id="scroll-link" class="scroll-link" href="#projects-heading">Click to
+        Continue
+      </a>
+
+      <nav id="navbar-desktop" class="display-none">
+        <li><a class="barlink" id="about-link" href="#about">ABOUT</a></li>
+        <li><a class="barlink" id="projects-link" href="#projects-heading">PROJECTS</a></li>
+        <li><a class="barlink" id="contact-link" href="#contact">CONTACT</a></li>
       </nav>
-      <button class="hamburger hamburger--3dx" id="ham-menu" type="button">
+
+      <button id="ham-menu" type="button" class="hamburger hamburger--3dx">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <nav id="navbar-mobile" class="navbar-mobile hide-navbar-mobile">
-        <li><a class="nav-link-fs nav-link-mobile" id="about-link-mobile" href="#about">ABOUT</a></li>
-        <li><a class="nav-link-fs nav-link-mobile" id="projects-link-mobile" href="#projects-heading">PROJECTS</a></li>
-        <li><a class="nav-link-fs nav-link-mobile" id="contact-link-mobile" href="#contact">CONTACT</a></li>
+
+      <nav id="navbar-mobile" class="navbar-mobile">
+        <li><a class="mobile-link display-none" id="about-link-mobile" href="#about">ABOUT</a></li>
+        <li><a class="mobile-link display-none" id="projects-link-mobile" href="#projects-heading">PROJECTS</a></li>
+        <li><a class="mobile-link display-none" id="contact-link-mobile" href="#contact">CONTACT</a></li>
       </nav>
+
     </header>
 
     <main id="main">
