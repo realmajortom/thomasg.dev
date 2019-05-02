@@ -1,4 +1,4 @@
-html, body {
+body {
   font-family: 'IBM Plex Mono', monospace;
   width: 100vw;
   margin: 0;
@@ -23,17 +23,16 @@ header {
   color: white;
 }
 .header-container-full {
-  background-image: url(../background-images/vs-dark.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 110vh;
   margin: 0;
   padding: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url(../background-images/vs-dark.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .header-text-full {
   padding-top: 40vh;
@@ -64,6 +63,7 @@ header {
 .header-pin {
   transition: 0.2s;
   position: fixed;
+  top: 0;
   height: 60px;
   flex-direction: row;
   justify-content: space-between;
@@ -132,19 +132,19 @@ header {
 /************************************************/
 /************************************************/
 main {
-  min-height: 100vh;
+  padding-top: 10px;
 }
-#projects-heading {
-  padding-top: 80px;
+.main-section {
+  width: 96vw;
+  margin: auto;
+  min-height:100vh;
+  padding-top: 70px;
 }
-h1 {
-  margin-left: 3vw;
+.heading {
   font-size: 19pt;
   font-weight: 400;
 }
 #project-container {
-  width: 96vw;
-  margin: 0 2vw 0 2vw;
   display: flex;
   flex-flow: row wrap;
 }
@@ -240,6 +240,11 @@ a:hover {
   .project-img {
     width: 43vw;
     height: 43vw;
+  }
+}
+@media (max-width: 465px) {
+  .name-text-full {
+    font-size: 24pt;
   }
 }
 @media (max-width: 399px) {
