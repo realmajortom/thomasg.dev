@@ -5,6 +5,7 @@ const classPairs = [
   ['navbar', 'navbar-pinned'],
   ['my-name', 'my-name-pinned'],
   ['my-title', 'my-title-pinned'],
+  ['scroll-link', 'icon-fs'],
   ['icon-container', 'icon-pinned'],
   ['body', 'scroll-on'],
   ['ham-menu', 'show'],

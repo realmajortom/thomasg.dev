@@ -29,6 +29,7 @@ li {
 /************************************************/
 /************** full-screen header **************/
 /************************************************/
+
 .header-fs {
   width: 100vw;
   height: 110vh;
@@ -53,6 +54,16 @@ li {
   font-weight: 400;
   padding: 0;
   margin: 0;
+}
+.scroll-link {
+  text-align: center;
+  padding-top: 30vh;
+}
+#scroll-href {
+  text-decoration: none;
+  color: #6cc644;
+  font-size: 14pt;
+  font-weight: 400;
 }
 .icon-fs {
   display: none;
