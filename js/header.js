@@ -8,7 +8,6 @@ const classPairs = [
   ['icon-container', 'icon-pinned'],
   ['body', 'scroll-on'],
   ['ham-menu', 'show'],
-  [document.getElementsByClassName('nav-link-fs'), 'nav-link-pinned']
 ];
 
 var didScroll = false;
