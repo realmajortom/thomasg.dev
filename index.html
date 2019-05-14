@@ -7,9 +7,8 @@
     <meta charset="UTF-8">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hamburgers.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400|Open+Sans" rel="stylesheet">
   </head>
-  <!--scroll="no" style="overflow: hidden;"-->
 
   <body id="body" class="scroll-off">
 
@@ -28,8 +27,7 @@
       </div>
 
       <button id="scroll-link" class="scroll-link" onclick="window.scrollBy(0, 11)">
-        Click to
-        Continue
+        <span id="continue" style="font-family: 'IBM Plex Mono', monospace">CONTINUE</span>
       </button>
 
       <nav id="navbar-desktop" class="display-none">
@@ -44,10 +42,14 @@
         </span>
       </button>
 
-      <nav id="navbar-mobile" class="navbar-mobile">
-        <li><a class="mobile-link display-none" id="about-link-mobile" href="#about">ABOUT</a></li>
-        <li><a class="mobile-link display-none" id="projects-link-mobile" href="#projects-heading">PROJECTS</a></li>
-        <li><a class="mobile-link display-none" id="contact-link-mobile" href="#contact">CONTACT</a></li>
+      <nav id="navbar-mobile" class="navbar-mobile height">
+        <li class="mob-list-item"><a class="mobile-link display-none" id="about-link-mobile" href="#about">ABOUT
+          </a>
+        </li>
+        <li class="mob-list-item"><a class="mobile-link display-none" id="projects-link-mobile"
+            href="#projects">PROJECTS</a></li>
+        <li class="mob-list-item"><a class="mobile-link display-none" id="contact-link-mobile"
+            href="#contact">CONTACT</a></li>
       </nav>
 
     </header>
@@ -58,50 +60,21 @@
         <div class="heading" id="about-heading">
           ABOUT
         </div>
-        <p>Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're
-          going.
-          Partially, but it also obeys your commands. You are a part of the Rebel Alliance and a traitor! Take her away!
-        </p>
-        <p>Your eyes can deceive you. Don't trust them. I can't get involved! I've got work to do! It's not that I like
-          the
-          Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.</p>
-        <p>Leave that to me. Send a distress signal, and inform the Senate that all on board were killed. I can't get
-          involved!
-          I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right
-          now. It's
-          such a long way from here.</p>
-        <p>Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were
-          beamed
-          to this ship by Rebel spies. I want to know what happened to the plans they sent you. I'm trying not to, kid.
-        </p>
-        <p>You don't believe in the Force, do you? Look, I ain't in this for your revolution, and I'm not in it for you,
-          Princess. I expect to be well paid. I'm in it for the money. The more you tighten your grip, Tarkin, the more
-          star
-          systems will slip through your fingers.</p>
-        <p>Still, she's got a lot of spirit. I don't know, what do you think? The plans you refer to will soon be back
-          in our
-          hands. I find your lack of faith disturbing. The more you tighten your grip, Tarkin, the more star systems
-          will slip
-          through your fingers.</p>
-        <p>I'm trying not to, kid. All right. Well, take care of yourself, Han. I guess that's what you're best at,
-          ain't it?
-          The Force is strong with this one. I have you now. Alderaan? I'm not going to Alderaan. I've got to go home.
-          It's
-          late, I'm in for it as it is.</p>
-        <p>What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of
-          courage.
-          It's more like…suicide. Remember, a Jedi can feel the Force flowing through him.</p>
-        <p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. No! Alderaan is
-          peaceful.
-          We have no weapons. You can't possibly… You're all clear, kid. Let's blow this thing and go home!</p>
-        <p>I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I
-          can do
-          about it right now. It's such a long way from here. Partially, but it also obeys your commands.</p>
-        <p>Still, she's got a lot of spirit. I don't know, what do you think? She must have hidden the plans in the
-          escape pod.
-          Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us
-          this time!
-        </p>
+        <div id="about-container">
+          <div id="about-summary">
+            <p>
+              Two important notes about myself:
+              First, I have a gluttonous craving for
+              newer and bigger challenges.
+              And second, if you invest in caffeine, you invest in me.
+            </p>
+            <p>
+              In addition to my points above, I am a self-tought developer with a passion for creative solutions to real problems, 
+            </p>
+          </div>
+          <div id="technologies"></div>
+
+        </div>
       </div>
 
       <div id="projects" class="main-section">
@@ -137,20 +110,9 @@
           CONTACT
         </div>
       </div>
-      <!--
-    <footer>
-      <div id="disclaimer">
-        <p>Note to all visitors: This website is currently under major construction. An updated version will be
-          published
-          shortly!</p>
-      </div>
-      <a href="https://www.github.com/tggir1" target="_blank" id="profile-link">Check out my other projects on
-        Github</a>
-    </footer>
-    -->
 
   </body>
-  <script src="js/header.js" rel="javascript/text"></script>
-  <script src="js/hamburger.js" rel="javascript/text"></script>
+
+  <script src="index.js" rel="javascript/text"></script>
 
 </html>

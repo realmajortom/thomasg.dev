@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a:hover {
+  cursor: pointer;
+}
 .scroll-off {
   overflow: hidden;
 }
@@ -16,9 +19,8 @@ li {
 .display-none {
   display: none;
 }
-/************************************************/
-/************** full-screen header **************/
-/************************************************/
+
+/********** welcome page (header-full) ***********/
 header {
   color: white;
 }
@@ -51,17 +53,51 @@ header {
   margin: 0;
 }
 .scroll-link {
-  margin-top: 20vh;
+  margin-top: 30vh;
   text-decoration: none;
-  color: #6cc644;
+  background-color: transparent;
+  border-width: 0;
+  color: white;
   font-size: 14pt;
   font-weight: 400;
 }
-/************************************************/
-/**************** pinned header *****************/
-/************************************************/
+.scroll-link:hover {
+  cursor: pointer;
+}
+
+#continue {
+  position: relative;
+}
+#continue::before, #continue::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #6cc644;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+#continue::before {
+  top: 0;
+  transform-origin: center right;
+}
+#continue:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+#continue::after {
+  bottom: 0;
+  transform-origin: center left;
+}
+#continue:hover::after {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+
+/*************** header ***************/
 .header-pin {
-  transition: 0.2s;
+  transition: 0.4s;
   position: fixed;
   top: 0;
   height: 60px;
@@ -105,32 +141,32 @@ header {
   margin-right: 24px;
   margin-top: 0;
   margin-left: 0;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .navbar-mobile {
+  height: 120px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   background-color: #1e1e1e;
   width: 150px;
-  margin-top: 134px;
+  margin-top: 90px;
   position: fixed;
   right: 0;
 }
+.height {
+  height: 0px;
+}
 .mobile-link {
-  color: white;
-  font-size: 14pt;
-  font-weight: 400;
-  margin-right: 20px;
-  text-decoration: none;
+    color: white;
+    font-size: 14pt;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 20px 10px 15px;
 }
 
-/************************************************/
-/************************************************/
-/************************************************/
-/******************* main ***********************/
-/************************************************/
-/************************************************/
-/************************************************/
+
+/*************** main *****************/
 main {
   padding-top: 10px;
 }
@@ -138,12 +174,25 @@ main {
   width: 90vw;
   margin: auto;
   min-height:100vh;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 .heading {
   font-size: 19pt;
   font-weight: 400;
 }
+
+#about-container {
+  display: flex;
+  flex-flow: row none;
+}
+#about-summary {
+  width: 33vw;
+  min-width: 300px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 #project-container {
   display: flex;
   flex-flow: row wrap;
@@ -163,9 +212,8 @@ main {
   max-height: 300px;
 }
 
-/**************************************/
+
 /*************** footer ***************/
-/**************************************/
 footer {
   text-align: center;
   padding-bottom: 20px;
@@ -177,9 +225,10 @@ a:hover {
   color: #6cc644;
 }
 
-/**************************************/
+
+
+
 /*************** @media ***************/
-/**************************************/
 @media (max-width: 1334px) {
   .project-tile {
     width: 22vw;
