@@ -13,7 +13,7 @@ a:hover {
 .scroll-on {
   overflow: visible;
 }
-li {
+.navList {
   list-style-type: none;
 }
 .display-none {
