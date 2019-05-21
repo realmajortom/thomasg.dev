@@ -12,7 +12,6 @@ const classPairs = [
   ['body', 'scroll-on']
 ];
 
-var didScroll = false;
 window.onscroll = function () {
   adjustHeader();
 };
@@ -25,6 +24,7 @@ function adjustHeader() {
       navLink[n].classList.add('barlink-pin');
     }
   }
+  /*
   else {
     for (let p = 0; p < classPairs.length; p++) {
       document.getElementById(classPairs[p][0]).classList.remove(classPairs[p][1]);
@@ -33,13 +33,8 @@ function adjustHeader() {
       navLink[n].classList.remove('barlink-pin');
     }
   }
+  */
 }
-setInterval(function () {
-  if (didScroll) {
-    didScroll = false;
-  }
-}, 100);
-
 
 const hamburger = document.querySelector('.hamburger');
 const mobileLink = document.getElementsByClassName('mobile-link');
@@ -52,3 +47,17 @@ hamburger.addEventListener('click', function () {
     mobileLink[l].classList.toggle('display-none');
   }
 });
+
+
+$(document).ready(function () {
+  $('#name-text').click(function () {
+    for (let p = 0; p < classPairs.length; p++) {
+      document.getElementById(classPairs[p][0]).classList.remove(classPairs[p][1]);
+    }
+    for (let n = 0; n < navLink.length; n++) {
+      navLink[n].classList.remove('barlink-pin');
+    }
+    window.scrollTo(0, 0);
+  });
+});
+
