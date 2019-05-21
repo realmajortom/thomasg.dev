@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0"
   }
 }

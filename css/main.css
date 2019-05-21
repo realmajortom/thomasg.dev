@@ -60,6 +60,7 @@ header {
   color: white;
   font-size: 14pt;
   font-weight: 400;
+  animation-delay: 1s;
 }
 .scroll-link:hover {
   cursor: pointer;
