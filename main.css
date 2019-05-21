@@ -32,7 +32,7 @@ header {
   height: 110vh;
   margin: 0;
   padding: 0;
-  background-image: url(background-images/vs-dark.jpg);
+  background-image: url(background-images/vs-dark2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -185,12 +185,13 @@ main {
 #about-container {
   display: flex;
   flex-flow: row none;
+  line-height: 150%;
 }
 #about-summary {
-  width: 33vw;
-  min-width: 300px;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 150%;
   font-size: 16px;
-  line-height: 30px;
 }
 
 #project-container {
