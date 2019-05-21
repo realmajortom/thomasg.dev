@@ -8,7 +8,7 @@ body {
   align-items: center;
   margin: 0;
 }
-/*********** header ************/
+
 header {
   background-color: #f9f9fa;
   position: fixed;
@@ -16,6 +16,7 @@ header {
   width: 100vw;
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 .header-container, .icon-title-container, .nav-container {
   display: flex;
@@ -91,6 +92,7 @@ li {
   opacity: 0;
 }
 
+/***** main *****/
 .main {
   width: 100vw;
 }
@@ -116,8 +118,10 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: space-between;
+  font-size: 20px;
+  line-height: 160%;
 }
-.package-background {
+.packages-background {
   background-image: url("night-sky.jpeg");
   background-attachment: fixed;
   background-size: cover;
@@ -139,6 +143,8 @@ h2 {
   min-width: 330px;
   min-height: 330px;
   margin-right: 20px;
+  border-radius: 2px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .package-list {
   padding: 0;
@@ -168,10 +174,7 @@ legend {
   margin-top: 0;
   padding-top: 0;
 }
-input {
-  margin-bottom: 15px;
-}
-textarea {
+.formPut {
   margin-bottom: 15px;
 }
 #submit-button {
