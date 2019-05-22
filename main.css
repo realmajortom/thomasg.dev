@@ -16,15 +16,18 @@ a:hover {
 .navList {
   list-style-type: none;
 }
-.display-none {
+.noShow {
   display: none;
 }
 
 /********** welcome page (header-full) ***********/
 header {
+  font-family: 'IBM Plex Mono', monospace;
   color: white;
+  z-index: 1;
 }
-.header-container-full {
+
+.headerCont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,23 +39,57 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-.header-text-full {
+
+.headerMain {
   padding-top: 40vh;
 }
-.name-text-full {
+
+.headerTitle {
   font-size: 36pt;
   font-weight: 200;
   padding: 0;
   margin: 0;
 }
-#job-text {
+.headerTitle:hover {
+  cursor: pointer;
+}
+
+.headerSub {
   text-align: center;
   font-size: 14pt;
   font-weight: 400;
   padding: 0;
   margin: 0;
 }
-.scroll-link {
+
+.headerIcons {
+  margin-left: 20px;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+.nbDesk{
+  display: flex;
+  flex-direction: row;
+  margin-right: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  transition: 0.4s;
+}
+
+.nbMobile {
+  height: 120px;
+  width: 150px;
+  margin: 100px 10px 10px 10px;
+  position: fixed;
+  right: 0;
+  background-color: #292b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.continueBtn {
   margin-top: 30vh;
   text-decoration: none;
   background-color: transparent;
@@ -60,16 +97,12 @@ header {
   color: white;
   font-size: 14pt;
   font-weight: 400;
-  animation-delay: .3s;
-}
-.scroll-link:hover {
-  cursor: pointer;
-}
-
-#continue {
   position: relative;
 }
-#continue::before, #continue::after {
+.continueBtn:hover {
+  cursor: pointer;
+}
+.continueBtn::before, .continueBtn::after {
   content: '';
   position: absolute;
   left: 0;
@@ -79,91 +112,64 @@ header {
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
-#continue::before {
+.continueBtn::before {
   top: 0;
   transform-origin: center right;
 }
-#continue:hover::before {
+.continueBtn:hover::before {
   transform-origin: center left;
   transform: scaleX(1);
 }
-#continue::after {
+.continueBtn::after {
   bottom: 0;
   transform-origin: center left;
 }
-#continue:hover::after {
+.continueBtn:hover::after {
   transform-origin: center right;
   transform: scaleX(1);
 }
 
-/*************** header ***************/
-.header-pin {
-  transition: 0.4s;
-  position: fixed;
-  top: 0;
-  height: 60px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header-text-pin {
-  padding-top: 0;
-  margin-left: 3vw;
-}
-.name-text-pin {
-  display: inline-block;
-  font-size: 24pt;
-  font-weight: 200;
-}
-.icon-cont-pin {
-  margin-left: 20px;
-  padding-top: 4px;
-  display: inline-block;
-}
-.icon-image {
+.headerIcon {
   padding: 0;
   margin: 0 5px;
   width: 27px;
 }
-.icon-href {
+.iconLink {
   text-decoration: none;
   width: 27px;
   height: 27px;
 }
-.barlink-pin {
+.nbLink {
   color: white;
   font-size: 14pt;
   font-weight: 400;
   margin-right: 20px;
   text-decoration: none;
 }
-.navbar-pin {
-  display: flex;
+.nbLinkMob {
+  color: white;
+  font-size: 14pt;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*** shrink clases ***/
+.headerCont-shrink {
+  top: 0;
+  position: fixed;
+  height: 60px;
   flex-direction: row;
-  margin-right: 24px;
-  margin-top: 0;
-  margin-left: 0;
+  justify-content: space-between;
   transition: 0.4s;
 }
-.navbar-mobile {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: #1e1e1e;
-  width: 150px;
-  margin-top: 90px;
-  position: fixed;
-  right: 0;
+.headerMain-shrink {
+  padding-top: 0;
+  margin-left: 3vw;
 }
-.height {
-  height: 0px;
-}
-.mobile-link {
-    color: white;
-    font-size: 14pt;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px 20px 10px 15px;
+.headerTitle-shrink {
+  display: inline-block;
+  font-size: 24pt;
+  font-weight: 200;
 }
 
 
@@ -181,24 +187,59 @@ main {
   font-size: 19pt;
   font-weight: 400;
 }
-
 #about-container {
   display: flex;
   flex-flow: row none;
-  line-height: 150%;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 #about-summary {
-  padding-top: 20px;
+  width: 64vw;
   font-family: 'Roboto', sans-serif;
   line-height: 150%;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
+#technologies {
+  width: 20vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.centerAlign {
+  align-self: center;
+}
+.headshot {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #292b36;
+}
+.techIcn {
+  margin: 10px;
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+.aboutListCont {
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+.aboutList {
+  min-width: 160px;
+}
 #project-container {
   display: flex;
   flex-flow: row wrap;
   width: 96vw;
   margin-left: -2vw;
+  margin-top: 30px;
 }
 .project-tile {
   max-width: 300px;
@@ -225,8 +266,6 @@ a {
 a:hover {
   color: #6cc644;
 }
-
-
 
 
 /*************** @media ***************/
@@ -260,26 +299,31 @@ a:hover {
   }
 }
 @media (max-width: 820px) {
-  .name-text-pin {
+  .headerTitle-shrink {
     margin: 10px 0px 0px 0px;
     font-size: 18pt;
   }
-  .icon-cont-pin {
+  #headerIcons {
     margin-left: 0px;
     padding-top: 8px;
   }
-  .icon-href {
+  .iconLink {
     width: 2px;
     height: 20px;
   }
-  .icon-image-pin {
+  .headerIcon {
     padding: 0;
     margin: 0 5px;
     width: 20px;
   }
 }
 @media (max-width: 740px){
-  #navbar-desktop {
+  #nbDesk {
+    display: none;
+  }
+}
+@media (min-width: 740px) {
+  .nbMobile {
     display: none;
   }
 }
@@ -295,7 +339,7 @@ a:hover {
   }
 }
 @media (max-width: 465px) {
-  .name-text-full {
+  .headerTitle-full {
     font-size: 24pt;
   }
 }
@@ -315,9 +359,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
   }
-  .name-text-pin {
+  .headerTitle-full {
     display: none;
   }
 }
-
-/**************** Menu Icon *************/

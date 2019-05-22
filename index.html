@@ -14,45 +14,58 @@
 
   <body id="body" class="scroll-off">
 
-    <header id="header-container" class="header-container-full">
-      <div id="header-text" class="header-text-full">
-        <div id="name-text" class="name-text-full">Thomas Girgenti</div>
-        <div id="job-text" class="">FULL-STACK DEVELOPER</div>
-        <div id="icon-container" class="display-none">
-          <a href="mailto:thomas@thomasg.dev" class="icon-href">
-            <img class="icon-image" id="mail-icon" src="icons/mail-icon.png" alt="Email Me">
+    <header id="headerCont" class="headerCont">
+      <div id="headerMain" class="headerMain">
+        <div id="headerTitle" class="headerTitle">Thomas Girgenti</div>
+        <div id="headerSub" class="headerSub">FULL-STACK DEVELOPER</div>
+        <div id="headerIcons" class="headerIcons">
+          <a href="mailto:thomas@thomasg.dev" class="iconLink">
+            <img class="headerIcon noShow" id="mail-icon" src="icons/mail-icon.png" alt="Email Me">
           </a>
-          <a href="https://github.com/tggir1" target="_blank" class="icon-href">
-            <img class="icon-image" id="github-icon" src="icons/github-icon.png" alt="Link to my Github page">
+          <a href="https://github.com/tggir1" target="_blank" class="iconLink">
+            <img class="headerIcon noShow" id="github-icon" src="icons/github-icon.png" alt="Link to my Github page">
           </a>
         </div>
       </div>
 
-      <button id="scroll-link" class="scroll-link animated bounce" onclick="window.scrollBy(0, 11)">
-        <span id="continue" style="font-family: 'IBM Plex Mono', monospace">CONTINUE
-        </span>
+      <button id="continueBtn" onclick="window.scrollBy(0, 11)" class="continueBtn">
+        <span stlye="font-family: 'IBM Plex Mono', monospace;">CONTINUE</span>
       </button>
 
-      <nav id="navbar-desktop" class="display-none">
-        <li class="navList"><a class="barlink" id="about-link" href="#about">ABOUT</a></li>
-        <li class="navList"><a class="barlink" id="projects-link" href="#projects">PROJECTS</a></li>
-        <li class="navList"><a class="barlink" id="contact-link" href="#contact">CONTACT</a></li>
+      <nav id="nbDesk" class="nbDesk">
+        <li class="navList">
+          <a class="nbLink noShow" id="about-link" href="#about">ABOUT</a>
+        </li>
+        <li class="navList">
+          <a class="nbLink noShow" id="projects-link" href="#projects">PROJECTS</a>
+        </li>
+        <li class="navList">
+          <a class="nbLink noShow" id="contact-link" href="#contact">CONTACT</a>
+        </li>
       </nav>
 
-      <button id="ham-menu" type="button" class="hamburger hamburger--3dx">
+      <button id="hamMenu" type="button" class="hamburger hamburger--3dx">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
 
-      <nav id="navbar-mobile" class="navbar-mobile height">
-        <li class="mob-list-item navList"><a class="mobile-link display-none" id="about-link-mobile" href="#about">ABOUT
+      <nav id="nbMobile " class="nbMobile">
+        <li class="mob-list-item navList">
+          <a class="nbLinkMob" id="about-link-mobile" href="#about">
+            ABOUT
           </a>
         </li>
-        <li class="mob-list-item navList"><a class="mobile-link display-none" id="projects-link-mobile"
-            href="#projects">PROJECTS</a></li>
-        <li class="mob-list-item navList"><a class="mobile-link display-none" id="contact-link-mobile"
-            href="#contact">CONTACT</a></li>
+        <li class="mob-list-item navList">
+          <a class="nbLinkMob" id="projects-link-mobile" href="#projects">
+            PROJECTS
+          </a>
+        </li>
+        <li class="mob-list-item navList">
+          <a class="nbLinkMob" id="contact-link-mobile" href="#contact">
+            CONTACT
+          </a>
+        </li>
       </nav>
 
     </header>
@@ -65,27 +78,29 @@
         </div>
         <div id="about-container">
           <div id="about-summary">
-            <p>Welcome, I'm Thomas!</p>
+            <img src="icons/headshot.jpg" class="headshot centerAlign">
+            <p class="centerAlign">Welcome, I'm Thomas!</p>
             <p>
-              After much time spent shuffling between career paths and passions, I have discovered and nurtured a deep
+              After shuffling between career paths, I have discovered a deep
               love for web development. The hobby began when I couldn't find a good RSS reader online, and has resulted
-              in a new laptop, a used and abused Github account, and countless hours spent sipping Red Bull while
-              staring at a screen.
+              in a laptop upgrade, a used and abused Github account, and countless hours spent sipping Red Bull while
+              staring blanky at my screen. Surely I'm not the only one!
             </p>
             <p>
-              One of the biggest hurdles while learning was frustration that everything I could make has already been
-              made--and much better. To get past this, I set a rule for myself--every app and project must be fully
-              functional and do just a little more than comparable projects. For example, a toggle for light/dark mode
-              in the technical documentation site or a viewable history with the calculator app. The little extras
-              appear in all of my work :)
-            </p>
-            <br>
-            <strong>On the following page, each project card has 3 pieces of info:</strong>
-            <ol>
-              <li>Technologies Used</li>
-              <li>Extra pizzaz</li>
-              <li>The hardest part</li>
-            </ol>
+              One of the most challenging things as a programmer is the feeling that everything I make has already been
+              done. To get past this, I set a rule for myself--every app and project I develop must be fully
+              functional and do just a little more than comparable projects.
+              <p style="font-weight: bolder;">
+                On the following page, each card has
+                3 pieces of info:
+              </p>
+              <ol class="aboutListCont">
+                <li class="aboutList">Technologies Used</li>
+                <li class="aboutList">The hardest part</li>
+                <li class="aboutList">Extra touches</li>
+              </ol>
+
+              <!--
             <p>
               Important side notes:
               First, I have a gluttonous craving for
@@ -95,8 +110,17 @@
             <p>
               I am a self-taught developer with a zeal for creating strategic solutions to real-life challenges.
             </p>
+          -->
           </div>
-          <div id="technologies"></div>
+          <div id="technologies">
+            <img src="icons/nodejs-new-black.png" alt="node icon" class="techIcn">
+            <img src="icons/git.png" alt="git icon" class="techIcn">
+            <img src="icons/react.png" alt="react icon" class="techIcn">
+            <img src="icons/js.svg" alt="git icon" class="techIcn">
+            <img src="icons/html-icn.png" alt="html icon" class="techIcn">
+            <img src="icons/css.png" alt="css icon" class="techIcn">
+
+          </div>
 
         </div>
       </div>
@@ -136,7 +160,7 @@
       </div>
 
   </body>
-
-  <script src="index.js" rel="javascript/text"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 
 </html>
