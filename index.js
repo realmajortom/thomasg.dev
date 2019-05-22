@@ -10,7 +10,7 @@ $(document).ready(function () {
   ];
 
   const show = [
-    '#nbDesk', '#mail-icon', '#github-icon', '#about-link', '#projects-link', '#contact-link'
+    '#nbDesk', '#mail-icon', '#github-icon', '#about-link', '#projects-link', '#contact-link', '.hamburger'
   ];
 
   window.onscroll = function () {
@@ -36,7 +36,8 @@ $(document).ready(function () {
 
   $('#hamMenu').click(function () {
     $('#hamMenu').toggleClass('is-active');
-    //$('#nbMobile').toggleClass('noShow');
+    $('.nbMobile').toggleClass('noShow');
   });
+
 });
 
