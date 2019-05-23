@@ -37,7 +37,50 @@ $(document).ready(function () {
   $('#hamMenu').click(function () {
     $('#hamMenu').toggleClass('is-active');
     $('.nbMobile').toggleClass('noShow');
+    $('#main').toggleClass('blur');
   });
-
+  /*
+    let liveStory = 0;
+    const cards = ['#us1', '#us2', '#us3', '#us4', '#us5', '#us6'];
+    $('#prevUS').click(function () {
+      if (liveStory > 0) {
+        $(cards[liveStory]).addClass('noShow');
+        $(cards[liveStory - 1]).removeClass('noShow');
+        liveStory -= 1;
+      }
+    });
+    $('#nextUS').click(function () {
+      if (liveStory < 5) {
+        $(cards[liveStory]).addClass('noShow');
+        $(cards[liveStory + 1]).removeClass('noShow');
+        liveStory += 1;
+      }
+    });
+  */
+  $('.userStories').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
 

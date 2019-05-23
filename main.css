@@ -62,7 +62,16 @@ header {
   padding-top: 4px;
   display: inline-block;
 }
-
+.headerIcon {
+  padding: 0;
+  margin: 0 5px;
+  width: 27px;
+}
+.iconLink {
+  text-decoration: none;
+  width: 27px;
+  height: 27px;
+}
 .nbDesk{
   display: flex;
   flex-direction: row;
@@ -71,14 +80,29 @@ header {
   margin-left: 0;
   transition: 0.4s;
 }
-
+.nbLink {
+  color: white;
+  font-size: 14pt;
+  font-weight: 400;
+  margin-right: 20px;
+  text-decoration: none;
+}
 .nbMobile {
-  height: 120px;
+  height: 150px;
   width: 150px;
-  margin: 100px 10px 10px 10px;
+  margin: 120px 30px 0px 0px;
   position: fixed;
   right: 0;
   background-color: #292b36;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.nbLinkMob {
+  color: white;
+  font-size: 14pt;
+  font-weight: 400;
+  text-decoration: none;
+  padding-left: 15px;
 }
 
 .continueBtn {
@@ -121,30 +145,6 @@ header {
   transform: scaleX(1);
 }
 
-.headerIcon {
-  padding: 0;
-  margin: 0 5px;
-  width: 27px;
-}
-.iconLink {
-  text-decoration: none;
-  width: 27px;
-  height: 27px;
-}
-.nbLink {
-  color: white;
-  font-size: 14pt;
-  font-weight: 400;
-  margin-right: 20px;
-  text-decoration: none;
-}
-.nbLinkMob {
-  color: white;
-  font-size: 14pt;
-  font-weight: 400;
-  text-decoration: none;
-}
-
 /*** shrink clases ***/
 .headerCont-shrink {
   top: 0;
@@ -164,7 +164,6 @@ header {
   font-weight: 200;
 }
 
-
 /*************** main *****************/
 main {
   padding-top: 10px;
@@ -183,21 +182,53 @@ main {
   display: flex;
   flex-flow: row none;
   justify-content: space-between;
-  padding-top: 20px;
 }
 #about-summary {
-  width: 64vw;
-  font-family: 'Roboto', sans-serif;
+  width: 78vw;
+  font-family: 'Quicksand', sans-serif;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-#technologies {
-  width: 20vw;
+#userStories {
+  align-self: center;
+  width: 90%;
+  height: 300px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.12), inset 0 2px 4px rgba(0,0,0,0.24);
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row none;
+  align-items: center;
+  justify-content: space-around;
+}
+.uStory {
+  padding: 20px;
+  display: block;
+  width: 80%;
+  height: 70%;
+  background-color: #292b36;
+  border-radius: 4px;
+  color: #fff;
+}
+.usTitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
+#usControls {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+}
+#technologies {
+  width: 12vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .centerAlign {
@@ -205,19 +236,19 @@ main {
 }
 .headshot {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   border-style: solid;
-  border-width: 6px;
+  border-width: 5px;
   border-color: #292b36;
 }
 .techIcn {
-  margin: 10px;
   display: block;
-  max-width:230px;
+  max-width:95px;
   max-height:95px;
   width: auto;
   height: auto;
+  boingInUp
 }
 .aboutListCont {
   margin: 0 0 0 40px;
@@ -245,7 +276,6 @@ main {
   max-width: 300px;
   max-height: 300px;
 }
-
 
 /*************** footer ***************/
 footer {
@@ -357,6 +387,12 @@ a:hover {
   }
 }
 
+
 .noShow {
   display: none;
+}
+.blur {
+  filter: blur(2px);
+  transition: ease-out;
+  transition-duration: .15s;
 }

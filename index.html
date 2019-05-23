@@ -8,8 +8,9 @@
     <link href="main.css" rel="stylesheet">
     <link href="animate.min.css" rel="stylesheet">
     <link href="hamburgers.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400|Roboto:300&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,400|Quicksand|Raleway&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
   </head>
 
   <body id="body" class="scroll-off">
@@ -80,16 +81,73 @@
           <div id="about-summary">
             <img src="icons/headshot.jpg" class="headshot centerAlign">
             <p class="centerAlign">Welcome, I'm Thomas!</p>
-            <p>
-              After shuffling between career paths, I have discovered a deep
-              love for web development. The hobby began when I couldn't find a good RSS reader online, and has resulted
-              in a laptop upgrade, a used and abused Github account, and countless hours spent sipping Red Bull while
-              staring blanky at my screen. Surely I'm not the only one!
-            </p>
-            <p>
-              One of the most challenging things as a programmer is the feeling that everything I make has already been
-              done. To get past this, I set a rule for myself--every app and project I develop must be fully
-              functional and do just a little more than comparable projects.
+            <div id="userStories" class="userStories">
+              <div class="uStory" id="us1">
+                <div class="usTitle">User Story 1: Wings</div>
+                <p>
+                  They say Red Bull gives you wings. I beg to differ. All I've gained from it is countless sleepless
+                  nights
+                  staring into the depths of my Macbook, hoping I may discover some burnt out pixel has been just barely
+                  conceiling a simple typo this whole time. We may finally learn which lasts longer--an overheating cpu
+                  or
+                  my vision.<br>(Seriously, who writes infinite loops anyways??)
+                </p>
+              </div>
+              <div class="uStory noShow" id="us2">
+                <div class="usTitle">User Story 2: Broke</div>
+                <p>
+                  Some people start programming as a hobby and gradually stumble into a development career. Screw
+                  that--I
+                  need to pay for Red Bull and my MacBook keyboard replacement(s).
+                </p>
+              </div>
+              <div class="uStory noShow" id="us3">
+                <div class="usTitle">User Story 3: Pillars</div>
+                <p>
+                  "It's not much, but it's mine."
+                  <br>These warming words coupled with Jagerbombs stand as the pillars of my existence.
+                </p>
+              </div>
+              <div class="uStory noShow" id="us4">
+                <div class="usTitle">User Story 4: Stack Overlfl-oh-no</div>
+                <p>
+                  Ever look up a funky error, only to get back google results with Github issues? It's just you and God
+                  now.
+                </p>
+              </div>
+              <div class="uStory noShow" id="us5">
+                <div class="usTitle">User Story 5: Git Vim</div>
+                <p>
+                  The very first time I tried "git commit", I managed to mess up the message flag and got sucked into
+                  vim.
+                  After quitting my terminal, I tried the commit
+                  again, this time receiving an error message due to the dangling remains of attempt #1. There is no
+                  recovering from a bad vim trip.<br><br>Somewhere
+                  in
+                  the
+                  ether wanders a lonesome, unloved Github account, abanonded by a startled young developer.
+                </p>
+              </div>
+              <div class="uStory noShow" id="us6">
+                <div class="usTitle">User Story 6: vim 1:1</div>
+                <p>
+                  "In the beginning was the vim, and the vim was with God, and vim was God. The same was in the
+                  beginning
+                  with God. All things were made by vim; and without vim was not any thing made that was made. In vim
+                  was
+                  life; and the life was the light of men."
+                </p>
+              </div>
+            </div>
+
+            <div id="intro">
+              <p>
+                One of the most frustrating things as a programmer is the feeling that everything I make has already
+                been
+                done. To get past this, I set a rule for myself--every app and project I develop must be fully
+                functional and do just a little more than comparable projects. Making things that work well is a
+                thrill!
+              </p>
               <p style="font-weight: bolder;">
                 On the following page, each card has
                 3 pieces of info:
@@ -99,27 +157,15 @@
                 <li class="aboutList">The hardest part</li>
                 <li class="aboutList">Extra touches</li>
               </ol>
-
-              <!--
-            <p>
-              Important side notes:
-              First, I have a gluttonous craving for
-              newer and bigger challenges.
-              And second, if you invest in caffeine, you invest in me.
-            </p>
-            <p>
-              I am a self-taught developer with a zeal for creating strategic solutions to real-life challenges.
-            </p>
-          -->
+            </div>
           </div>
           <div id="technologies">
-            <img src="icons/nodejs-new-black.png" alt="node icon" class="techIcn">
-            <img src="icons/git.png" alt="git icon" class="techIcn">
-            <img src="icons/react.png" alt="react icon" class="techIcn">
-            <img src="icons/js.svg" alt="git icon" class="techIcn">
-            <img src="icons/html-icn.png" alt="html icon" class="techIcn">
-            <img src="icons/css.png" alt="css icon" class="techIcn">
-
+            <img src="icons/git.png" alt="git icon" class="techIcn perspectiveUpReturn">
+            <img src="icons/nodejs-new-black.png" alt="node icon" class="techIcn perspectiveUpReturn">
+            <img src="icons/react.png" alt="react icon" class="techIcn perspectiveUpReturn">
+            <img src="icons/js.svg" alt="git icon" class="techIcn perspectiveUpReturn">
+            <img src="icons/html-icn.png" alt="html icon" class="techIcn perspectiveUpReturn">
+            <img src="icons/css.png" alt="css icon" class="techIcn perspectiveUpReturn">
           </div>
 
         </div>
@@ -159,8 +205,15 @@
         </div>
       </div>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="index.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <!--
+    <div id="usControls">
+      <button id="prevUS">Previous</button>
+      <button id="nextUS">Next</button>
+    </div>
+  -->
 
 </html>
