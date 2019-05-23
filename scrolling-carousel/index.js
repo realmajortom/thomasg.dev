@@ -40,29 +40,29 @@ $(document).ready(function () {
     $('#main').toggleClass('blur');
   });
 
-  let liveStory = 0;
-  const cards = ['#us1', '#us2', '#us3', '#us4', '#us5', '#us6'];
-  $('#prevUS').click(function () {
-    if (liveStory > 0) {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[liveStory - 1]).removeClass('noShowStory');
-      liveStory -= 1;
-    } else {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[5]).removeClass('noShowStory');
-      liveStory = 5;
-    }
-  });
-  $('#nextUS').click(function () {
-    if (liveStory < 5) {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[liveStory + 1]).removeClass('noShowStory');
-      liveStory += 1;
-    } else {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[0]).removeClass('noShowStory');
-      liveStory = 0;
-    }
-  });
+  // let liveStory = 0;
+  // const cards = ['#us1', '#us2', '#us3', '#us4', '#us5', '#us6'];
+  // $('#prevUS').click(function () {
+  //   if (liveStory > 0) {
+  //     $(cards[liveStory]).addClass('noShow');
+  //     $(cards[liveStory - 1]).removeClass('noShow');
+  //     liveStory -= 1;
+  //   } else {
+  //     $(cards[liveStory]).addClass('noShow');
+  //     $(cards[5]).removeClass('noShow');
+  //     liveStory = 5;
+  //   }
+  // });
+  // $('#nextUS').click(function () {
+  //   if (liveStory < 5) {
+  //     $(cards[liveStory]).addClass('noShow');
+  //     $(cards[liveStory + 1]).removeClass('noShow');
+  //     liveStory += 1;
+  //   } else {
+  //     $(cards[liveStory]).addClass('noShow');
+  //     $(cards[0]).removeClass('noShow');
+  //     liveStory = 0;
+  //   }
+  // });
 });
 

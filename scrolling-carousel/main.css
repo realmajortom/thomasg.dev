@@ -178,10 +178,9 @@ main {
   font-size: 19pt;
   font-weight: 400;
 }
-
 #about-container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row none;
   justify-content: space-between;
 }
 #about-summary {
@@ -190,73 +189,47 @@ main {
   line-height: 150%;
   font-size: 18px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: flex-start;
-}
-#picPara {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-#intro {
-  max-width: 70vw;
-  margin-left: 30px;
-}
-.headshot {
-  border-radius: 4px;
-  width: 140px;
-  height: 140px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #292b36;
-  margin-top: 20px;
 }
 .userStories {
-  color: #fff;
-  font-size: 17px;
+  align-self: center;
   box-sizing: content-box;
-  width: 560px;
-  height: 300px;
+  width: 600px;
+  height: 290px;
+  padding: 12px 10px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.12), inset 0 2px 4px rgba(0,0,0,0.24);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  border-radius: 2px;
-  background-color: #292b36;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  align-items: center;
+  overflow-x: auto;
 }
 .uStory {
+  flex-shrink: 0;
   display: block;
   width: 500px;
-  padding: 20px;
-  background-color: none;
-  }
+  height: 220px;
+  padding: 30px;
+  margin: 0 20px;
+  background-color: #292b36;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 120%;
+}
+
 .usTitle {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   font-size: 24px;
 }
-.caroBtn {
-  width: 40px;
-  height: 300px;
-  font-size: 26px;
-  border-radius: 2px;
-  border-style: none;
-  background-color: transparent;
-  color: #d5d9dc;
-  font-weight: bolder;
+/*
+#usControls {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
 }
-.caroBtn:hover {
-  cursor: pointer;
-  color: #6cc644
-}
-.noShowStory {
-  display: none;
-  transition: ease-in;
-  transition-duration: 1s;
-}
-
-
+*/
 #technologies {
   width: 12vw;
   height: 80vh;
@@ -268,7 +241,14 @@ main {
 .centerAlign {
   align-self: center;
 }
-
+.headshot {
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #292b36;
+}
 .techIcn {
   display: block;
   max-width:95px;
