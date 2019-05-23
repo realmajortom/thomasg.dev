@@ -110,39 +110,10 @@ header {
   text-decoration: none;
   background-color: transparent;
   border-width: 0;
-  color: white;
-  font-size: 14pt;
-  font-weight: 400;
   position: relative;
 }
 .continueBtn:hover {
   cursor: pointer;
-}
-.continueBtn::before, .continueBtn::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #6cc644;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
-}
-.continueBtn::before {
-  top: 0;
-  transform-origin: center right;
-}
-.continueBtn:hover::before {
-  transform-origin: center left;
-  transform: scaleX(1);
-}
-.continueBtn::after {
-  bottom: 0;
-  transform-origin: center left;
-}
-.continueBtn:hover::after {
-  transform-origin: center right;
-  transform: scaleX(1);
 }
 
 /*** shrink clases ***/
@@ -219,7 +190,7 @@ header {
   width: 500px;
   padding: 20px;
   background-color: none;
-  animation-duration: .4s!important;
+  animation-duration: .6s!important;
 }
 .storyTitle {
   font-family: 'IBM Plex Mono', monospace;
@@ -235,11 +206,11 @@ header {
   background-color: transparent;
   color: #d5d9dc;
   font-weight: bolder;
+  outline: none;
 }
 .caroBtn:hover {
   cursor: pointer;
-  color: #6cc644
-  background-colo
+  color: #6cc644;
 }
 .noShowStory {
   display: none;
@@ -424,4 +395,58 @@ a:hover {
   filter: blur(2px);
   transition: ease-out;
   transition-duration: .15s;
+}
+
+.arrowBox {
+  margin-top: 24vh;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nayNay {
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	left: 50%;
+	top: 50%;
+	transform: rotate(135deg);
+}
+.nayNay::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transition: .2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+.nayNay::after {
+  content: '';
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 2px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transform-origin: 100% 0;
+  transition:.2s ease;
+}
+.arrowBox:hover {
+  cursor: pointer;
+}
+.arrowBox:hover .nayNay::after {
+  transform: rotate(45deg);
+  border-color: #6cc644;
+  height: 120%;
+}
+.arrowBox:hover .nayNay::before {
+  border-color: #6cc644;
+  transform: scale(.8);
 }

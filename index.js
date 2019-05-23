@@ -5,7 +5,8 @@ $(document).ready(function () {
     ['#headerMain', 'headerMain-shrink'],
     ['#headerTitle', 'headerTitle-shrink'],
     ['#body', 'scroll-on'],
-    ['#continueBtn', 'noShow'],
+    ['#nayNay', 'noShow'],
+    ['arrowBow', 'noShow'],
     ['#headerSub', 'noShow'],
   ];
 
@@ -14,7 +15,7 @@ $(document).ready(function () {
   ];
 
 
-  $('.continueBtn').click(function () {
+  $('.arrowBox').click(function () {
     for (let p = 0; p < shrinkThings.length; p++) {
       $(shrinkThings[p][0]).addClass(shrinkThings[p][1]);
     }
