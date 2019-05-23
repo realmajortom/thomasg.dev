@@ -21,7 +21,7 @@ a:hover {
 header {
   font-family: 'IBM Plex Mono', monospace;
   color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 .headerCont {
@@ -165,9 +165,6 @@ header {
 }
 
 /*************** main *****************/
-main {
-  padding-top: 10px;
-}
 .mainCont {
   width: 90vw;
   margin: auto;
@@ -185,8 +182,10 @@ main {
   justify-content: space-between;
   margin-top: 20px;
   font-family: 'Quicksand', sans-serif;
-   line-height: 150%;
-   font-size: 18px;
+  line-height: 150%;
+  font-size: 18px;
+  animation-duration: .1s;
+  animation-delay: .1s;
 }
 
 .summaryCont {
@@ -220,6 +219,7 @@ main {
   width: 500px;
   padding: 20px;
   background-color: none;
+  animation-duration: .4s!important;
 }
 .storyTitle {
   font-family: 'IBM Plex Mono', monospace;
@@ -239,11 +239,10 @@ main {
 .caroBtn:hover {
   cursor: pointer;
   color: #6cc644
+  background-colo
 }
 .noShowStory {
   display: none;
-  transition: ease-in;
-  transition-duration: 1s;
 }
 #satireStories {
   background-color: #292b36;
@@ -278,6 +277,7 @@ main {
 .aboutList {
   min-width: 160px;
 }
+
 #project-container {
   display: flex;
   flex-flow: row wrap;
@@ -296,6 +296,7 @@ main {
 .project-img {
   max-width: 300px;
   max-height: 300px;
+  border-radius: 2px;
 }
 .headshot {
   border-radius: 4px;

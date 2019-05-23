@@ -21,6 +21,7 @@ $(document).ready(function () {
     for (let q = 0; q < show.length; q++) {
       $(show[q]).removeClass('noShow');
     }
+    $('.aboutCont').addClass('animated slideInUp');
   });
 
   $('#headerTitle').click(function () {
@@ -55,11 +56,11 @@ $(document).ready(function () {
   $('#nextSat').click(function () {
     if (liveSat < 5) {
       $(satCards[liveSat]).addClass('noShowStory');
-      $(satCards[liveSat + 1]).removeClass('noShowStory');
+      $(satCards[liveSat + 1]).addClass('animated flipInX').removeClass('noShowStory');
       liveSat += 1;
     } else {
       $(satCards[liveSat]).addClass('noShowStory');
-      $(satCards[0]).removeClass('noShowStory');
+      $(satCards[0]).addClass('animated flipInX').removeClass('noShowStory');
       liveSat = 0;
     }
   });
