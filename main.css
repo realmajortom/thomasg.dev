@@ -168,7 +168,7 @@ header {
 main {
   padding-top: 10px;
 }
-.main-section {
+.mainCont {
   width: 90vw;
   margin: auto;
   min-height:100vh;
@@ -179,66 +179,56 @@ main {
   font-weight: 400;
 }
 
-#about-container {
+.aboutCont {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-#about-summary {
-  width: 78vw;
+  margin-top: 20px;
   font-family: 'Quicksand', sans-serif;
-  line-height: 150%;
-  font-size: 18px;
+   line-height: 150%;
+   font-size: 18px;
+}
+
+.summaryCont {
+  width: 42vw;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 }
-#picPara {
+
+.storiesCont {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 42vw;
+}
+.storyBox {
   margin-bottom: 30px;
-}
-#intro {
-  max-width: 70vw;
-  margin-left: 30px;
-}
-.headshot {
-  border-radius: 4px;
-  width: 140px;
-  height: 140px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #292b36;
-  margin-top: 20px;
-}
-.userStories {
   color: #fff;
   font-size: 17px;
   box-sizing: content-box;
   width: 560px;
-  height: 300px;
+  height: 270px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 2px;
-  background-color: #292b36;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.uStory {
+.story {
   display: block;
   width: 500px;
   padding: 20px;
   background-color: none;
-  }
-.usTitle {
+}
+.storyTitle {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   font-size: 24px;
 }
 .caroBtn {
   width: 40px;
-  height: 300px;
+  height: 270px;
   font-size: 26px;
   border-radius: 2px;
   border-style: none;
@@ -255,10 +245,15 @@ main {
   transition: ease-in;
   transition-duration: 1s;
 }
+#satireStories {
+  background-color: #292b36;
+}
+#trueStories {
+  background-color: maroon;
+}
 
-
-#technologies {
-  width: 12vw;
+.techCont {
+  width: 6vw;
   height: 80vh;
   display: flex;
   flex-flow: column;
@@ -302,7 +297,14 @@ main {
   max-width: 300px;
   max-height: 300px;
 }
-
+.headshot {
+  border-radius: 4px;
+  width: 140px;
+  height: 140px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #292b36;
+}
 /*************** footer ***************/
 footer {
   text-align: center;

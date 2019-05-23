@@ -13,16 +13,15 @@ $(document).ready(function () {
     '#nbDesk', '#mail-icon', '#github-icon', '#about-link', '#projects-link', '#contact-link', '.hamburger'
   ];
 
-  window.onscroll = function () {
-    if (window.pageYOffset >= 1) {
-      for (let p = 0; p < shrinkThings.length; p++) {
-        $(shrinkThings[p][0]).addClass(shrinkThings[p][1]);
-      }
-      for (let q = 0; q < show.length; q++) {
-        $(show[q]).removeClass('noShow');
-      }
+
+  $('.continueBtn').click(function () {
+    for (let p = 0; p < shrinkThings.length; p++) {
+      $(shrinkThings[p][0]).addClass(shrinkThings[p][1]);
     }
-  };
+    for (let q = 0; q < show.length; q++) {
+      $(show[q]).removeClass('noShow');
+    }
+  });
 
   $('#headerTitle').click(function () {
     window.scrollTo(0, 0);
@@ -40,28 +39,53 @@ $(document).ready(function () {
     $('#main').toggleClass('blur');
   });
 
-  let liveStory = 0;
-  const cards = ['#us1', '#us2', '#us3', '#us4', '#us5', '#us6'];
-  $('#prevUS').click(function () {
-    if (liveStory > 0) {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[liveStory - 1]).removeClass('noShowStory');
-      liveStory -= 1;
+  let liveSat = 0;
+  const satCards = ['#sat1', '#sat2', '#sat3', '#sat4', '#sat5', '#sat6'];
+  $('#prevSat').click(function () {
+    if (liveSat > 0) {
+      $(satCards[liveSat]).addClass('noShowStory');
+      $(satCards[liveSat - 1]).removeClass('noShowStory');
+      liveSat -= 1;
     } else {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[5]).removeClass('noShowStory');
-      liveStory = 5;
+      $(satCards[liveSat]).addClass('noShowStory');
+      $(satCards[5]).removeClass('noShowStory');
+      liveSat = 5;
     }
   });
-  $('#nextUS').click(function () {
-    if (liveStory < 5) {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[liveStory + 1]).removeClass('noShowStory');
-      liveStory += 1;
+  $('#nextSat').click(function () {
+    if (liveSat < 5) {
+      $(satCards[liveSat]).addClass('noShowStory');
+      $(satCards[liveSat + 1]).removeClass('noShowStory');
+      liveSat += 1;
     } else {
-      $(cards[liveStory]).addClass('noShowStory');
-      $(cards[0]).removeClass('noShowStory');
-      liveStory = 0;
+      $(satCards[liveSat]).addClass('noShowStory');
+      $(satCards[0]).removeClass('noShowStory');
+      liveSat = 0;
+    }
+  });
+
+  let liveTrue = 0;
+  const trueCards = ['#true1', '#true2', '#true3', '#true4', '#true5', '#true6'];
+  $('#prevTrue').click(function () {
+    if (liveTrue > 0) {
+      $(trueCards[liveTrue]).addClass('noShowStory');
+      $(trueCards[liveTrue - 1]).removeClass('noShowStory');
+      liveTrue -= 1;
+    } else {
+      $(trueCards[liveTrue]).addClass('noShowStory');
+      $(trueCards[5]).removeClass('noShowStory');
+      liveTrue = 5;
+    }
+  });
+  $('#nextTrue').click(function () {
+    if (liveTrue < 5) {
+      $(trueCards[liveTrue]).addClass('noShowStory');
+      $(trueCards[liveTrue + 1]).removeClass('noShowStory');
+      liveTrue += 1;
+    } else {
+      $(trueCards[liveTrue]).addClass('noShowStory');
+      $(trueCards[0]).removeClass('noShowStory');
+      liveTrue = 0;
     }
   });
 });

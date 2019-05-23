@@ -72,38 +72,48 @@
 
     <main id="main">
 
-      <div id="about" class="main-section">
+      <div id="about" class="mainCont">
         <div class="heading" id="about-heading">
           ABOUT
         </div>
-        <div id="about-container">
 
-          <div id="about-summary">
-            <div id="picPara">
-              <img src="icons/headshot.jpg" class="headshot">
-              <div id="intro">
-                <p>
-                  One of the most frustrating things as a programmer is the feeling that everything I make has already
-                  been
-                  done. To get past this, I set a rule for myself--every app and project I develop must be fully
-                  functional and do just a little more than comparable projects. Making things that work well is a
-                  thrill!
-                </p>
-                <p style="font-weight: bolder;">
-                  On the following page, each card has
-                  3 pieces of info:
-                </p>
-                <ol class="aboutListCont">
-                  <li class="aboutList">Technologies Used</li>
-                  <li class="aboutList">The hardest part</li>
-                  <li class="aboutList">Extra touches</li>
-                </ol>
-              </div>
+        <div class="aboutCont">
+
+          <div class="summaryCont">
+            <div class="introText">
+              <p>
+                Subway tile kinfolk squid kombucha gluten-free. Offal beard cred lomo post-ironic mustache. Pitchfork
+                paleo viral
+                skateboard godard snackwave before they sold out neutra hoodie authentic echo park. Hella copper mug
+                waistcoat, listicle
+                thundercats poke vinyl next level adaptogen authentic wayfarers.
+              </p>
+              <p>
+                Aesthetic cloud bread tumblr vaporware. Brooklyn occupy fingerstache hot chicken kombucha direct trade.
+                Kale chips umami
+                listicle chia gastropub vice pop-up portland. Narwhal tacos raclette microdosing post-ironic beard
+                poutine keffiyeh yr
+                before they sold out pour-over kogi meditation.
+              </p>
+              <p>
+                Pitchfork blue bottle portland, yr selvage ugh roof party copper mug hammock wolf chambray pabst 8-bit
+                neutra paleo.
+                Heirloom try-hard tousled asymmetrical polaroid banh mi vinyl la croix succulents biodiesel woke chia
+                hashtag
+                shoreditch. Vape iceland tilde authentic stumptown tote bag cornhole raw denim. Chillwave fanny pack
+                flannel mustache +1
+                blog bitters sustainable 3 wolf moon poke taxidermy franzen. Thundercats flexitarian etsy photo booth
+                readymade man
+                braid yr authentic.
+              </p>
             </div>
-            <div id="userStories" class="userStories">
-              <button id="prevUS" class="caroBtn">&#171;</button>
-              <div class="uStory" id="us1">
-                <div class="usTitle">User Story 1: Wings</div>
+          </div>
+
+          <div class="storiesCont">
+            <div id="satireStories" class="storyBox">
+              <button id="prevSat" class="caroBtn">&#171;</button>
+              <div class="story" id="sat1">
+                <div class="storyTitle">User Story 1: Wings</div>
                 <p>
                   They say Red Bull gives you wings. All I've gained from it is countless sleepless
                   nights
@@ -113,33 +123,97 @@
                   my vision.<br>(Seriously, who writes infinite loops anyways??)
                 </p>
               </div>
-              <div class="uStory noShowStory" id="us2">
+              <div class="story noShowStory" id="sat2">
 
-                <div class="usTitle">User Story 2: Broke</div>
+                <div class="storyTitle">User Story 2: Broke</div>
                 <p>
                   Some people start programming as a hobby and gradually stumble into a development career. Screw
                   that--I
                   need to pay for Red Bull and my MacBook keyboard replacement(s).
                 </p>
               </div>
-              <div class="uStory noShowStory" id="us3">
+              <div class="story noShowStory" id="sat3">
 
-                <div class="usTitle">User Story 3: Pillars</div>
+                <div class="storyTitle">User Story 3: Pillars</div>
                 <p>
                   "It's not much, but it's mine."
                   <br>These warming words coupled with Jagerbombs stand as the pillars of my existence.
                 </p>
               </div>
-              <div class="uStory noShowStory" id="us4">
+              <div class="story noShowStory" id="sat4">
 
-                <div class="usTitle">User Story 4: Stack Overlfl-oh</div>
+                <div class="storyTitle">User Story 4: Stack Overlfl-oh</div>
                 <p>
                   Ever look up a funky error, only to get back google results with Github issues? It's just you and God
                   now.
                 </p>
               </div>
-              <div class="uStory noShowStory" id="us5">
-                <div class="usTitle">User Story 5: Git Vim</div>
+              <div class="story noShowStory" id="sat5">
+                <div class="storyTitle">User Story 5: Git Vim</div>
+                <p>
+                  The very first time I tried "git commit", I managed to mess up the message flag and got warped into
+                  vim.
+                  After quitting terminal, I tried to commit
+                  again, this time receiving an error message due to the dangling remains of attempt #1. Somewhere
+                  in
+                  the
+                  ether wanders a lonesome Github account, abanonded by a startled young developer.
+                </p>
+              </div>
+              <div class="story noShowStory" id="sat6">
+
+                <div class="storyTitle">User Story 6: vim 1:1</div>
+                <p>
+                  "In the beginning was the vim, and the vim was with God, and vim was God. The same was in the
+                  beginning
+                  with God. All things were made by vim; and without vim was not any thing made that was made. In vim
+                  was
+                  life; and the life was the light of men."
+                </p>
+              </div>
+              <button id="nextSat" class="caroBtn">&#187;</button>
+            </div>
+
+            <div id="trueStories" class="storyBox">
+              <button id="prevTrue" class="caroBtn">&#171;</button>
+              <div class="story" id="true1">
+                <div class="storyTitle">User Story 1: Wings</div>
+                <p>
+                  They say Red Bull gives you wings. All I've gained from it is countless sleepless
+                  nights
+                  staring soulessly into the depths of my Macbook. We may finally learn which lasts longer--an
+                  overheating cpu
+                  or
+                  my vision.<br>(Seriously, who writes infinite loops anyways??)
+                </p>
+              </div>
+              <div class="story noShowStory" id="true2">
+
+                <div class="storyTitle">User Story 2: Broke</div>
+                <p>
+                  Some people start programming as a hobby and gradually stumble into a development career. Screw
+                  that--I
+                  need to pay for Red Bull and my MacBook keyboard replacement(s).
+                </p>
+              </div>
+              <div class="story noShowStory" id="true3">
+
+                <div class="storyTitle">User Story 3: Pillars</div>
+                <p>
+                  "It's not much, but it's mine."
+                  <br>These warming words coupled with Jagerbombs stand as the pillars of my existence.
+                </p>
+              </div>
+              <div class="story noShowStory" id="true4">
+
+                <div class="storyTitle">User Story 4: Stack Overlfl-oh</div>
+                <p>
+                  Ever look up a funky error, only to get back google results with Github issues? It's just you and God
+                  now.
+                </p>
+              </div>
+              <div class="story noShowStory" id="true5">
+                <div class="storyTitle">User Story 5: Git Vim</div>
                 <p>
                   The very first time I tried "git commit", I managed to mess up the message flag and got sucked into
                   vim.
@@ -150,9 +224,8 @@
                   ether wanders a lonesome, unloved Github account, abanonded by a startled young developer.
                 </p>
               </div>
-              <div class="uStory noShowStory" id="us6">
-
-                <div class="usTitle">User Story 6: vim 1:1</div>
+              <div class="story noShowStory" id="true6">
+                <div class="storyTitle">User Story 6: vim 1:1</div>
                 <p>
                   "In the beginning was the vim, and the vim was with God, and vim was God. The same was in the
                   beginning
@@ -161,11 +234,11 @@
                   life; and the life was the light of men."
                 </p>
               </div>
-              <button id="nextUS" class="caroBtn">&#187;</button>
+              <button id="nextTrue" class="caroBtn">&#187;</button>
             </div>
           </div>
 
-          <div id="technologies">
+          <div class='techCont'>
             <img src="icons/git.png" alt="git icon" class="techIcn perspectiveUpReturn">
             <img src="icons/nodejs-new-black.png" alt="node icon" class="techIcn perspectiveUpReturn">
             <img src="icons/react.png" alt="react icon" class="techIcn perspectiveUpReturn">
@@ -174,10 +247,10 @@
             <img src="icons/css.png" alt="css icon" class="techIcn perspectiveUpReturn">
           </div>
 
-        </div>
+        </div> <!-- aboutCont end -->
       </div>
 
-      <div id="projects" class="main-section">
+      <div id="projects" class="mainCont">
         <div class="heading">
           PROJECTS
         </div>
@@ -205,14 +278,16 @@
         </div>
       </div>
 
-      <div id="contact" class="main-section">
+      <div id="contact" class="mainCont">
         <div class="heading" id="contact-heading">
           CONTACT
         </div>
+        <img src="icons/headshot.jpg" class="headshot">
       </div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="index.js"></script>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
   <!--
     <div id="usControls">
