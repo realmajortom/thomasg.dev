@@ -165,7 +165,10 @@ header {
   flex-flow: column;
   align-items: flex-start;
 }
-
+#kg {
+  margin-top: 0;
+  padding-top: 0;
+}
 .storiesCont {
   display: flex;
   flex-direction: column;
