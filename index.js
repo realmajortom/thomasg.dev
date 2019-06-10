@@ -1,5 +1,9 @@
+
+
 $(document).ready(function () {
 
+
+  /* controls the landing-page/header */
   const shrinkThings = [
     ['#headerCont', 'headerCont-shrink'],
     ['#headerMain', 'headerMain-shrink'],
@@ -9,23 +13,19 @@ $(document).ready(function () {
     ['arrowBow', 'noShow'],
     ['#headerSub', 'noShow'],
   ];
-
   const show = [
     '#nbDesk', '#mail-icon', '#github-icon', '#about-link', '#projects-link', '#contact-link', '.hamburger'
   ];
 
-
-  $('.arrowBox').click(function () {
+  const pinHead = () => {
     for (let p = 0; p < shrinkThings.length; p++) {
       $(shrinkThings[p][0]).addClass(shrinkThings[p][1]);
     }
     for (let q = 0; q < show.length; q++) {
       $(show[q]).removeClass('noShow');
     }
-    $('.aboutCont').addClass('animated slideInUp');
-  });
-
-  $('#headerTitle').click(function () {
+  };
+  const growHead = () => {
     window.scrollTo(0, 0);
     for (let r = 0; r < shrinkThings.length; r++) {
       $(shrinkThings[r][0]).removeClass(shrinkThings[r][1]);
@@ -33,14 +33,29 @@ $(document).ready(function () {
     for (let s = 0; s < show.length; s++) {
       $(show[s]).addClass('noShow');
     }
-  });
+  };
 
+  window.onload = function () {
+    if (pageYOffset === 0) {
+      $('#body').addClass('scroll-off');
+    }
+    else {
+      pinHead();
+    }
+  };
+  $('.arrowBox').click(pinHead);
+  $('#headerTitle').click(growHead);
+
+
+  /* controls the hamburger menu on mobile */
   $('#hamMenu').click(function () {
     $('#hamMenu').toggleClass('is-active');
     $('.nbMobile').toggleClass('noShow');
     $('#main').toggleClass('blur');
   });
 
+
+  /* controls the satirical quote box */
   let liveSat = 0;
   const satCards = ['#sat1', '#sat2', '#sat3', '#sat4', '#sat5', '#sat6'];
   $('#prevSat').click(function () {
@@ -66,6 +81,8 @@ $(document).ready(function () {
     }
   });
 
+
+  /* controls the serious quote box */
   let liveTrue = 0;
   const trueCards = ['#true1', '#true2', '#true3', '#true4', '#true5', '#true6'];
   $('#prevTrue').click(function () {
