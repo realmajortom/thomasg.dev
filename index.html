@@ -1,141 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Thomas Girgenti</title>
+    <title>Thomas Girgenti: Portfolio</title>
+
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
     <meta charset='UTF-8'>
-    <link rel='stylesheet' href='main.css'>
-    <link rel='stylesheet' href='hamburgers.css'>
-    <link rel='stylesheet'
-          href='https://fonts.googleapis.com/css?family=Quicksand|Montserrat:300&display=swap'>
+
+	<link rel='stylesheet' href='styles/fonts/fonts.css'>
+
+    <link rel='stylesheet' href='styles/main.css'>
+
+    <link rel="stylesheet" href="styles/animate.min.css">
+
 </head>
+
+
+
 
 <body>
 
 <header>
-    <h1>Thomas Girgenti</h1>
 
-    <nav>
-        <ul id='nav-list'>
-            <li class="nav-item">
-                <a class="nav-link" id="link-projects" href="#projects">PROJECTS</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' id="link-about" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="link-contact" href="#contact">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
+    <h1 class='header-title'>Thomas Girgenti</h1>
 
-    <button id="ham-menu" class="hamburger hamburger--3dx">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+	<a class="moz-btn moz-prim" href="#contact">CONTACT</a>
+
 </header>
 
+
+
+
 <main>
-    <div class="main-cont" id="projects">
-        <h2 id="head-projects">PROJECTS</h2>
-        <div id="projects-container">
 
-            <div class="project-tile">
-                <a href="project-pages/t-wizard/index.html">
-                    <img class="project-img" src="project-tiles/tcal.png" alt="T-Wizard Calculator">
-                </a>
-            </div>
+    <section class="about-cont animated fadeIn" id="about">
 
-            <div class="project-tile">
-                <a href="project-pages/pomodoro-timer/index.html">
-                    <img class="project-img" src="project-tiles/pompic.png" alt="Pomodoro Timer">
-                </a>
-            </div>
+            <h2 class='about-title'>FULL STACK DEVELOPER</h2>
 
-            <div class="project-tile">
-                <a href="project-pages/selenity-travels/index.html">
-                    <img class="project-img" src="project-tiles/night-sky.png" alt="Selenty Travels - Product Landing">
-                </a>
-            </div>
+	        <p class='about-intro'>I love using code to solve tricky problems. If there's something to build, I'm
+	                               all-in.</p>
 
-            <div class="project-tile">
-                <a href="project-pages/count-my-beans/index.html">
-                    <img class="project-img" src="project-tiles/countmybeans.jpeg" alt="Count My Beans">
-                </a>
-            </div>
+	        <a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
 
-            <div class="project-tile">
-                <a href="project-pages/tech-doc/index.html">
-                    <img class="project-img" src="project-tiles/tech-doc.png" alt="Technical Documentation Site">
-                </a>
-            </div>
+<!--			<h2 class='about-subtitle'>My Toolbox:</h2>-->
 
-            <div class="project-tile">
-                <a href="project-pages/survey-form/index.html">
-                    <img class="project-img" src="project-tiles/survey.jpeg" alt="Are You Boring? Sample Survey Form">
-                </a>
-            </div>
+<!--	        <ul class='skills-list'>-->
+<!--		        <li class='skill'>Node.js</li>-->
+<!--		        <li class='skill'>NoSQL</li>-->
+<!--		        <li class='skill'>REST APIs</li>-->
+<!--		        <li class='skill'>Google Cloud Platform</li>-->
+<!--		        <li class='skill'>React</li>-->
+<!--		        <li class='skill'>jQuery</li>-->
+<!--		        <li class='skill'>Git</li>-->
+<!--		        <li class='skill'>NPM</li>-->
+<!--		        <li class='skill'>Javascript (ES6+)</li>-->
+<!--		        <li class='skill'>Responsive HTML + CSS</li>-->
+<!--	        </ul>-->
 
-            <div class="project-tile">
-                <a href="">
-                    <img class="img-project" src="" alt="">
-                </a>
-            </div>
-
-        </div>
-    </div>
+    </section>
 
 
-    <div class="main-cont" id="about">
-        <h2 id="head-about">ABOUT</h2>
-        <div id="about-paragraphs">
-            <p>
-                Thanks for visiting my site! I am a full-stack web developer located in the Salt Lake City area.
-            </p>
-            <p>
-                I create value by analyzing the big-picture and purpose of a project, strategizing an efficient
-                game plan, and utilizing the proper tools to get awesome outcomes.
-            </p>
-        </div>
-        <div class="skills-cont">
-            <h3>Technical Competencies</h3>
-            <ul class="skills-list">
-                <li class="skills-item">Node.js</li>
-                <li class="skills-item">React</li>
-                <li class="skills-item">MongoDB (NoSQL)</li>
-                <li class="skills-item">Git</li>
-                <li class="skills-item">NPM & Yarn</li>
-                <li class="skills-item">Javascript (ES6)</li>
-                <li class="skills-item">Responsive HTML + CSS</li>
-            </ul>
-        </div>
-    </div>
+	<div class='border-wrapper'>
+
+	    <section class="portfolio-cont" >
+
+	        <h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
 
 
-    <div class="main-cont" id="contact">
-        <h2 id="head-contact">CONTACT</h2>
+	        <div id="projects-container">
+
+	            <div class="project-tile">
+	                <a href="project-pages/t-wizard/index.html">
+	                    <img class="project-img" src='img/project-tiles/tcal.png' alt="T-Wizard Calculator">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="project-pages/pomodoro-timer/index.html">
+	                    <img class="project-img" src='img/project-tiles/pompic.png' alt="Pomodoro Timer">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="project-pages/selenity-travels/index.html">
+	                    <img class="project-img" src='img/project-tiles/night-sky.png' alt="Selenty Travels - Product Landing">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="project-pages/count-my-beans/index.html">
+	                    <img class="project-img" src='img/project-tiles/countmybeans.jpeg' alt="Count My Beans">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="project-pages/tech-doc/index.html">
+	                    <img class="project-img" src='img/project-tiles/tech-doc.png' alt="Technical Documentation Site">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="project-pages/survey-form/index.html">
+	                    <img class="project-img" src='img/project-tiles/survey.jpeg' alt="Are You Boring? Sample Survey Form">
+	                </a>
+	            </div>
+
+	            <div class="project-tile">
+	                <a href="">
+	                    <img class="img-project" src="" alt="">
+	                </a>
+	            </div>
+
+	        </div>
+	    </section>
+	</div>
+
+
+
+    <section class="contact-cont" id="contact">
+
+        <h1 id="head-contact">Contact</h1>
+
         <div id="contact-links">
             <div class="contact-link">
-                <a href="https://github.com/tggir1" target="_blank">Github Profile</a>
+                <a href="https://github.com/tggir1" target="_blank" rel="noreferrer">Github Profile</a>
             </div>
             <div class="contact-link">
-                <a href="https://www.linkedin.com/in/tgirgenti" target="_blank">LinkedIn Profile</a>
-            </div>
-            <div class="contact-link">
-                <a href="mailto:thomas@thomasg.dev">Email Me</a>
+                <a href="https://www.linkedin.com/in/tgirgenti" target="_blank" rel="noreferrer">LinkedIn Profile</a>
             </div>
         </div>
-        <form id="contact-form">
-            <input type="text" class="contact-input-field" placeholder="Name" required>
-            <input type="email" class="contact-input-field" placeholder="Email Address" required>
-            <textarea class="contact-textarea" placeholder="Message" required></textarea>
-        </form>
-    </div>
-</main>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="index.js"></script> -->
+        <form id="contact-form">
+
+	        <label for='name-field'>Name</label>
+            <input id='name-field' name='name' type="text" class="contact-input-field" required>
+
+	        <label for='email-field'>Email</label>
+            <input id='email-field' name='email' type="email" class="contact-input-field" required>
+
+	        <label for='message-field'>Message</label>
+            <textarea id='message-field' name='message' class="contact-textarea" required></textarea>
+        </form>
+
+    </section>
+
+
+</main>
 
 </body>
 </html>
