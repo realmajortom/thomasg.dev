@@ -2,7 +2,7 @@
 html {
     scroll-behavior: smooth;
 	width: 100vw;
-	border-top: 3px solid #952bb9;
+	border-top: 5px solid #952bb9;
 }
 
 body {
@@ -114,18 +114,18 @@ header {
 
 /************* tools section *****************/
 .tools-wrapper {
-	width: 100vw;
+	width: calc(100vw - 5px);
 	margin-left: -15vw;
 	background-color: #101115;
-	color: #ffffff
+	color: #ffffff;
+	border-left: 5px solid #ff5e5f;
 }
 
 .tools-section {
-	width: 72vw;
-	min-height: 200px;
-	margin-left: 13vw;
-	padding: 20px 0 20px 2vw;
-	border-left: 3px solid #ff5e5f;
+	width: 70vw;
+	min-height: 250px;
+	margin: auto;
+	padding: 20px 0;
 }
 
 .tools-title {
@@ -143,7 +143,7 @@ header {
 
 .skill-list li {
 	white-space: nowrap;
-	padding: 15px 35px;
+	padding: 20px 35px;
 }
 
 
@@ -151,15 +151,15 @@ header {
 /*************** projects section ************/
 .portfolio-wrapper {
 	padding-top: 6vh;
-	width: 72vw;
-	margin-left: -2vw;
-	border-left: 3px solid #3fe1b0;
+	width: calc(100vw - 5px);
+	margin-left: -15vw;
+	border-left: 5px solid #3fe1b0;
 }
 
 .portfolio-section {
 	min-height: 100vh;
 	width: 70vw;
-	margin-left: 2vw;
+	margin: auto;
 }
 
 .portfolio-title {
@@ -185,3 +185,7 @@ header {
 .project-img:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+
+
+/*************** contact section ***************/
