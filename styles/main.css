@@ -30,10 +30,10 @@ h2 {
 }
 
 .moz-btn {
+	z-index: 10;
 	text-decoration: none;
 	border: 2px solid #101115;
 	border-radius: 2px;
-
 	transition: background-color 100ms, box-shadow 100ms, color 100ms, transform 100ms;
 	transition-property: background-color, box-shadow, color, transform;
 	transition-duration: 100ms, 100ms, 100ms, 100ms;
@@ -61,10 +61,22 @@ h2 {
 
 .moz-sec {
 	display: inline-block;
-	background-color: transparent;
+	background-color: #fff;
 	color: #101115;
 	font-size: 16pt;
 	padding: 14px 30px;
+}
+
+.moz-dark {
+	background-color: #fff;
+	color: #101115;
+	border-color: #fff;
+}
+
+.moz-dark:hover {
+	background-color: #101115;
+	color: #fff;
+	box-shadow: 4px 4px 0 0 #fff;
 }
 
 
@@ -84,37 +96,70 @@ header {
 
 
 /************* about section ************/
-
-.about-cont {
-	height: calc(100vh - 100px);
+.about-section {
+	height: calc(100vh - 105px);
 }
 
 .about-title {
 	padding-top: 30vh;
 }
 
-.about-intro {
-	font-size: 20pt;
+.about-text {
+	font-size: 1.7rem;
 	font-weight: 300;
 	margin-bottom: 80px;
 }
 
 
 
+/************* tools section *****************/
+.tools-wrapper {
+	width: 100vw;
+	margin-left: -15vw;
+	background-color: #101115;
+	color: #ffffff
+}
+
+.tools-section {
+	width: 72vw;
+	min-height: 200px;
+	margin-left: 13vw;
+	padding: 20px 0 20px 2vw;
+	border-left: 3px solid #ff5e5f;
+}
+
+.tools-title {
+	font-weight: 600;
+}
+
+.skill-list {
+	list-style-type: none;
+	font-weight: 300;
+	font-size: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -35px;
+}
+
+.skill-list li {
+	white-space: nowrap;
+	padding: 15px 35px;
+}
+
+
 
 /*************** projects section ************/
-
-.border-wrapper {
-	height: 110vh;
+.portfolio-wrapper {
+	padding-top: 6vh;
 	width: 72vw;
 	margin-left: -2vw;
 	border-left: 3px solid #3fe1b0;
 }
 
-.portfolio-cont {
+.portfolio-section {
+	min-height: 100vh;
 	width: 70vw;
 	margin-left: 2vw;
-	padding-top: 10vh;
 }
 
 .portfolio-title {

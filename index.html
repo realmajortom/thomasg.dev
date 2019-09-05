@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Thomas Girgenti: Portfolio</title>
+    <title>Thomas Girgenti | Portfolio</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
@@ -18,135 +18,145 @@
 
 
 
-
 <body>
 
-<header>
+	<header>
 
-    <h1 class='header-title'>Thomas Girgenti</h1>
+	    <h1 class='header-title'>Thomas Girgenti</h1>
 
-	<a class="moz-btn moz-prim" href="#contact">CONTACT</a>
+		<a class="moz-btn moz-prim" href="#contact" id='contact-float'>CONTACT</a>
 
-</header>
-
-
+	</header>
 
 
-<main>
+	<main>
 
-    <section class="about-cont animated fadeIn" id="about">
+	    <section class="about-section animated fadeIn" id="about">
 
-            <h2 class='about-title'>FULL STACK DEVELOPER</h2>
+	            <h2 class='about-title'>FULL STACK DEVELOPER</h2>
 
-	        <p class='about-intro'>I love using code to solve tricky problems. If there's something to build, I'm
-	                               all-in.</p>
+		        <p class='about-text'>I love using code to solve tricky problems. If there's something to build, I'm
+		                               all-in.</p>
 
-	        <a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
+		        <a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
 
-<!--			<h2 class='about-subtitle'>My Toolbox:</h2>-->
-
-<!--	        <ul class='skills-list'>-->
-<!--		        <li class='skill'>Node.js</li>-->
-<!--		        <li class='skill'>NoSQL</li>-->
-<!--		        <li class='skill'>REST APIs</li>-->
-<!--		        <li class='skill'>Google Cloud Platform</li>-->
-<!--		        <li class='skill'>React</li>-->
-<!--		        <li class='skill'>jQuery</li>-->
-<!--		        <li class='skill'>Git</li>-->
-<!--		        <li class='skill'>NPM</li>-->
-<!--		        <li class='skill'>Javascript (ES6+)</li>-->
-<!--		        <li class='skill'>Responsive HTML + CSS</li>-->
-<!--	        </ul>-->
-
-    </section>
-
-
-	<div class='border-wrapper'>
-
-	    <section class="portfolio-cont" >
-
-	        <h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
-
-
-	        <div id="projects-container">
-
-	            <div class="project-tile">
-	                <a href="project-pages/t-wizard/index.html">
-	                    <img class="project-img" src='img/project-tiles/tcal.png' alt="T-Wizard Calculator">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="project-pages/pomodoro-timer/index.html">
-	                    <img class="project-img" src='img/project-tiles/pompic.png' alt="Pomodoro Timer">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="project-pages/selenity-travels/index.html">
-	                    <img class="project-img" src='img/project-tiles/night-sky.png' alt="Selenty Travels - Product Landing">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="project-pages/count-my-beans/index.html">
-	                    <img class="project-img" src='img/project-tiles/countmybeans.jpeg' alt="Count My Beans">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="project-pages/tech-doc/index.html">
-	                    <img class="project-img" src='img/project-tiles/tech-doc.png' alt="Technical Documentation Site">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="project-pages/survey-form/index.html">
-	                    <img class="project-img" src='img/project-tiles/survey.jpeg' alt="Are You Boring? Sample Survey Form">
-	                </a>
-	            </div>
-
-	            <div class="project-tile">
-	                <a href="">
-	                    <img class="img-project" src="" alt="">
-	                </a>
-	            </div>
-
-	        </div>
 	    </section>
-	</div>
 
 
 
-    <section class="contact-cont" id="contact">
+		<div class='tools-wrapper' id='tools-wrapper'>
 
-        <h1 id="head-contact">Contact</h1>
+			<section class='tools-section'>
 
-        <div id="contact-links">
-            <div class="contact-link">
-                <a href="https://github.com/tggir1" target="_blank" rel="noreferrer">Github Profile</a>
-            </div>
-            <div class="contact-link">
-                <a href="https://www.linkedin.com/in/tgirgenti" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-            </div>
-        </div>
+				<h1 class='tools-title'>My Toolbox</h1>
 
-        <form id="contact-form">
+		        <ul class='skill-list'>
 
-	        <label for='name-field'>Name</label>
-            <input id='name-field' name='name' type="text" class="contact-input-field" required>
+			        <li>Node.js</li>
+			        <li>NoSQL</li>
+			        <li>REST APIs</li>
+			        <li>Google Cloud Platform</li>
+			        <li>React</li>
+			        <li>jQuery</li>
+			        <li>Javascript (ES6)</li>
+			        <li>Responsive HTML + CSS</li>
+					<li>Git</li>
+			        <li>Yarn</li>
+			        <li>NPM</li>
+		        </ul>
 
-	        <label for='email-field'>Email</label>
-            <input id='email-field' name='email' type="email" class="contact-input-field" required>
+			</section>
 
-	        <label for='message-field'>Message</label>
-            <textarea id='message-field' name='message' class="contact-textarea" required></textarea>
-        </form>
-
-    </section>
+		</div>
 
 
-</main>
 
+		<div class='portfolio-wrapper'>
+
+		    <section class="portfolio-section" >
+
+		        <h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
+
+
+		        <div id="projects-container">
+
+		            <div class="project-tile">
+		                <a href="project-pages/t-wizard/index.html">
+		                    <img class="project-img" src='img/project-tiles/tcal.png' alt="T-Wizard Calculator">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="project-pages/pomodoro-timer/index.html">
+		                    <img class="project-img" src='img/project-tiles/pompic.png' alt="Pomodoro Timer">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="project-pages/selenity-travels/index.html">
+		                    <img class="project-img" src='img/project-tiles/night-sky.png' alt="Selenty Travels - Product Landing">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="project-pages/count-my-beans/index.html">
+		                    <img class="project-img" src='img/project-tiles/countmybeans.jpeg' alt="Count My Beans">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="project-pages/tech-doc/index.html">
+		                    <img class="project-img" src='img/project-tiles/tech-doc.png' alt="Technical Documentation Site">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="project-pages/survey-form/index.html">
+		                    <img class="project-img" src='img/project-tiles/survey.jpeg' alt="Are You Boring? Sample Survey Form">
+		                </a>
+		            </div>
+
+		            <div class="project-tile">
+		                <a href="">
+		                    <img class="img-project" src="" alt="">
+		                </a>
+		            </div>
+
+		        </div>
+		    </section>
+		</div>
+
+
+
+	    <section class="contact-section" id="contact">
+
+	        <h1 id="head-contact">Contact</h1>
+
+	        <div id="contact-links">
+	            <div class="contact-link">
+	                <a href="https://github.com/tggir1" target="_blank" rel="noreferrer">Github Profile</a>
+	            </div>
+	            <div class="contact-link">
+	                <a href="https://www.linkedin.com/in/tgirgenti" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+	            </div>
+	        </div>
+
+	        <form id="contact-form">
+
+		        <label for='name-field'>Name</label>
+	            <input id='name-field' name='name' type="text" class="contact-input-field" required>
+
+		        <label for='email-field'>Email</label>
+	            <input id='email-field' name='email' type="email" class="contact-input-field" required>
+
+		        <label for='message-field'>Message</label>
+	            <textarea id='message-field' name='message' class="contact-textarea" required></textarea>
+	        </form>
+
+	    </section>
+
+
+	</main>
+	<script src='scripts/button.js'></script>
 </body>
 </html>
