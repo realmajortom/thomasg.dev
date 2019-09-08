@@ -8,6 +8,8 @@
 
     <meta charset='UTF-8'>
 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300|Concert+One&display=swap' rel='stylesheet'>
+
 	<link rel='stylesheet' href='styles/fonts/fonts.css'>
 
     <link rel='stylesheet' href='styles/main.css'>
@@ -36,7 +38,7 @@
 	            <h2 class='about-title'>FULL STACK DEVELOPER</h2>
 
 		        <p class='about-text'>I love using code to solve tricky problems. If there's something to build, I'm
-		                               all-in.</p>
+		                               all in.</p>
 
 		        <a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
 
@@ -78,52 +80,199 @@
 		        <h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
 
 
-		        <div id="projects-container">
+		        <div class="projects-container">
 
-		            <div class="project-tile">
-		                <a href="project-pages/t-wizard/index.html">
-		                    <img class="project-img" src='img/project-tiles/tcal.png' alt="T-Wizard Calculator">
-		                </a>
-		            </div>
+			        <a class='p-link' href='https://astrostore.io' target='_blank' rel='noopener'>
 
-		            <div class="project-tile">
-		                <a href="project-pages/pomodoro-timer/index.html">
-		                    <img class="project-img" src='img/project-tiles/pompic.png' alt="Pomodoro Timer">
-		                </a>
-		            </div>
+							<div class='card-initial c-i_abm'>
 
-		            <div class="project-tile">
-		                <a href="project-pages/selenity-travels/index.html">
-		                    <img class="project-img" src='img/project-tiles/night-sky.png' alt="Selenty Travels - Product Landing">
-		                </a>
-		            </div>
+								<div class='card-title_abm'>
+									Astro
+									<img src='img/cards/planet.png' alt='AstroStore Icon' class='img-abm'/>
+									Store
+								</div>
 
-		            <div class="project-tile">
-		                <a href="project-pages/count-my-beans/index.html">
-		                    <img class="project-img" src='img/project-tiles/countmybeans.jpeg' alt="Count My Beans">
-		                </a>
-		            </div>
+							</div>
 
-		            <div class="project-tile">
-		                <a href="project-pages/tech-doc/index.html">
-		                    <img class="project-img" src='img/project-tiles/tech-doc.png' alt="Technical Documentation Site">
-		                </a>
-		            </div>
 
-		            <div class="project-tile">
-		                <a href="project-pages/survey-form/index.html">
-		                    <img class="project-img" src='img/project-tiles/survey.jpeg' alt="Are You Boring? Sample Survey Form">
-		                </a>
-		            </div>
+					        <div class='card-hover'>
 
-		            <div class="project-tile">
-		                <a href="">
-		                    <img class="img-project" src="" alt="">
-		                </a>
-		            </div>
+						         <ul class='tech-list'>
+							        <li>React</li>
+							        <li>React Hooks</li>
+							        <li>MongoDB</li>
+							        <li>Node</li>
+							        <li>Passport.js</li>
+							        <li>JsonWebToken</li>
+							        <li>Express Framework</li>
+							        <li>Google App Engine</li>
+					             </ul>
+
+					            <h3>AstroStore Bookmark Manager</h3>
+
+					        </div>
+
+			        </a>
+
+
+					<a class='p-link' href='project-pages/t-wizard/index.html'>
+
+							<div class='card-initial c-i_rmc'>
+								<div class='checker-bkg'>
+									<div class='checker c-green'>del</div>
+									<div class='checker c-gray'>c</div>
+									<div class='checker c-pink'>=</div>
+									<div class='checker c-gray'>+</div>
+									<div class='checker c-pink'>-</div>
+									<div class='checker c-green'>x</div>
+								</div>
+							</div>
+
+
+							<div class='card-hover'>
+
+								<ul class='tech-list'>
+									<li>React</li>
+									<li>Responsive CSS</li>
+									<li>HTML5</li>
+									<li>Javascript</li>
+								</ul>
+
+								<h3>I Remember Calculator</h3>
+
+							</div>
+
+					</a>
+
+
+			        <a class='p-link' href='project-pages/bubblegum-ai/index.html'>
+
+					        <div class='card-initial c-i_bi'>
+								<img src='img/cards/bubblegum_logo.png' alt='Bubblegum Icon' class='img-bi'/>
+							</div>
+
+
+							<div class='card-hover'>
+
+								 <ul class='tech-list'>
+							        <li>Responsive CSS</li>
+							        <li>HTML5</li>
+							        <li>JavaScript</li>
+						        </ul>
+
+						        <h3>Bubblegum.ai Product Page</h3>
+
+							</div>
+
+			        </a>
+
+
+			        <a class='p-link' href='project-pages/pomodoro-timer/index.html'>
+
+					        <div class='card-initial c-i_dpt'>
+								<div class='card-title_dpt'>DON'T PANIC!</div>
+							</div>
+
+
+							<div class='card-hover'>
+
+								<ul class='tech-list'>
+							        <li>React</li>
+									<li>Responsive CSS</li>
+									<li>HTML5</li>
+							        <li>Javascript</li>
+						        </ul>
+
+						        <h3>DON'T PANIC! Pomodoro Timer</h3>
+
+							</div>
+
+			        </a>
+
+
+			        <a class='p-link' href='project-pages/tech-doc/index.html'>
+
+					        <div class='card-initial c-i_td'>
+						        <pre>
+									<code>
+router.get('/login', (req, res) => {
+	User.findOne({meal: req.body.meal}, (err, user) => {
+		if (err) {
+			res.json({message: 'Wrong restaurant bud',success:false});
+		} else if (!user.meal.complete) {
+			const newMeal = makeNewMeal();
+			User.findByIdAndUpdate(user.id, {dinner: {order:newMeal,today: Date.now(),isWaiting: true}}, err => {
+				if (err) {
+					res.json({message: 'Oops overcooked your food.', success:false});
+				} else {
+					sendVerification(user.id, newMeal).catch(console.error);
+					res.json({message: 'Order submitted. Please wait!',success: false});
+				}
+			});
+		} else {
+			foodCrypt.compare(req.body.dish, user.order, (err,response) =>{
+				if (err) {
+					res.json({message: 'Error verifying order', success:false});
+				} else if (response === false) {
+					res.json({message: 'No food here.', success: false});
+				} else {
+					const finishedMeal = chef.sign(
+						{ patron: user.id, guest_name: user.name.preferred},
+						process.env.SECRET_INGREDIENT,
+						{expiresIn:user.idKind ? '1h' : '10d'}
+					);
+					res.json({platter: finishedMeal, success: true});
+				}
+			});
+		}
+	})
+});
+									</code>
+						        </pre>
+							</div>
+
+
+							<div class='card-hover'>
+
+						        <ul class='tech-list'>
+							        <li>CSS Grid</li>
+							        <li>HTML5</li>
+							        <li>JavaScript</li>
+						        </ul>
+
+						        <h3>Technical Documentation Template</h3>
+
+							</div>
+
+			        </a>
+
+
+			        <a class='p-link' href='project-pages/count-my-beans/index.html'>
+
+					        <div class='card-initial'>
+
+							</div>
+
+
+							<div class='card-hover'>
+
+								<ul class='tech-list'>
+									<li>Responsive CSS</li>
+							        <li>HTML5</li>
+							        <li>JavaScript</li>
+						        </ul>
+
+						        <h3>Count My Beans</h3>
+
+							</div>
+
+			        </a>
+
 
 		        </div>
+
 		    </section>
+
 		</div>
 
 

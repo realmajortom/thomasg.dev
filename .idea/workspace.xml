@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/cards/bubblegum_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/planet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/HiTrack-Architecture-Diagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/lightbulb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/scripts/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/scripts/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/styles/bubblegum.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/countmybeans.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/night-sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/pompic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/r-williams.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/survey.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/tcal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/project-tiles/tech-doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +55,15 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1OnFYjb34EKy3N1qAax1Og8eGpJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/fonts/metropolis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/cards" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,13 +73,14 @@
     <property name="settings.editor.selected.configurable" value="stylesheet.code.style.group" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/styles/fonts/metropolis" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/styles/fonts" />
       <recent name="$PROJECT_DIR$/styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/cards" />
+      <recent name="$PROJECT_DIR$/styles/fonts/metropolis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,7 +130,9 @@
       <workItem from="1565107852394" duration="29000" />
       <workItem from="1566166122892" duration="2347000" />
       <workItem from="1566239082421" duration="477000" />
-      <workItem from="1567702034656" duration="18219000" />
+      <workItem from="1567702034656" duration="24071000" />
+      <workItem from="1567791520513" duration="17768000" />
+      <workItem from="1567970106836" duration="920000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -128,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567723788914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Move left borders to edge">
+      <created>1567724235003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567724235003</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,9 +189,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Restructure project sites + fix about container" />
     <MESSAGE value="New index.html" />
     <MESSAGE value="Make contact button context aware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make contact button context aware" />
+    <MESSAGE value="Move left borders to edge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move left borders to edge" />
   </component>
 </project>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'/>
+
+	<title>Bubblegum.ai</title>
+
+	<link rel='stylesheet' href='styles/bubblegum.css'/>
+
+	<link rel='stylesheet'
+	      href='https://fonts.googleapis.com/css?family=Fira+Sans:300,500|Roboto:300,400&display=swap'/>
+
+	<link rel='shortcut icon' type='image/png' href='img/favicon.png'/>
+
+
+	<noscript>
+		<style>
+			#header {
+				border-bottom-color: rgb(230, 230, 230);
+				height: 40px;
+			}
+
+			#header-logo {
+				max-height: 40px;
+			}
+		</style>
+	</noscript>
+
+</head>
+
+
+<body>
+	 <div id='top'></div>
+
+	<header id='header' class='header__load' style=''>
+
+		<a id='logo-wrapper' href='#top'>
+			<img src='img/bubblegum_full512.png' alt='Bubblegum Logo' id='header-logo' style=''/>
+		</a>
+
+		<nav>
+			<a href='#about-target' class='nav-link'>About</a>
+			<a href='#features-target' class='nav-link'>Features</a>
+			<a href='#data-linking-target' class='nav-link' style='white-space:nowrap;'>Data Linking</a>
+			<a href='#purchase-target' class='nav-link'>Purchase</a>
+			<a href='#contact-target' class='nav-link'>Contact</a>
+		</nav>
+
+	</header>
+	<!-- END #header  -->
+
+
+
+	<main>
+
+		<div id='landing' class='main-container'>
+
+			<h1 id='ehdi-subtitle'>EHDI Data Management System</h1>
+
+			<div id='landing-flex'>
+
+				<div id='landing-info'>
+
+					<p class='landing-p'>
+						Medical Providers and Administrators want straightforward tools to manage and meet their patients' individual needs. HiTrack has been developed to meet the distinct data demands of hospital and state EHDI hearing screening programs.
+					</p>
+
+					<p class='landing-p'>
+						HiTrack's Hearing Screening Protocol Engine™ leverages modern medical research and cutting-edge technology to provide intelligent treatment recommendations throughout your patients' treatment timeline.
+					</p>
+
+					<p class='landing-p'>
+						Using insight from our clients, we have designed an intuitive interface so users can easily enter new data, request reports, and determine what's next for their patients.
+					</p>
+
+					<div id='demo-button' class='landing-btn'>
+						<div class='demo-circle'></div>
+						<a class='demo-button-text'>Access Live Demo!</a>
+					</div>
+
+				</div>
+
+				<img src='img_new/lightbulb.png' alt='lightbulb graphic' id='lightbulb-graphic'/>
+
+			</div>
+
+			<div id='myModal' class='modal'>
+
+                <!-- Modal content -->
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+	                <h1 id='modal-header'>HiTrack 5 Web Demo</h1>
+
+	                <form id='demo-form'>
+
+		                <div id='form-fields-container'>
+			                <label for='g-name' class='demo-label'>Name</label>
+                            <input type='text' id='g-name' name='guestName' class='demo-field' required>
+
+
+			                <label for='g-org' class='demo-label'>Organization</label>
+			                <input type='text' id='g-org' name='guestOrg' class='demo-field' required>
+
+			                <label for='g-email' class='demo-label'>Email</label>
+			                <input type='email' id='g-email' name='guestEmail' class='demo-field' required>
+
+			                <label for='g-phone' class='demo-label'>Phone</label>
+			                <input type='tel' id='g-phone' name='guestPhone' class='demo-field' required>
+		                </div>
+
+						<div id='form-button-container'>
+
+		                    <div onclick='window.alert("Form submits & user gets redirected to HiTrack")'
+		                         id='submit-demo'
+		                         class='landing-btn'>
+			                    <div class='demo-circle'></div>
+								<div class='demo-button-text'>Continue to HiTrack</div>
+		                    </div>
+
+						</div>
+
+	                </form>
+
+					<p style='margin-left:40px;color:rgba(49, 49, 49, 0.6);'>Click here to download the previous
+					                                                           version: <span
+							onclick='window.alert("HiTrack 4 begins downloading")' id='ht4-link'>HiTrack 4
+					                                                                          Desktop</span></p>
+
+                 </div>
+
+			</div>
+
+		</div>
+		<!--END #landing -->
+
+
+
+		<div id='about' class='main-container'>
+
+			<div id='stats-container'>
+				<a id='about-target' class='target'></a>
+
+				<h1 class='main-header' id='stats-header'>HiTrack By The Numbers</h1>
+
+				<ul id='stats-list'>
+					<li>
+						<i>Babies uploaded to HiTrack:</i><br><span class='stats-value'>2.25 mil</span>
+					</li>
+
+					<li>
+						<i>Babies in HT who meet CDC standards:</i><br><span class='stats-value'>91%</span>
+					</li>
+
+					<li>
+						<i>Automatic Equipment File Uploads:</i><br><span class='stats-value'>411,000</span>
+					</li>
+
+					<li>
+						<i>Customers who switched from a competitor:</i><br><span class='stats-value'>25%</span>
+					</li>
+
+					<li>
+						<i>Overall user satisfaction score:</i><br><span class='stats-value'>94%</span>
+					</li>
+				</ul>
+
+				<p style='font-size:10pt; padding: 0 10px 10px 10px;'>
+					THIS DATA HAS BEEN FABRICATED BY THOMAS GIRGENTI TO STAND IN AS PLACEHOLDER VALUES; THE DATA IS
+					NOT INTENDED TO REPRESENT REAL RESULTS/FINDINGS. IF ANY OF THE DATA POINTS ABOVE ARE ACCURATE,
+					THE OCCURRENCE IS STRICTLY BY CHANCE AND IS PURELY COINCIDENTAL.
+				</p>
+
+			</div>
+
+			<div id='steps-container'>
+
+				<h1 class='main-header' id='steps-header'>EHDI Data Management in Three Steps:</h1>
+
+					<p class='steps-p'>
+						Screening is the first step in managing a newborn hearing program. HiTrack's user-friendly
+						interface helps medical providers import demographic data and screening results from
+						screening equipment.
+					</p>
+
+					<p class='steps-p'>
+						HiTrack's intelligent tracking system indicates babies in need of follow-up services and
+						recommends personalized "next-steps" in a baby's treatment plan. In addition, users can easily generate specialized lists of patients with upcoming or overdue appointments.
+					</p>
+
+					<p class='steps-p' style='height:30vh;'>
+						Our program also assists in bridging communication between local health care providers,
+						hospitals, and state and regional agencies. Based on children's treatment progress and
+						screening program status, HiTrack automatically generates customizable letters and reports to share with these parties. This synchronicity of information helps improve the personalization of medical care and increases patient participation in treatment programs.
+					</p>
+
+			</div>
+
+		</div>
+		<!-- END #about -->
+
+
+
+		<div id='features' class='main-container'>
+
+			<a id='features-target' class='target'></a>
+
+			<h1 class='main-header'>Features</h1>
+
+			<section class='features-section' style='margin-top:0; padding-top:0;'>
+
+				<h3>Hearing Screening Protocol Engine&trade;</h3>
+
+					<p>HiTrack's Hearing Screening Protocol Engine&trade; is a rule-based system that governs how infants are tracked. Based on the screening protocol selected by the Screening Program Coordinator, the software automatically suggests the "next step" needed for each baby being tracked through the screening and follow-up process. Users can select a protocol to best suit their facility's data tracking needs:</p>
+
+						<ul>
+							<li>Two-Stage Automated Pass/Manual Non-Pass</li>
+							<li>Two-Stage Fully Automated</li>
+							<li>Two-Stage Manual</li>
+							<li>Two-Stage Inpatient Automated</li>
+							<li>Two-Stage Dual Equipment Auto-Pass Only</li>
+							<li>Two-Stage Dual Equipment Automated</li>
+						</ul>
+
+			</section>
+
+			<section class='features-section'>
+
+				<h3>Preferences/Settings</h3>
+
+					<ul>
+						<li>Access rights can be administrated by creating custom User Groups</li>
+						<li>Facilities and their specific equipment configurations can be entered and modified</li>
+						<li>Physicians, screeners and audiologists can be entered and modified</li>
+						<li>Alternate IDs for medical personnel can be entered to help facilitate linking with third-party screening equipment software</li>
+						<li>Nursery, Early Intervention, and other demographic pick lists can be customized</li>
+						<li>Facilities can determine the default recipient of both standard and custom letters</li>
+						<li>Required fields can be defined for manual data-entry</li>
+						<li>Facility Groups can be defined for reporting and list filtering</li>
+					</ul>
+
+			</section>
+
+			<section class='features-section'>
+				<h3>Facility Baby List</h3>
+
+					<ul>
+						<li>Based on a facility's protocol setting, infants are categorized automatically based on their real-time needs</li>
+						<li>Infants in need of inpatient or outpatient screening can be easily identified</li>
+						<li>Recommendation Actions are provided to help medical providers and patients arrange future appointments</li>
+						<li>Lists can be sorted, filtered, and searched based on a large variety of criteria</li>
+						<li>The birth facility and birth date filter allow users to work with subsets of data</li>
+						<li>Lists of babies who have been transferred in or out are provided by default</li>
+						<li>Infants who pass screening with risk indicators entered are automatically placed in a Risk Monitoring list</li>
+						<li>CDC Milestone Tracking utilizing filters for 'Met', 'Due Soon', 'Overdue' and 'Late'</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Facility Group Baby List</h3>
+
+					<ul>
+						<li>Work with babies from multiple facilities in one convenient list</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Child Information</h3>
+
+					<ul>
+						<li>Demographic data can be entered and manually modified for a baby</li>
+						<li>The Summary screen provides an overview of all pertinent baby data.</li>
+						<li>Easy to use entry screens for:
+							<ul>
+								<li>Contacts</li>
+								<li>Screening History</li>
+								<li>Risk Indicator Assessments</li>
+								<li>Diagnostic Testing, Hearing Disposition and Audiograms</li>
+								<li>Recommendations and Amplification</li>
+								<li>Early Intervention</li>
+							</ul>
+						</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Import &amp; Merge Data</h3>
+
+					<p>HiTrack's advanced rule-based merge protocols are optimized to ensure data integrity while providing edge-case flexibility. Data from external sources are merged in batches allowing error-free records to flow into the central database while questionable records are set aside for correction at the user's convenience.</p>
+
+					<ul>
+						<li>Configure automatic, time-based uploads</li>
+						<li>Manually resolve questionable or abnormal records</li>
+						<li>Manually resolve "Unknown Codes" from screening equipment</li>
+						<li><a href='data_linking.html'>Support for most popular screening equipment</a></li>
+						<li>Import and merge patient demographic data from hospital data systems</li>
+						<li>Import and merge lists of Physicians, Audiologists and Screeners from hospital data systems.</li>
+						<li>Review Merge History</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Letters</h3>
+
+					<ul>
+						<li>Customizable Letter Templates with stock letters in English and Spanish</li>
+						<li>The Letter Queue automatically updates based on changes made to records in HiTrack</li>
+						<li>Appropriate letters can be manually requested for a baby at any time</li>
+						<li>Letter history shows all letters generated for a baby or a facility</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Reports</h3>
+
+					<ul>
+						<li>Standard Results-Based Reports
+							<ul>
+								<li>Screening Results Report</li>
+								<li>Outpatient Screening Report</li>
+								<li>Physicians Report</li>
+								<li>Hearing Status Report</li>
+								<li>Infants with Risk Indicators Report</li>
+								<li>Early Interventions Report</li>
+								<li>Intervention Sessions Report</li>
+								<li>Developmental Measures Report</li>
+								<li>Amplification Devices Report</li>
+								<li>Lab Testing Report</li>
+							</ul>
+						</li>
+						<li>Summary Reports
+							<ul>
+								<li>Tracking Flow Chart</li>
+								<li>Screener Profiles</li>
+								<li>State Quarterly Report</li>
+								<li>Hospital Summary Report</li>
+								<li>CDC Milestone Summary Report</li>
+								<li>CDC Survey Report</li>
+								<li>Technology Summary Report</li>
+							</ul>
+						</li>
+						<li>Advanced criteria and filters can be applied to any standard report</li>
+						<li>Users can also create custom reports based on patient and provider needs</li>
+					</ul>
+			</section>
+
+			<section class='features-section'>
+				<h3>Management & Security</h3>
+
+					<ul>
+						<li>Database Change Logging</li>
+						<li>Record View Logging</li>
+						<li>User Activity Logging and Reporting</li>
+						<li>Custom Notifications</li>
+					</ul>
+			</section>
+
+			<section class='features-section' style='border-bottom:none; padding-bottom:0;'>
+				<h3>Configuration Options</h3>
+
+					<img src='img_new/HiTrack-Architecture-Diagram.jpg' alt='HiTrack 5 Configuration Diagram'/>
+
+					<p>See our <a href='../docs/HiTrack4QuickGuide.pdf' class='config-link'>Quick Start Guide
+					                                                                         [PDF]</a> for more
+					   feature details.</p>
+
+					<p><a href='#contact-target' class='config-link'>Contact us for more information on configuration
+					                                       options</a></p>
+			</section>
+
+		</div>
+		<!-- END features -->
+
+
+
+
+		<div id='data-linking' class='main-container'>
+
+			<a id='data-linking-target' class='target'></a>
+
+			<h1 class='main-header'>Data Linking</h1>
+
+			<p>
+				We at HiTrack understand the vitality of data integrity--patient data in particular. We work closely
+				with equipment manufacturers to improve the quality of screening equipment links. increase the
+				quality of screening equipment links, so you always have access to complete, accurate, and consistent
+				data.
+			</p>
+
+			<div class='data-container' style='margin-top:40px;'>
+
+				<h3>Manufacturers' latest software links with HiTrack:</h3>
+
+					<table>
+						<tr>
+							<th>Equipment</th>
+							<th>Version</th>
+							<th>Required Fields<sup class='asterisk'>*</sup></th>
+							<th>Tracking Fields<sup class='asterisk'>**</sup></th>
+							<th>Import Picklists</th>
+							<th>Rich Export Tools</th>
+							<th>To Do List Feature</th>
+						</tr>
+						<tr>
+							<td class='table-tech'>AccuScreen/AccuLink</td>
+							<td>1.4.7</td>
+							<td>100%</td>
+							<td>All</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Biologic AuDX/ABaer</td>
+							<td>3.17</td>
+							<td>100%</td>
+							<td>All</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>GSI Corti</td>
+							<td>1.2.0.22</td>
+							<td>100%</td>
+							<td>None</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Interacoustics OtoRead</td>
+							<td>2.0.42.0</td>
+							<td>100%</td>
+							<td>None</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Interacoustics Titan</td>
+							<td>2.0.1.2</td>
+							<td>100%</td>
+							<td>All</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>MAICO ERO-SCAN OAE SYSTEM</td>
+							<td>1.2.0.22</td>
+							<td>100%</td>
+							<td>None</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Maico MB 11</td>
+							<td>2.38</td>
+							<td>100%</td>
+							<td>All</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Natus audble Lite</td>
+							<td>1.3.5</td>
+							<td>100%</td>
+							<td>All</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Vivosonic Integrity Screener</td>
+							<td>8.8.1</td>
+							<td>100%</td>
+							<td>Most</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>HearSIM</td>
+							<td>2.0.6485</td>
+							<td>93%</td>
+							<td>Few</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Interacoustics Sera</td>
+							<td>1.2</td>
+							<td>93%</td>
+							<td>Few</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Maico Eroscan Pro</td>
+							<td>101026</td>
+							<td>93%</td>
+							<td>Few</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Otodynamics Otolink</td>
+							<td>2.21.0.10</td>
+							<td>93%</td>
+							<td>Few</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Intelligent Hearing Systems SmartScreener Plus2</td>
+							<td>2.35</td>
+							<td>79%</td>
+							<td>Most</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Otodynamics EZScreen</td>
+							<td>6.20.0.0</td>
+							<td>79%</td>
+							<td>Most</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Natus ALGO 5</td>
+							<td>5</td>
+							<td>71%</td>
+							<td>Few</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>Unknown</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>SLE SABRe</td>
+							<td>2.0.1.2</td>
+							<td>50%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>GSI AUDIOscreener</td>
+							<td>2.1</td>
+							<td>36%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Unknown</td>
+						</tr>
+					</table>
+
+			</div>
+
+
+			<div class='data-container'>
+
+				<h3>Manufacturers' prior software versions that link with HiTrack:</h3>
+
+					<table>
+						<tr>
+							<th>Equipment</th>
+							<th>Version</th>
+							<th>Required Fields<sup class='asterisk'>*</sup></th>
+							<th>Tracking Fields</th>
+							<th>Import Picklists</th>
+							<th>Rich Export Tools</th>
+							<th>To Do List Feature</th>
+						</tr>
+						<tr>
+							<td class='table-tech'>Otodynamics ILO88 w/HISCREEN</td>
+							<td>~</td>
+							<td>100%</td>
+							<td>Most</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Natus ALGO 3/2E Color NHS</td>
+							<td>3/2E</td>
+							<td>57%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>Unknown</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>AccuScreen Classic</td>
+							<td>1.12</td>
+							<td>50%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>ERO-SCAN OAE SYSTEM</td>
+							<td>7.60.5</td>
+							<td>43%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td class='table-tech'>Natus ALGO 2</td>
+							<td>2</td>
+							<td>43%</td>
+							<td>None</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>Unknown</td>
+						</tr>
+
+					</table>
+
+
+			</div>
+
+
+			<div id='footnote-container'>
+				<p class='footnote'>*Some of the percentages above reflect fields collected using a combination of data
+			                   entry on a device and data entry within related software.  Contact the Help Desk for
+			                      more information on a specific device.</p>
+
+
+				<p class='footnote'>**Mom's Address, Phone, Language, Mom's Race and Baby Risk Indicators.</p>
+			</div>
+
+
+			<div class='data-container'>
+
+				<h3>The following fields are required for a link:</h3>
+
+					<ul id='data-link-list'>
+						<li>Infant's last name</li>
+						<li>Infant's first name</li>
+						<li>Infant's date of birth</li>
+						<li>Infant's medical record number</li>
+						<li>Infant's birth facility</li>
+						<li>Infant's birth order</li>
+						<li>Infant's birth weight</li>
+						<li>Mother's last name (first name also recommended)</li>
+						<li>Code/ID of screening site</li>
+						<li>Code/ID of infant's primary health provider</li>
+						<li>Code/ID of screener conducting test</li>
+						<li>Stage of test: Inpatient/Outpatient</li>
+						<li>Test Result and Date for left and right ears including dates</li>
+						<li>Outcomes for un-tested babies</li>
+					</ul>
+
+			</div>
+
+		</div>
+		<!-- END data-linking -->
+
+
+
+
+		<div id='purchase' class='main-container'>
+			<a id='purchase-target' class='target'></a>
+		</div>
+
+		<div id='contact' class='main-container'>
+			<a id='contact-target' class='target'></a>
+		</div>
+
+	</main>
+
+
+	<footer></footer>
+
+	<script type='text/javascript' src='scripts/modal.js'></script>
+	<script type='text/javascript' src='scripts/header.js'></script>
+
+</body>
+
+</html>
