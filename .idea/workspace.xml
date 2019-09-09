@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/cards/card_astrostore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/cards/card_bubblegum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/cards/card_dpt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/cards/card_rmc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/cards/card_td.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_text_logo.ai" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_text_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_cmb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cards/bubblegum_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cards/planet.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +108,7 @@
       <workItem from="1566239082421" duration="477000" />
       <workItem from="1567702034656" duration="24071000" />
       <workItem from="1567791520513" duration="17768000" />
-      <workItem from="1567970106836" duration="7980000" />
+      <workItem from="1567970106836" duration="8283000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -178,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567971520128</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create card images">
+      <created>1567995845308</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567995845308</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +193,7 @@
     <MESSAGE value="Move left borders to edge" />
     <MESSAGE value="Add Bubblegum.ai product page" />
     <MESSAGE value="Project card styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project card styles" />
+    <MESSAGE value="Create card images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create card images" />
   </component>
 </project>
