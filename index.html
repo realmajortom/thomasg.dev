@@ -84,16 +84,7 @@
 
 			        <a class='p-link' href='https://astrostore.io' target='_blank' rel='noopener'>
 
-							<div class='card-initial c-i_abm'>
-
-								<div class='card-title_abm'>
-									Astro
-									<img src='img/cards/planet.png' alt='AstroStore Icon' class='img-abm'/>
-									Store
-								</div>
-
-							</div>
-
+				            <img class='card-initial' src='img/cards/card_astrostore.png' alt='AstroStore Card' >
 
 					        <div class='card-hover'>
 
@@ -114,65 +105,9 @@
 
 			        </a>
 
-
-					<a class='p-link' href='project-pages/t-wizard/index.html'>
-
-							<div class='card-initial c-i_rmc'>
-								<div class='checker-bkg'>
-									<div class='checker c-green'>del</div>
-									<div class='checker c-gray'>c</div>
-									<div class='checker c-pink'>=</div>
-									<div class='checker c-gray'>+</div>
-									<div class='checker c-pink'>-</div>
-									<div class='checker c-green'>x</div>
-								</div>
-							</div>
-
-
-							<div class='card-hover'>
-
-								<ul class='tech-list'>
-									<li>React</li>
-									<li>Responsive CSS</li>
-									<li>HTML5</li>
-									<li>Javascript</li>
-								</ul>
-
-								<h3>I Remember Calculator</h3>
-
-							</div>
-
-					</a>
-
-
-			        <a class='p-link' href='project-pages/bubblegum-ai/index.html'>
-
-					        <div class='card-initial c-i_bi'>
-								<img src='img/cards/bubblegum_logo.png' alt='Bubblegum Icon' class='img-bi'/>
-							</div>
-
-
-							<div class='card-hover'>
-
-								 <ul class='tech-list'>
-							        <li>Responsive CSS</li>
-							        <li>HTML5</li>
-							        <li>JavaScript</li>
-						        </ul>
-
-						        <h3>Bubblegum.ai Product Page</h3>
-
-							</div>
-
-			        </a>
-
-
 			        <a class='p-link' href='project-pages/pomodoro-timer/index.html'>
 
-					        <div class='card-initial c-i_dpt'>
-								<div class='card-title_dpt'>DON'T PANIC!</div>
-							</div>
-
+				            <img class='card-initial' src='img/cards/card_dpt.png' alt="Don't Panic! Timer Card">
 
 							<div class='card-hover'>
 
@@ -189,49 +124,46 @@
 
 			        </a>
 
+			        <a class='p-link' href='project-pages/bubblegum-ai/index.html'>
+
+				        <img class='card-initial' src='img/cards/card_bubblegum.png' alt='Bubblegum.ai Card'/>
+
+							<div class='card-hover'>
+
+								 <ul class='tech-list'>
+							        <li>Responsive CSS</li>
+							        <li>HTML5</li>
+							        <li>JavaScript</li>
+						        </ul>
+
+						        <h3>Bubblegum.ai Product Page</h3>
+
+							</div>
+
+			        </a>
+
+					<a class='p-link' href='project-pages/t-wizard/index.html'>
+
+							<img class='card-initial' src='img/cards/card_rmc.png' alt='RememberMe Calculator Card'>
+
+							<div class='card-hover'>
+
+								<ul class='tech-list'>
+									<li>React</li>
+									<li>Responsive CSS</li>
+									<li>HTML5</li>
+									<li>Javascript</li>
+								</ul>
+
+								<h3>I Remember Calculator</h3>
+
+							</div>
+
+					</a>
 
 			        <a class='p-link' href='project-pages/tech-doc/index.html'>
 
-					        <div class='card-initial c-i_td'>
-						        <pre>
-									<code>
-router.get('/login', (req, res) => {
-	User.findOne({meal: req.body.meal}, (err, user) => {
-		if (err) {
-			res.json({message: 'Wrong restaurant bud',success:false});
-		} else if (!user.meal.complete) {
-			const newMeal = makeNewMeal();
-			User.findByIdAndUpdate(user.id, {dinner: {order:newMeal,today: Date.now(),isWaiting: true}}, err => {
-				if (err) {
-					res.json({message: 'Oops overcooked your food.', success:false});
-				} else {
-					sendVerification(user.id, newMeal).catch(console.error);
-					res.json({message: 'Order submitted. Please wait!',success: false});
-				}
-			});
-		} else {
-			foodCrypt.compare(req.body.dish, user.order, (err,response) =>{
-				if (err) {
-					res.json({message: 'Error verifying order', success:false});
-				} else if (response === false) {
-					res.json({message: 'No food here.', success: false});
-				} else {
-					const finishedMeal = chef.sign(
-						{ patron: user.id, guest_name: user.name.preferred},
-						process.env.SECRET_INGREDIENT,
-						{expiresIn:user.idKind ? '1h' : '10d'}
-					);
-					res.json({platter: finishedMeal, success: true});
-				}
-			});
-		}
-	})
-});
-									</code>
-						        </pre>
-							</div>
-
-
+				        <img class='card-initial' src='img/cards/card_td.png' alt='Technical Documentation Card'>
 							<div class='card-hover'>
 
 						        <ul class='tech-list'>
@@ -246,13 +178,9 @@ router.get('/login', (req, res) => {
 
 			        </a>
 
-
 			        <a class='p-link' href='project-pages/count-my-beans/index.html'>
 
-					        <div class='card-initial'>
-
-							</div>
-
+					        <div class='card-initial'></div>
 
 							<div class='card-hover'>
 
@@ -267,7 +195,6 @@ router.get('/login', (req, res) => {
 							</div>
 
 			        </a>
-
 
 		        </div>
 

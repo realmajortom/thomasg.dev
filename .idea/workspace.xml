@@ -2,34 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/cards/bubblegum_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/cards/planet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/HiTrack-Architecture-Diagram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.ai" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/lightbulb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/scripts/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/scripts/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/styles/bubblegum.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_astrostore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_bubblegum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_dpt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_rmc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cards/card_td.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_text_logo.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_text_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/countmybeans.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/night-sky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/pompic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/r-williams.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/survey.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/tcal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/project-tiles/tech-doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cards/bubblegum_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cards/planet.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_full512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.ai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/bubblegum_logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,17 +63,19 @@
     <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="stylesheet.code.style.group" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/styles/fonts" />
-      <recent name="$PROJECT_DIR$/styles" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img/cards" />
       <recent name="$PROJECT_DIR$/styles/fonts/metropolis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project-pages/bubblegum-ai/img" />
+      <recent name="$PROJECT_DIR$/img/cards" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/styles/fonts" />
+      <recent name="$PROJECT_DIR$/styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -132,7 +127,7 @@
       <workItem from="1566239082421" duration="477000" />
       <workItem from="1567702034656" duration="24071000" />
       <workItem from="1567791520513" duration="17768000" />
-      <workItem from="1567970106836" duration="920000" />
+      <workItem from="1567970106836" duration="7980000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -169,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567724235003</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Bubblegum.ai product page">
+      <created>1567971478436</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567971478436</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Project card styles">
+      <created>1567971520128</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567971520128</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +203,8 @@
     <MESSAGE value="New index.html" />
     <MESSAGE value="Make contact button context aware" />
     <MESSAGE value="Move left borders to edge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move left borders to edge" />
+    <MESSAGE value="Add Bubblegum.ai product page" />
+    <MESSAGE value="Project card styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project card styles" />
   </component>
 </project>
