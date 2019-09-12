@@ -151,115 +151,234 @@ header {
 
 /*************** projects section ************/
 .portfolio-wrapper {
-	padding-top: 6vh;
+	padding: 6vh 0;
 	width: calc(100vw - 5px);
 	margin-left: -15vw;
 	border-left: 5px solid #3fe1b0;
 }
 
 .portfolio-section {
-	min-height: 100vh;
-	width: 70vw;
+	width: calc(100vw - 5px);
 	margin: auto;
 }
 
 .portfolio-title {
-	padding-top: 14px;
+	padding: 14px 0 5vh calc(15vw - 5px);
 }
 
 .projects-container {
     display: flex;
-    flex-flow: row wrap;
-	margin-top: 5vh;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 70vw;
+	margin: auto;
 }
 
 .p-link {
-	text-decoration: none;
 	padding: 0;
+	width: 700px;
 	margin: 1px;
+	position: relative;
 }
 
 .card-initial {
-	height: 346px;
-	width: 586px;
+	height: 100%;
+	width: 100%;
 }
 
 .card-hover {
-	display: none;
-	background-color: #101115;
-	height: 346px;
-	width: 586px;
-	opacity: 0;
-	transition-property: opacity;
-	transition-duration: 2s;
-	transition-delay: 1s;
-	transition-timing-function: ease-out;
-}
-
-.card-hover h3 {
-	z-index: 100;
-	font-size: 1.7rem;
-	font-weight: 700;
-	background-color: #fff;
-	color: #101115;
-	padding: 4% 0;
-	margin: 0;
+	z-index: 101;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	text-align: center;
-}
-
-.tech-list {
-	list-style-type: none;
+	height: 100%;
+	opacity: 0;
+	user-select: none;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 586px;
-	padding: 10px;
-}
-
-.tech-list li {
-	z-index: 99;
-	padding: 10px 15px;
-	margin: 10px;
-	background-color: #fff;
-	color: #101115;
-	border-radius: 2px;
-}
-
-.p-link:hover .card-initial {
-	display: none;
+	flex-flow: column nowrap;
+	background-color: rgba(255, 255, 255, 1);
+	transition-property: opacity;
+	transition-timing-function: ease-out;
+	transition-duration: 250ms;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .p-link:hover .card-hover {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
 	opacity: 1;
 }
 
+.card-hover ul {
+	list-style-type: none;
+}
 
-/************ initial cards ***********/
+.card-hover li {
+	margin-top: 10px;
+	font-size: 1.3rem;
+}
 
-/** Bubblegum.ai Product Page **/
-.c-i_bi {
+.card-hover h2 {
+	font-family: "Metropolis", sans-serif;
+	font-weight: 500;
+	text-align: center;
+	color: #101115;
+	font-size: 1.75rem;
+	padding: 20px 0;
+	border-bottom: 1px solid #3fe1b0;
+}
+
+.button-cont {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: #190b28;
-	/*background: linear-gradient(153deg, rgba(25, 11, 40, 1) 45%, rgba(235, 212, 203, 1) 45%);*/
-}
-.img-bi {
-	max-height: 300px;
+	flex-flow: row nowrap;
+	align-items: baseline;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
 }
 
+.link-project, .link-github {
+	padding: 0;
+	margin: 0;
+}
+.launch {
+	width: 48px;
+	height: 48px;
+	margin: 0 40px;
+	padding: 0;
+}
 
-/** Count My Beans **/
+.github-logo {
+	height: 40px;
+	margin: 0;
+	padding: 5px;
+}
 
+.launch:hover, .github-logo:hover .a {
+	fill: #3fe1b0;
+}
 
+@media (min-width: 1292px) {
+	.projects-container {
+		flex-flow: row wrap;
+	}
+	.p-link {
+		width: calc(35vw - 2px);
+		height: calc(.59 * (35vw - 2px));
+	}
+	.card-hover h2 {
+		/*padding: 14px 0;*/
+		font-size: 1.6rem;
+	}
+	.card-hover li {
+		margin-top: 5px;
+		font-size: 1.2rem;
+	}
+}
 
 /*************** contact section ***************/
+.contact-wrapper {
+	border-bottom: 5px solid #39a0ed;
+	border-right: 5px solid #39a0ed;
+	width: calc(100vw - 5px);
+	margin-left: -15vw;
+}
+
+.github-text{
+	width: 120px;
+}
+
+.linkedin-text {
+	width: 160px;
+}
+
 .contact-section {
 	height: 100vh;
+	margin-left: 15vw;
 }
+
+#head-contact {
+	padding-top: 14px;
+}
+
+#contact-form ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact-form ul li {
+	margin: 40px 0;
+}
+
+label {
+	font-weight: 600;
+	font-size: 1.3rem;
+	display: block;
+}
+
+.contact-input, textarea {
+	font-family: "Inter var", sans-serif;
+	font-weight: 400;
+	color: #101115;
+	border: 2px solid #101115;
+	border-radius: 2px;
+	display: block;
+	transition: background-color 100ms, box-shadow 100ms, color 100ms, transform 100ms;
+	transition-property: background-color, box-shadow, color, transform;
+	transition-duration: 100ms, 100ms, 100ms, 100ms;
+	transition-timing-function: ease, ease, ease, ease;
+	transition-delay: 0s, 0s, 0s, 0s;
+}
+
+.contact-input {
+	font-size: 16pt;
+	padding: 14px 20px;
+	width: 350px;
+	margin-top: 6px;
+}
+
+textarea {
+	width: 362px;
+	height: 150px;
+	padding: 14px;
+	font-weight: 400;
+	margin-top: 6px;
+}
+
+.contact-input:focus, textarea:focus {
+	transform: translate(-2px, -2px);
+	color: #101115;
+	background-color: #ffffff;
+	box-shadow: 4px 4px 0 0 #101115;
+}
+
+.contact-input:not(:focus), textarea:not(:focus), .email-input:not(:focus) {
+	box-shadow: none;
+}
+
+.email-input:not(:placeholder-shown):invalid {
+	border-color: #ff5e5f;
+	box-shadow: none;
+}
+
+.email-input:focus:not(:placeholder-shown):invalid {
+	box-shadow: 4px 4px 0 0 #ff5e5f;
+}
+
+.submit-btn {
+	color: #fff;
+	font-family: "Inter var", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 2px;
+	background-color: #39a0ed;
+}
+
+.submit-btn:hover {
+	background-color: #337cf9;
+	cursor: pointer;
+}
+
+

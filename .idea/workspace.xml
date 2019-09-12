@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/cards/card_cmb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/github-text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/linkedin-text.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/cards" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,16 +50,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img/cards" />
-      <recent name="$PROJECT_DIR$/styles/fonts/metropolis" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project-pages/bubblegum-ai/img" />
       <recent name="$PROJECT_DIR$/img/cards" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/styles/fonts" />
       <recent name="$PROJECT_DIR$/styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/icons" />
+      <recent name="$PROJECT_DIR$/img/cards" />
+      <recent name="$PROJECT_DIR$/styles/fonts/metropolis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -108,7 +112,10 @@
       <workItem from="1566239082421" duration="477000" />
       <workItem from="1567702034656" duration="24071000" />
       <workItem from="1567791520513" duration="17768000" />
-      <workItem from="1567970106836" duration="8283000" />
+      <workItem from="1567970106836" duration="8379000" />
+      <workItem from="1568067187968" duration="1774000" />
+      <workItem from="1568151337417" duration="2636000" />
+      <workItem from="1568236273716" duration="17808000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -166,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567995845308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Count My Beans Card">
+      <created>1567999321152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567999321152</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +208,7 @@
     <MESSAGE value="Add Bubblegum.ai product page" />
     <MESSAGE value="Project card styles" />
     <MESSAGE value="Create card images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create card images" />
+    <MESSAGE value="Add Count My Beans Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Count My Beans Card" />
   </component>
 </project>
