@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/icons/github-text.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/linkedin-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/thomasgirgenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
@@ -115,7 +113,7 @@
       <workItem from="1567970106836" duration="8379000" />
       <workItem from="1568067187968" duration="1774000" />
       <workItem from="1568151337417" duration="2636000" />
-      <workItem from="1568236273716" duration="17808000" />
+      <workItem from="1568236273716" duration="27662000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -180,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567999321152</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Complete contact form">
+      <created>1568318727138</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568318727138</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +214,7 @@
     <MESSAGE value="Project card styles" />
     <MESSAGE value="Create card images" />
     <MESSAGE value="Add Count My Beans Card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Count My Beans Card" />
+    <MESSAGE value="Complete contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete contact form" />
   </component>
 </project>

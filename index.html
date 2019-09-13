@@ -424,77 +424,69 @@
 
 		        <h1 id="head-contact">Contact</h1>
 
-		        <div id="contact-links">
+			    <div class='contact-inner'>
 
-		                <a href="https://github.com/tggir1" target="_blank" rel="noreferrer" class='contact-link'>
+			        <form id="contact-form">
+
+				        <ul>
+
+					        <li>
+						        <label for='name-field'>Name</label>
+			                    <input
+				                    id='name-field'
+				                    name='name'
+				                    type='text'
+				                    class='contact-input'
+				                    placeholder=' '
+				                    required>
+					        </li>
+
+					        <li>
+						        <label for='email-field'>Email</label>
+			                    <input
+				                    id='email-field'
+				                    name='email'
+				                    type='email'
+				                    class='contact-input email-input'
+				                    placeholder=' '
+				                    required>
+					        </li>
+
+					        <li>
+						        <label for='message-field'>Message</label>
+			                    <textarea
+				                    id='message-field'
+				                    name='message'
+				                    class='contact-textarea'
+				                    placeholder=' '
+				                    required></textarea>
+					        </li>
+
+					        <li>
+						        <input type='submit' value='submit' class='submit-btn'>
+					        </li>
+
+				        </ul>
+
+			        </form>
+
+				     <div class='contact-links'>
+
+					    <a href='mailto:thomas@thomasg.dev' class='email-text'>thomas@thomasg.dev</a>
+
+					    <a href='https://github.com/tggir1' target='_blank' rel='noreferrer' class='contact-link'>
 			                <img src='img/icons/github-text.svg' alt='Find Me on Github' class='github-text'>
 		                </a>
 
-		                <a href="https://www.linkedin.com/in/tgirgenti" target="_blank" rel="noreferrer"
+		                <a href='https://www.linkedin.com/in/tgirgenti' target='_blank' rel='noreferrer'
 		                   class='contact-link'>
 			                <img src='img/icons/linkedin-text.png' alt='View My LinkedIn Profile' class='linkedin-text'>
 		                </a>
 
-		        </div>
 
-		        <form id="contact-form">
-			        <ul>
+		            </div>
 
-				        <li>
-
-					        <label for='name-field'>
-				                Name
-			                </label>
-
-		                    <input
-			                    id='name-field'
-			                    name='name'
-			                    type='text'
-			                    class='contact-input'
-			                    placeholder=' '
-			                    required>
-
-				        </li>
-
-				        <li>
-
-					        <label for='email-field'>
-						        Email
-					        </label>
-
-		                    <input
-			                    id='email-field'
-			                    name='email'
-			                    type='email'
-			                    class='contact-input email-input'
-			                    placeholder=' '
-			                    required>
-
-				        </li>
-
-				        <li>
-
-					        <label for='message-field'>
-				                Message
-			                </label>
-
-		                    <textarea
-			                    id='message-field'
-			                    name='message'
-			                    class='contact-textarea'
-			                    placeholder=' '
-			                    required></textarea>
-
-				        </li>
-
-				        <li>
-
-					        <input type='submit' value='submit' class='submit-btn'>
-
-				        </li>
-
-			        </ul>
-		        </form>
+			    </div>
 
 		    </div>
 
