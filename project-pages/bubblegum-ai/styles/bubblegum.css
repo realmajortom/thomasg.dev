@@ -108,7 +108,7 @@ main {
 	padding-top: 80px;
 }
 
-#ehdi-subtitle {
+#freaky-subtitle {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
 	font-size: 34pt;
@@ -285,11 +285,11 @@ main {
 	box-shadow: 0 0 2px rgba(0, 164, 238, 0.5);
 }
 
-#ht4-link {
+#bg1-link {
 	color: rgba(0, 164, 238, 0.5);
 }
 
-#ht4-link:hover {
+#bg1-link:hover {
 	color: #c14ee0;
 	cursor: pointer;
 }
