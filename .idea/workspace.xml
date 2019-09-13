@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="Remove .idea">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/selenity-travels/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/selenity-travels/night-sky.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/selenity-travels/product-landing.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/selenity-travels/shrink-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/selenity-travels/space-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/survey-form/are-you-boring.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-pages/survey-form/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/count-my-beans/bean-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/count-my-beans/bean-counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/count-my-beans/beanCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/count-my-beans/beanCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/count-my-beans/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/count-my-beans/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +31,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1OnFYjb34EKy3N1qAax1Og8eGpJ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -51,7 +46,7 @@
     <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -120,7 +115,7 @@
       <workItem from="1568067187968" duration="1774000" />
       <workItem from="1568151337417" duration="2636000" />
       <workItem from="1568236273716" duration="35430000" />
-      <workItem from="1568410492099" duration="101000" />
+      <workItem from="1568410492099" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -220,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568402258469</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add github links">
+      <created>1568410607554</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1568410607554</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +256,7 @@
     <MESSAGE value="add contact form highlighting based on validity" />
     <MESSAGE value="Add contact form thank you page" />
     <MESSAGE value="Sanitize Bubblegum.ai pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sanitize Bubblegum.ai pages" />
+    <MESSAGE value="Add github links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add github links" />
   </component>
 </project>
