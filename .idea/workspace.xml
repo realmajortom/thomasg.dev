@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90a442f9-dc12-4e65-be20-ffd5bd9786ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/thank-you/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-pages/bubblegum-ai/styles/bubblegum.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-pages/bubblegum-ai/styles/bubblegum.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +115,7 @@
       <workItem from="1567970106836" duration="8379000" />
       <workItem from="1568067187968" duration="1774000" />
       <workItem from="1568151337417" duration="2636000" />
-      <workItem from="1568236273716" duration="29055000" />
+      <workItem from="1568236273716" duration="34757000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure project sites + fix about container">
       <created>1564859963743</created>
@@ -191,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568393228413</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add contact form highlighting based on validity">
+      <created>1568394757976</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568394757977</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +232,7 @@
     <MESSAGE value="Add Count My Beans Card" />
     <MESSAGE value="Complete contact form" />
     <MESSAGE value="remove contact-section wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove contact-section wrapper" />
+    <MESSAGE value="add contact form highlighting based on validity" />
+    <option name="LAST_COMMIT_MESSAGE" value="add contact form highlighting based on validity" />
   </component>
 </project>
