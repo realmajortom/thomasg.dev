@@ -338,7 +338,7 @@ label {
 	font-family: "Inter var", sans-serif;
 	font-weight: 400;
 	color: #101115;
-	border: 2px solid #101115;
+	border: 2px solid #3fe1b0;
 	border-radius: 2px;
 	display: block;
 	transition: background-color 100ms, box-shadow 100ms, color 100ms, transform 100ms;
@@ -363,24 +363,16 @@ textarea {
 	margin-top: 6px;
 }
 
-.contact-input:focus, textarea:focus {
-	transform: translate(-2px, -2px);
-	color: #101115;
-	background-color: #ffffff;
-	box-shadow: 4px 4px 0 0 #101115;
-}
-
-.contact-input:not(:focus), textarea:not(:focus), .email-input:not(:focus) {
-	box-shadow: none;
-}
-
-.contact-input:invalid, textarea:invalid {
+.email-input:not(:placeholder-shown):not(:focus):invalid {
 	border-color: #ff5e5f;
 	box-shadow: none;
+	transform: none;
 }
 
-.contact-input:focus:invalid, textarea:focus:invalid {
-	box-shadow: 4px 4px 0 0 #ff5e5f;
+.contact-input:invalid, textarea:invalid, .contact-input:focus, textarea:focus {
+	border-color: #101115;
+	transform: translate(-2px, -2px);
+	box-shadow: 4px 4px 0 0 #101115;
 }
 
 .submit-btn {
@@ -395,7 +387,7 @@ textarea {
 }
 
 .submit-btn:hover {
-	background-color: #337cf9;
+	background-color: #3fe1b0;
 	cursor: pointer;
 }
 
