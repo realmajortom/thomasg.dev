@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Inter var';
+	font-weight: 100 900;
+	font-display: block;
+	font-style: normal;
+	src: url('inter/Inter-upright.var.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 900;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 700;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 600;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 500;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 400;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 300;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 200;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Metropolis';
+	font-weight: 100;
+	font-display: block;
+	font-style: normal;
+	src: url('metropolis/Metropolis-Thin.woff2') format('woff2');
+}
