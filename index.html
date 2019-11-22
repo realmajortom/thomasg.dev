@@ -30,17 +30,17 @@
 			<div class='tools-section'>
 				<h1 class='tools-title'>My Toolbox</h1>
 				<ul class='skill-list'>
+					<li>JavaScript</li>
 					<li>React</li>
 					<li>Node.js</li>
-					<li>NoSQL</li>
-					<li>REST APIs</li>
+					<li>Express</li>
+					<li>MongoDB</li>
 					<li>Google Cloud Platform</li>
-					<li>jQuery</li>
-					<li>Javascript (ES6)</li>
-					<li>Responsive HTML + CSS</li>
 					<li>Git</li>
 					<li>Yarn</li>
 					<li>NPM</li>
+					<li>HTML</li>
+					<li>Responsive CSS</li>
 				</ul>
 			</div>
 		</div>
@@ -53,138 +53,155 @@
 
 				<div class="projects-container">
 
-					<div class='p-link'>
+					<!-- Whisperas Card -->
+					<div class='project-card' id='card-0'>
 
-						<img class='card-initial' src='img/cards/card_astrostore.png' alt='AstroStore Card' >
+						<div class='card-txt'>
 
-						<div class='card-hover' id='card-0'>
+							<div class='card-header'>
+								<img src='img/icons/whisperas.png' alt='Whisperas Icon' width='100px' >
+								<h2>Whisperas<span class='whisperas-sub'>: The Pancreas Whisperer</span></h2>
+							</div>
 
-							<h2>Whisperas:<br>Discover trends in your daily diabetes health</h2>
+							<h4>Intro:</h4>
+							<p>
+								Like many chronic illnesses, managing T1 Diabetes is highly involved and often exhausting. Whisperas aims to simplify patients' lives by helping them visualize the relationships between their treatment regimen and mental well-being.
+							</p>
 
-							<div class='card-content'>
+							<h4>Platforms:</h4>
+							<ul>
+								<li>Mobile browser</li>
+								<li>Installable as PWA</li>
+							</ul>
 
-								<ul>
-									<li>React</li>
-									<li>MongoDB</li>
-									<li>Node.js</li>
-									<li>Google App Engine</li>
-								</ul>
+							<h4>Tools & Technologies:</h4>
+							<ul>
+								<li>React</li>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>MongoDB</li>
+								<li>REST APIs</li>
+								<li>Google Cloud Platform</li>
+							</ul>
 
-								<div class='button-cont'>
-									<a class='link-project' href='https://whisperas.com' target='_blank' rel='noopener'>
-										<svg xmlns='http://www.w3.org/2000/svg'
-													width='24'
-													height='24'
-													class='launch'
-													viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-										</svg>
-									</a>
+							<div class='button-cont'>
+								<a class='card-link' id='link-btn-0' href='https://whisperas.com' target='_blank' rel='noopener' >
+									<span class='tooltip' id='link-tooltip-0'>View Live App</span>
+									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
+										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
+									</svg>
+								</a>
 
-									<a class='link-github' href='https://github.com/tggir1/whisperas' target='_blank' rel='noopener'>
-										<svg xmlns='http://www.w3.org/2000/svg'
-														viewBox='0 0 120.78 117.79'
-														class='github-logo'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-										</svg>
-									</a>
-
-								</div>
+								<a class='card-link' id='git-btn-0' href='https://github.com/tggir1/whisperas' target='_blank' rel='noopener'>
+									<span class='tooltip' id='git-tooltip-0'>View Code + Screenshots</span>
+									<svg xmlns='http://www.w3.org/2000/svg'
+													viewBox='0 0 120.78 117.79'
+													class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
+									</svg>
+								</a>
 							</div>
 						</div>
+
 					</div>
 
-					<div class='p-link'>
+					<!-- AstroStore Card -->
+					<div class='project-card' id='card-1'>
 
-						<img class='card-initial' src='img/cards/card_astrostore.png' alt='AstroStore Card' >
+						<div class='card-txt'>
+							<div class='card-header'>
+								<img src='img/icons/astrostore.png' alt='AstroStore Icon' width='100px' >
+								<h2>AstroStore</h2>
+							</div>
 
-							<div class='card-hover' id='card-1'>
+							<h4>Intro:</h4>
+							<p>AstroStore is a tool to access and save bookmarks in any browser--it can be installed as a standalone PWA on mobile, and desktop browser extensions are available for Chrome & Firefox.</p>
 
-								<h2>AstroStore:<br>A Cross-Platform Bookmark Manager</h2>
+							<h4>Platforms</h4>
+							<ul>
+								<li>Desktop & mobile browser</li>
+								<li>Installable as PWA</li>
+								<li>
+									<a href='https://addons.mozilla.org/en-US/firefox/addon/astrostore/' rel='noopener noreferrer' target='_blank'>Firefox</a> & <a href='https://chrome.google.com/webstore/detail/astrostore-quick-add/papafaajgpnblabjapiibkhdfjaghnhg' rel='noopener noreferrer' target='_blank'>Chrome</a> extensions</li>
+							</ul>
 
-								<div class='card-content'>
+							<h4>Tools & Technologies:</h4>
+							<ul>
+								<li>React</li>
+								<li>Responsive CSS</li>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>MongoDB</li>
+								<li>REST APIs</li>
+								<li>Google Cloud Platform</li>
+							</ul>
 
-									<ul>
-										<li>React</li>
-										<li>MongoDB</li>
-										<li>Node</li>
-										<li>Google App Engine</li>
-									</ul>
+							<div class='button-cont'>
+								<a class='card-link' id='link-btn-1' href='https://astrostore.io' target='_blank' rel='noopener'>
+									<span class='tooltip' id='link-tooltip-1'>View Project</span>
+									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
+										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
+									</svg>
+								</a>
 
-									<div class='button-cont'>
-
-										<a class='link-project' href='https://astrostore.io' target='_blank'
-												rel='noopener'>
-											<svg xmlns='http://www.w3.org/2000/svg'
-														width='24'
-														height='24'
-														class='launch'
-														viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-											</svg>
-										</a>
-
-										<a class='link-github' href='https://github.com/tggir1/astrostore' target='_blank' rel='noopener'>
-											<svg xmlns='http://www.w3.org/2000/svg'
-														viewBox='0 0 120.78 117.79'
-														class='github-logo'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-											</svg>
-										</a>
-
-									</div>
-								</div>
+								<a class='card-link' id='git-btn-1' href='https://github.com/tggir1/astrostore' target='_blank' rel='noopener'>
+									<span class='tooltip' id='git-tooltip-1'>View Code + Screenshots</span>
+									<svg xmlns='http://www.w3.org/2000/svg'
+												viewBox='0 0 120.78 117.79'
+												class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
+									</svg>
+								</a>
 							</div>
 						</div>
 
-						<div class='p-link'>
+					</div>
 
-							<img class='card-initial' src='img/cards/card_dpt.png' alt="Don't Panic! Timer Card">
+					<!-- Hacker Zeus Card -->
+					<div class='project-card' id='card-2'>
 
-							<div class='card-hover' id='card-2'>
+						<div class='card-txt'>
+							<div class='card-header'>
+								<img src='img/icons/hackerzeus.png' alt='Hacker Zeus Icon' width='100px' >
+								<h2>Hacker Zeus</h2>
+							</div>
 
-								<h2>DON'T PANIC!<br>The Pushover Pomodoro Timer</h2>
 
-								<div class='card-content'>
+							<h4>Intro:</h4>
+							<p>Hacker Zeus uses Hacker News' public api and Poslight's Mercury Parser to load Hacker News articles in a clean, single-page web app. No more hopping between websites when browsing Hacker News!</p>
 
-									<ul>
-										<li>React</li>
-										<li>HTML5</li>
-										<li>Javascript</li>
-									</ul>
+							<p>In addition to loading articles in-app, Hacker Zeus also displays the comments posted on HN.</p>
 
-									<div class='button-cont'>
+							<h4>Platforms:</h4>
+							<ul>
+								<li>Desktop browser</li>
+								<li>Installable as PWA</li>
+							</ul>
 
-										<a class='link-project' href='project-pages/pomodoro-timer/index.html' target='_blank'	rel='noopener'>
-											<svg xmlns='http://www.w3.org/2000/svg'
-													width='24'
-													height='24'
-													class='launch'
-													viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-											</svg>
-										</a>
+							<h4>Tools & Technologies:</h4>
+							<ul>
+								<li>React</li>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>Mercury Parser by Postlight</li>
+							</ul>
 
-										<a class='link-github' href='https://github.com/tggir1/pomodoro-timer' target='_blank' rel='noopener'>
-											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120.78 117.79'
-													class='github-logo'
-										><path class='a'
-																	d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path
-											class='b'
-											d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path
-											class='b'
-											d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path
-											class='b'
-											d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path
-											class='b'
-											d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path
-											class='b'
-											d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path
-											class='b'
-											d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path
-											class='b'
-											d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-											</svg>
-										</a>
+							<div class='button-cont'>
+								<a class='card-link' id='link-btn-2' href='project-pages/pomodoro-timer/index.html' target='_blank' rel='noopener'>
+									<span class='tooltip' id='link-tooltip-2'>View Project</span>
+									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
+										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
+									</svg>
+								</a>
 
-								</div>
+								<a class='card-link' id='git-btn-2' href='https://github.com/tggir1/pomodoro-timer' target='_blank' rel='noopener'>
+									<span class='tooltip' id='git-tooltip-2'>View Code + Screenshots</span>
+									<svg xmlns='http://www.w3.org/2000/svg'
+													viewBox='0 0 120.78 117.79'
+													class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
+									</svg>
+								</a>
 							</div>
 						</div>
+
 					</div>
 
 				</div>
