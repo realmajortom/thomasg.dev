@@ -19,14 +19,14 @@
 
 	<main>
 
-		<div class="about-section" id="about">
-			<h2 class='about-title'>FULL STACK DEVELOPER</h2>
-			<p class='about-text'>I love using code to solve tricky problems. If there's something to build, I'm all in.</p>
+		<div class="landing-section">
+			<h2 class='landing-title'>FULL STACK DEVELOPER</h2>
+			<p class='landing-text'>I love using code to solve tricky problems. If there's something to build, I'm all in.</p>
 			<a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
 		</div>
 
 
-		<div class='tools-wrapper' id='tools-wrapper'>
+		<div class='tools-wrapper' id='tools-wrappers'>
 			<div class='tools-section'>
 				<h1 class='tools-title'>My Toolbox</h1>
 				<ul class='skill-list'>
@@ -51,166 +51,181 @@
 
 				<h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
 
-				<div class="projects-container">
-
 					<!-- Whisperas Card -->
-					<div class='project-card' id='card-0'>
-
-						<div class='card-txt'>
+					<div class='project-card'>
 
 							<div class='card-header'>
-								<img src='img/icons/whisperas.png' alt='Whisperas Icon' width='100px' >
+								<img src='img/icons/whisperas.png' alt='Whisperas Icon'>
 								<h2>Whisperas<span class='whisperas-sub'>: The Pancreas Whisperer</span></h2>
 							</div>
 
-							<h4>Intro:</h4>
-							<p>
-								Like many chronic illnesses, managing T1 Diabetes is highly involved and often exhausting. Whisperas aims to simplify patients' lives by helping them visualize the relationships between their treatment regimen and mental well-being.
-							</p>
 
-							<h4>Platforms:</h4>
-							<ul>
-								<li>Mobile browser</li>
-								<li>Installable as PWA</li>
-							</ul>
+							<div class='card-body'>
 
-							<h4>Tools & Technologies:</h4>
-							<ul>
-								<li>React</li>
-								<li>Node.js</li>
-								<li>Express</li>
-								<li>MongoDB</li>
-								<li>REST APIs</li>
-								<li>Google Cloud Platform</li>
-							</ul>
+								<div class='card-body_left'>
+									<h3>Description:</h3>
+									<p>Like many chronic illnesses, managing T1 Diabetes is highly involved and often exhausting. Whisperas aims to simplify patients' lives by helping them visualize the relationships between their treatment regimen and mental well-being.</p>
 
-							<div class='button-cont'>
-								<a class='card-link' id='link-btn-0' href='https://whisperas.com' target='_blank' rel='noopener' >
-									<span class='tooltip' id='link-tooltip-0'>View Live App</span>
-									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
-										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-									</svg>
-								</a>
 
-								<a class='card-link' id='git-btn-0' href='https://github.com/tggir1/whisperas' target='_blank' rel='noopener'>
-									<span class='tooltip' id='git-tooltip-0'>View Code + Screenshots</span>
-									<svg xmlns='http://www.w3.org/2000/svg'
-													viewBox='0 0 120.78 117.79'
-													class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-									</svg>
-								</a>
+									<h3>Platforms:</h3>
+									<ul>
+										<li>Mobile browser</li>
+										<li>Installable as PWA</li>
+									</ul>
+
+
+									<h3>Tools & Technologies:</h3>
+									<ul>
+										<li>JavaScript</li>
+										<li>HTML</li>
+										<li>Responsive CSS</li>
+										<li>React</li>
+										<li>Node.js</li>
+										<li>Express</li>
+										<li>MongoDB</li>
+										<li>Google Cloud Platform</li>
+									</ul>
+								</div>
+
+								<div class='card-body_right'>
+
+									<a class='submit-btn card-link' href='https://whisperas.com' target='_blank' rel='noopener'>
+										Go to app
+									</a>
+
+									<a class='submit-btn card-link' href='https://github.com/tggir1/whisperas' target='_blank' rel='noopener'>
+										Code + screenshots
+									</a>
+
+								</div>
+
 							</div>
-						</div>
 
 					</div>
 
-					<!-- AstroStore Card -->
-					<div class='project-card' id='card-1'>
 
-						<div class='card-txt'>
+					<!-- AstroStore Card -->
+					<div class='project-card'>
+
 							<div class='card-header'>
-								<img src='img/icons/astrostore.png' alt='AstroStore Icon' width='100px' >
+								<img src='img/icons/astrostore.png' alt='AstroStore Icon' >
 								<h2>AstroStore</h2>
 							</div>
 
-							<h4>Intro:</h4>
-							<p>AstroStore is a tool to access and save bookmarks in any browser--it can be installed as a standalone PWA on mobile, and desktop browser extensions are available for Chrome & Firefox.</p>
+							<div class='card-body'>
 
-							<h4>Platforms</h4>
-							<ul>
-								<li>Desktop & mobile browser</li>
-								<li>Installable as PWA</li>
-								<li>
-									<a href='https://addons.mozilla.org/en-US/firefox/addon/astrostore/' rel='noopener noreferrer' target='_blank'>Firefox</a> & <a href='https://chrome.google.com/webstore/detail/astrostore-quick-add/papafaajgpnblabjapiibkhdfjaghnhg' rel='noopener noreferrer' target='_blank'>Chrome</a> extensions</li>
-							</ul>
+								<div class='card-body_left'>
+									<h3>Description:</h3>
+									<p>AstroStore is a tool to access and save bookmarks in any browser--it can be installed as a standalone PWA on mobile,
+										and desktop browser extensions are available for Chrome & Firefox.</p>
 
-							<h4>Tools & Technologies:</h4>
-							<ul>
-								<li>React</li>
-								<li>Responsive CSS</li>
-								<li>Node.js</li>
-								<li>Express</li>
-								<li>MongoDB</li>
-								<li>REST APIs</li>
-								<li>Google Cloud Platform</li>
-							</ul>
 
-							<div class='button-cont'>
-								<a class='card-link' id='link-btn-1' href='https://astrostore.io' target='_blank' rel='noopener'>
-									<span class='tooltip' id='link-tooltip-1'>View Project</span>
-									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
-										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-									</svg>
-								</a>
+									<h3>Platforms</h3>
+									<ul>
+										<li>Desktop & mobile browser</li>
+										<li>Installable as PWA</li>
+										<li>
+											<a href='https://addons.mozilla.org/en-US/firefox/addon/astrostore/' rel='noopener noreferrer'
+												target='_blank'>Firefox</a> & <a
+												href='https://chrome.google.com/webstore/detail/astrostore-quick-add/papafaajgpnblabjapiibkhdfjaghnhg'
+												rel='noopener noreferrer' target='_blank'>Chrome</a> extensions</li>
+									</ul>
 
-								<a class='card-link' id='git-btn-1' href='https://github.com/tggir1/astrostore' target='_blank' rel='noopener'>
-									<span class='tooltip' id='git-tooltip-1'>View Code + Screenshots</span>
-									<svg xmlns='http://www.w3.org/2000/svg'
-												viewBox='0 0 120.78 117.79'
-												class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-									</svg>
-								</a>
+
+									<h3>Tools & Technologies:</h3>
+									<ul>
+										<li>JavaScript</li>
+										<li>HTML</li>
+										<li>Responsive CSS</li>
+										<li>React</li>
+										<li>Node.js</li>
+										<li>Express</li>
+										<li>MongoDB</li>
+										<li>Google Cloud Platform</li>
+									</ul>
+								</div>
+
+								<div class='card-body_right'>
+
+									<a class='submit-btn card-link' href='https://astrostore.io' target='_blank' rel='noopener'>
+										Go to app
+									</a>
+
+									<a class='submit-btn card-link' href='https://github.com/tggir1/AstroStore' target='_blank' rel='noopener'>
+										Code + screenshots
+									</a>
+
+								</div>
+
 							</div>
-						</div>
 
 					</div>
 
-					<!-- Hacker Zeus Card -->
-					<div class='project-card' id='card-2'>
 
-						<div class='card-txt'>
+					<!-- Hacker Zeus Card -->
+					<div class='project-card'>
+
 							<div class='card-header'>
-								<img src='img/icons/hackerzeus.png' alt='Hacker Zeus Icon' width='100px' >
+								<img src='img/icons/hackerzeus.png' alt='Hacker Zeus Icon' >
 								<h2>Hacker Zeus</h2>
 							</div>
 
 
-							<h4>Intro:</h4>
-							<p>Hacker Zeus uses Hacker News' public api and Poslight's Mercury Parser to load Hacker News articles in a clean, single-page web app. No more hopping between websites when browsing Hacker News!</p>
+							<div class='card-body'>
 
-							<p>In addition to loading articles in-app, Hacker Zeus also displays the comments posted on HN.</p>
+								<div class='card-body_left'>
+									<h3>Description:</h3>
+									<p>Hacker Zeus uses Hacker News' public api and Poslight's Mercury Parser to load Hacker News articles in a clean,
+										single-page web app. No more hopping between websites when browsing Hacker News!</p>
 
-							<h4>Platforms:</h4>
-							<ul>
-								<li>Desktop browser</li>
-								<li>Installable as PWA</li>
-							</ul>
+									<p>In addition to loading articles in-app, Hacker Zeus also displays the comments posted on HN.</p>
 
-							<h4>Tools & Technologies:</h4>
-							<ul>
-								<li>React</li>
-								<li>Node.js</li>
-								<li>Express</li>
-								<li>Mercury Parser by Postlight</li>
-							</ul>
 
-							<div class='button-cont'>
-								<a class='card-link' id='link-btn-2' href='project-pages/pomodoro-timer/index.html' target='_blank' rel='noopener'>
-									<span class='tooltip' id='link-tooltip-2'>View Project</span>
-									<svg xmlns='http://www.w3.org/2000/svg' class='link-btn' viewBox='0 0 24 24'>
-										<path fill='none' d='M0 0h24v24H0V0z'/><path d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/>
-									</svg>
-								</a>
+									<h3>Platforms:</h3>
+									<ul>
+										<li>Desktop browser</li>
+										<li>Installable as PWA</li>
+									</ul>
 
-								<a class='card-link' id='git-btn-2' href='https://github.com/tggir1/pomodoro-timer' target='_blank' rel='noopener'>
-									<span class='tooltip' id='git-tooltip-2'>View Code + Screenshots</span>
-									<svg xmlns='http://www.w3.org/2000/svg'
-													viewBox='0 0 120.78 117.79'
-													class='github-btn'><path class='a' d='M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z'/><path class='b' d='M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z'/><path class='b' d='M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z'/><path class='b' d='M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z'/><path class='b' d='M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z'/><path class='b' d='M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z'/><path class='b' d='M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z'/><path class='b' d='M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z'/>
-									</svg>
-								</a>
+
+									<h3>Tools & Technologies:</h3>
+									<ul>
+										<li>JavaScript</li>
+										<li>HTML</li>
+										<li>Responsive CSS</li>
+										<li>React</li>
+										<li>Node.js</li>
+										<li>Express</li>
+										<li>Mercury Parser by Postlight</li>
+									</ul>
+								</div>
+
+								<div class='card-body_right'>
+
+									<a class='submit-btn card-link' href='https://hackerzeus.appspot.com' target='_blank' rel='noopener'>
+										Go to app
+									</a>
+
+									<a class='submit-btn card-link' href='https://github.com/tggir1/hackerzeus' target='_blank' rel='noopener'>
+										View code
+									</a>
+
+								</div>
+
 							</div>
-						</div>
 
 					</div>
 
-				</div>
 			</div>
 		</div>
 
 
-		<div class="contact-section" id="contact">
-		  <h1 id="head-contact">Contact</h1>
+		<div class='contact-wrapper'>
+
+			<div class="contact-section" id="contact">
+
+			<h1 class='contact-title'>Contact</h1>
+
 			<div class='contact-inner'>
 
 			  <form id="contact-form" action='https://www.formbackend.com/f/ac782d77331ca51a' method='POST'>
@@ -247,23 +262,47 @@
 								required></textarea>
 						</li>
 
-						<li>
+						<li class='submit-btn_wrap'>
 							<button type='submit' class='submit-btn'>Submit</button>
 						</li>
 					</ul>
+
 			  </form>
 
-				<div class='contact-links'>
-					<a href='mailto:thomas@thomasg.dev' class='email-text'>thomas@thomasg.dev</a>
-					<a href='https://github.com/tggir1' target='_blank' rel='noreferrer' class='contact-link'>
-			      <img src='img/icons/github-text.svg' alt='Find Me on Github' class='github-text'>
-		      </a>
-		      <a href='https://www.linkedin.com/in/tgirgenti' target='_blank' rel='noreferrer' class='contact-link'>
-			      <img src='img/icons/linkedin-text.png' alt='View My LinkedIn Profile' class='linkedin-text'>
-		      </a>
-				</div>
+			</div>
+
+
+			<div class='contact-links'>
+
+				<a href='https://github.com/tggir1' target='_blank' rel='noreferrer' class='contact-link'>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360.18 97.41" class='github-text'>
+						<title>github-text</title>
+						<path class="a"
+							d="M69.37,41.69H39.11a1.41,1.41,0,0,0-1.42,1.42V57.9a1.42,1.42,0,0,0,1.42,1.42h11.8V77.71s-2.65.9-10,.9c-8.65,0-20.73-3.16-20.73-29.72S32.78,18.82,44.59,18.82c10.23,0,14.63,1.8,17.43,2.67a1.43,1.43,0,0,0,1.7-1.39L67.09,5.8a1.31,1.31,0,0,0-.54-1.1C65.41,3.88,58.47,0,40.93,0,20.73,0,0,8.6,0,49.92S23.73,97.41,43.73,97.41c16.55,0,26.6-7.08,26.6-7.08a1.23,1.23,0,0,0,.46-1.07V43.11A1.42,1.42,0,0,0,69.37,41.69Z" />
+						<path class="a"
+							d="M225.36,5A1.41,1.41,0,0,0,224,3.53h-17A1.41,1.41,0,0,0,205.5,5V37.89H178.94V5a1.41,1.41,0,0,0-1.41-1.42h-17A1.41,1.41,0,0,0,159.08,5V94.13a1.42,1.42,0,0,0,1.41,1.43h17a1.42,1.42,0,0,0,1.41-1.43V56H205.5l0,38.15a1.42,1.42,0,0,0,1.41,1.43H224a1.43,1.43,0,0,0,1.41-1.43Z" />
+						<path class="a" d="M101.53,16.65a11,11,0,1,0-11,11.11A11,11,0,0,0,101.53,16.65Z" />
+						<path class="a"
+							d="M100.31,75.32V34.15a1.42,1.42,0,0,0-1.41-1.42h-17a1.63,1.63,0,0,0-1.47,1.59v59c0,1.74,1.08,2.25,2.48,2.25h15.3c1.68,0,2.09-.82,2.09-2.27Z" />
+						<path class="a"
+							d="M290.12,32.87H273.21a1.41,1.41,0,0,0-1.4,1.42V78a19.14,19.14,0,0,1-10.4,3.14c-6.1,0-7.72-2.76-7.72-8.74V34.29a1.41,1.41,0,0,0-1.4-1.42H235.12a1.41,1.41,0,0,0-1.4,1.42v41c0,17.74,9.88,22.08,23.48,22.08,11.15,0,20.15-6.17,20.15-6.17a34.29,34.29,0,0,0,.62,3.64,1.49,1.49,0,0,0,1.24.77l10.92,0a1.42,1.42,0,0,0,1.41-1.42V34.29A1.43,1.43,0,0,0,290.12,32.87Z" />
+						<path class="a"
+							d="M336.35,30.86a31.76,31.76,0,0,0-16.14,4.29V5a1.41,1.41,0,0,0-1.41-1.42H301.71A1.41,1.41,0,0,0,300.3,5V94.13a1.42,1.42,0,0,0,1.41,1.43h11.86a1.43,1.43,0,0,0,1.24-.76,28.4,28.4,0,0,0,.72-4.11s7,6.62,20.22,6.62c15.53,0,24.43-7.88,24.43-35.37S346,30.86,336.35,30.86Zm-6.67,50.25a20.31,20.31,0,0,1-9.85-2.84V50a22.54,22.54,0,0,1,8.74-2.84c6.09-.54,12,1.3,12,15.82C340.53,78.33,337.88,81.36,329.68,81.11Z" />
+						<path class="a"
+							d="M149.29,32.72H136.51l0-16.88c0-.64-.33-1-1.07-1H118c-.68,0-1,.3-1,.95V33.28s-8.73,2.11-9.32,2.28a1.41,1.41,0,0,0-1,1.36v11A1.42,1.42,0,0,0,108,49.31H117V75.69c0,19.6,13.75,21.52,23,21.52a38.91,38.91,0,0,0,10.15-1.67,1.32,1.32,0,0,0,.8-1.28V82.2a1.43,1.43,0,0,0-1.41-1.42c-.75,0-2.65.3-4.61.3-6.28,0-8.41-2.92-8.41-6.7V49.31h12.78a1.42,1.42,0,0,0,1.41-1.43V34.15A1.42,1.42,0,0,0,149.29,32.72Z" />
+					</svg>
+				</a>
+
+				<a href='mailto:thomas@thomasg.dev' class='email-text'>thomas@thomasg.dev</a>
+
+				<a href='https://www.linkedin.com/in/tgirgenti' target='_blank' rel='noreferrer' class='contact-link'>
+					<img src='img/icons/linkedin-text.png' alt='View My LinkedIn Profile' class='linkedin-text'>
+				</a>
 
 			</div>
+
+
+		</div>
 
 		</div>
 

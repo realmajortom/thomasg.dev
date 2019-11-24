@@ -52,7 +52,7 @@ h2 {
 .moz-prim {
 	position: fixed;
 	top: 14px;
-	right: 14vw;
+	right: 15vw;
 	font-size: 14pt;
 	padding: 6px 14px;
 	color: #ffffff;
@@ -95,15 +95,15 @@ header {
 
 
 /************* about section ************/
-.about-section {
+.landing-section {
 	height: calc(100vh - 95px);
 }
 
-.about-title {
+.landing-title {
 	padding-top: 30vh;
 }
 
-.about-text {
+.landing-text {
 	font-size: 1.7rem;
 	font-weight: 300;
 	margin-bottom: 80px;
@@ -150,37 +150,31 @@ header {
 
 /*************** projects section ************/
 .portfolio-wrapper {
-	padding: 6vh 0;
+	padding: 5vh 0;
 	width: calc(100vw - 5px);
 	margin-left: -15vw;
 	border-left: 5px solid #3fe1b0;
 }
 
 .portfolio-section {
-	width: calc(100vw - 5px);
-	margin: auto;
-}
-
-.portfolio-title {
-	padding: 14px 0 30px calc(15vw - 5px);
-}
-
-.projects-container {
-  display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
 	width: 70vw;
 	margin: auto;
 }
 
+.portfolio-title {
+	padding: 20px 0;
+}
+
+.projects-container {
+	width: 100%;
+}
+
 .project-card {
-	width: calc(100% - 20px);
-	/* height: 75vh; */
+	width: calc(100% - 80px);
 	box-shadow: 0 0 0 4px #ededf0;
 	border-radius: 4px;
-	margin: 20px 0;
-	padding: 10px;
-	display: flex;
+	margin: 60px 0;
+	padding: 20px 40px;
 	transition: box-shadow 100ms ease-out 0s;
 }
 
@@ -192,27 +186,30 @@ header {
 	margin-top: 0;
 }
 
-.card-txt {
-	flex-grow: 2;
-	position: relative;
-	margin: 10px;
+.project-card:last-of-type {
+	margin-bottom: 0;
+}
+
+
+.card-header {
+	display: flex;
+	align-items: center;
+}
+
+.card-header img {
+	width: 50px;
 }
 
 .project-card h2 {
-	font-size: 26pt;
+	font-size: 30pt;
+	margin-left: 20px;
 }
 
 .project-card h3 {
 	font-family: 'Metropolis', sans-serif;
-	font-size: 20pt;
 	font-weight: 600;
-	margin: 8px 0;
-}
-
-.project-card h4 {
-	font-size: 14pt;
-	margin-bottom: 0;
-	font-weight: 500;
+	font-size: 16pt;
+	margin: 30px 0 10px 0;
 }
 
 .project-card p {
@@ -220,10 +217,6 @@ header {
 	font-weight: 300;
 	line-height: 1.4;
 	margin: 0 0 30px 0;
-}
-
-.problem {
-	font-weight: 500;
 }
 
 .project-card ul {
@@ -238,83 +231,21 @@ header {
 	font-weight: 300;
 }
 
-.button-cont {
+.card-body_right {
 	display: flex;
-	flex-flow: row nowrap;
-	align-items: baseline;
-	justify-content: space-between;
-	margin-top: 30px;
-	width: 150px;
+	flex-direction: row;
+	margin-top: 40px;
 }
 
 .card-link {
-	padding: 0;
-	margin: 0;
-	position: relative;
+	text-decoration: none;
+	white-space: nowrap;
 }
 
-.link-btn {
-	height: 48px;
+.card-link:first-of-type {
+	margin-right: 30px;
 }
 
-.scrn-btn {
-	height: 44px;
-	padding-bottom: 3px;
-}
-
-.github-btn {
-	height: 40px;
-	margin: 0;
-	padding: 5px;
-}
-
-.scrn-btn:hover, .link-btn:hover, .github-btn:hover {
-	fill: #3fe1b0;
-	cursor: pointer;
-}
-
-
-.card-img {
-	min-width: 300px;
-	max-height: 700px;
-	height: 100%;
-	padding: 0;
-	border-radius: 4px;
-	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
-}
-
-.tooltip {
-	visibility: hidden;
-	width: 120px;
-	background-color: rgb(55,55,55);
-	color: #fff;
-	text-align: center;
-	border-radius: 2px;
-	padding: 6px 8px;
-	position: absolute;
-	z-index: 10;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -68px;
-	font-size: 11pt;
-}
-
-
-
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(55,55,55) transparent transparent transparent;
-}
-
-#link-btn-0:hover #link-tooltip-0, #scrn-btn-0:hover #scrn-tooltip-0, #git-btn-0:hover #git-tooltip-0, #link-btn-1:hover #link-tooltip-1, #scrn-btn-1:hover #scrn-tooltip-1, #git-btn-1:hover #git-tooltip-1, #link-btn-2:hover #link-tooltip-2, #scrn-btn-2:hover #scrn-tooltip-2, #git-btn-2:hover #git-tooltip-2 {
-	visibility: visible;
-}
 
 li a {
 	text-decoration: none;
@@ -326,42 +257,43 @@ li a:hover {
 }
 
 
-/*************** contact section ***************/
 
-#head-contact {
-	padding-top: 20px;
-	margin-left: 15vw;
+/*************** contact section ***************/
+.contact-wrapper {
+	padding: 5vh 0 0 0;
+		border-bottom: 5px solid #39a0ed;
+		border-right: 5px solid #39a0ed;
+		width: calc(100vw - 5px);
+		margin-left: -15vw;
 }
 
 .contact-section {
+	width: 70vw;
+	margin: auto;
 	min-height: calc(100vh - 5px);
 	position: relative;
-	border-bottom: 5px solid #39a0ed;
-	border-right: 5px solid #39a0ed;
-	width: calc(100vw - 5px);
-	margin-left: -15vw;
+}
+
+.contact-title {
+	padding: 20px 0;
 }
 
 .contact-inner {
 	width: 100%;
+	padding-top: calc((100vh - 760px) / 2);
+	padding-bottom: calc((100vh - 560px) / 2);
 	display: flex;
 	flex-flow: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	margin-top: 60px;
 }
 
-.contact-links {
-	min-height: 150px;
-	padding-bottom: 40px;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	align-items: center;
-}
 
 .github-text {
 	width: 100px;
+}
+.github-text .a {
+	fill: #100e0f;
 }
 
 .linkedin-text {
@@ -388,6 +320,10 @@ li a:hover {
 	margin: 40px 0;
 }
 
+#contact-form li:last-of-type {
+	margin: 40px 0 0 0;
+}
+
 #contact-form li:first-of-type {
 	margin-top: 0;
 }
@@ -405,6 +341,7 @@ label {
 	border: 2px solid #3fe1b0;
 	border-radius: 2px;
 	display: block;
+		margin-top: 6px;
 	transition: background-color 100ms, box-shadow 100ms, color 100ms, transform 100ms;
 	transition-property: background-color, box-shadow, color, transform;
 	transition-duration: 100ms, 100ms, 100ms, 100ms;
@@ -415,17 +352,16 @@ label {
 .contact-input {
 	font-size: 16pt;
 	padding: 14px 20px;
-	width: 350px;
-	margin-top: 6px;
+	max-width: 500px;
+	width: 76vw;
 }
 
 textarea {
-	width: 362px;
+	max-width: 512px;
+	width: calc(76vw + 12px);
 	height: 150px;
 	padding: 14px;
 	font-size: 13pt;
-	font-weight: 400;
-	margin-top: 6px;
 }
 
 .email-input:not(:placeholder-shown):not(:focus):invalid {
@@ -441,6 +377,11 @@ textarea {
 	outline: none;
 }
 
+.submit-btn_wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
 .submit-btn {
 	color: #fff;
 	font-family: "Inter var", sans-serif;
@@ -457,147 +398,177 @@ textarea {
 	cursor: pointer;
 }
 
-/* @media (max-width: 1300px) {
+
+.contact-links {
+	position: absolute;
+	bottom: 30px;
+	width: 70vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+@media (max-width: 1156px) {
+	body {
+		width: 80vw;
+	}
+	.tools-wrapper, .portfolio-wrapper, .contact-wrapper {
+		margin-left: -10vw;
+	}
+	.tools-section, .portfolio-section, .contact-section,	.contact-links {
+		width: 80vw;
+	}
+	.moz-prim {
+		right: 10vw;
+	}
+}
+
+@media (max-width: 1012px) {
 	body {
 		width: 90vw;
 	}
-	.tools-wrapper {
+	.tools-wrapper, .portfolio-wrapper, .contact-wrapper {
 		margin-left: -5vw;
 	}
-	.tools-section {
+	.tools-section, .portfolio-section, .contact-section,	.contact-links {
 		width: 90vw;
 	}
-	.portfolio-wrapper {
-		margin-left: -5vw
-	}
-	.projects-container {
-		width: 90vw;
-	}
-	.portfolio-title {
-		padding-left: calc(5vw - 5px);
-	}
-	.contact-section {
-		margin-left: -5vw;
-	}
-	.project-card h2 {
-		font-size: 22pt;
-	}
-	.project-card h3 {
-		font-size: 18pt;
+	.moz-prim {
+		right: 5vw;
 	}
 }
 
-
-
-@media (max-width: 1030px) {
-	.whisperas-sub {
-		display: none;
-	}
-	.project-card h3 {
-		font-size: 16pt;
-	}
-	.project-card h4 {
-		font-size: 12pt;
-	}
-	.project-card p {
-		font-size: 12pt;
-	}
-	.project-card ul li {
-		font-size: 12pt;
-	}
-}
-
-@media(max-width: 820px) {
-	.card-img-cont {
-		display: none;
-	}
-	.button-cont {
-		position: relative;
-	}
-}
-@media (max-width: 492px) {
-	.header-title {
-		width: 100px;
-		display: flex;
-		flex-flow: column nowrap;
-		margin-top: 50px;
-		font-size: 3rem;
-	}
-	.about-title {
-		font-size: 2.75rem
-	}
-	.about-text {
-		font-size: 1.5rem;
-	}
-
-}
-
-@media (max-width: 424px) {
-	.p-link {
-		margin: 2px;
-	}
-	.card-hover ul {
-		height: 110px;
-	}
-	.card-hover ul li {
-		font-size: .8rem;
-	}
-	.contact-inner {
-		margin-top: 20px;
-	}
-	.skill-list {
-		flex-flow: column nowrap;
-	}
-}
-
-@media (max-width: 410px) {
-	.header-title {
-		width: 50px;
-		font-size: 2rem;
-		margin-top: 20px;
-	}
-	.card-hover h2 {
-		font-size: .8rem;
-	}
-	.card-hover ul {
-		max-height: 100px;
-	}
-	.contact-input {
-		width: 300px;
-	}
-	textarea {
-		width: 312px;
-	}
-}
-
-
-@media (max-width: 359px) {
-	.header-title {
-		font-size: 1.5rem;
-		margin-top: 10px;
-	}
-	.about-title {
-		padding-top: 10vh;
-	}
-	.skill-list {
-		font-size: 1rem;
-	}
-	.contact-input {
-		width: 260px;
-	}
-	textarea {
-		width: 272px;
-	}
-	.email-text {
-		font-size: 1.5rem;
+@media (max-width: 540px) {
+	.contact-links {
+		flex-direction: column;
+		height: 100px;
 	}
 	.github-text {
 		width: 70px;
 	}
 	.linkedin-text {
-		width: 95px;
+		width: 90px;
 	}
-} */
+	.email-text {
+		font-size: 16pt;
+		font-weight: 600;
+	}
+	.card-body_right {
+		flex-direction: column;
+		height: 110px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.card-link {
+		width: 220px;
+		text-align: center;
+	}
+	.card-link:first-of-type {
+		margin: 0;
+	}
+}
+
+@media (max-width: 440px) {
+	h1 {
+		font-size: 18pt;
+	}
+	.moz-prim {
+		font-size: 12pt;
+	}
+	.landing-title {
+		padding-top: 20vh;
+		font-size: 42pt;
+	}
+	.skill-list {
+		font-size: 16pt;
+	}
+	.skill-list li {
+		padding: 15px 20px;
+	}
+	.project-card {
+		width: calc(100% - 40px);
+		padding: 20px;
+	}
+	.project-card h2 {
+		font-size: 20pt;
+	}
+	.project-card h3 {
+		font-size: 14pt;
+	}
+	.project-card p, .project-card ul li {
+		font-size: 12pt;
+	}
+	.card-header img {
+		width: 40px;
+	}
+	.submit-btn {
+		width: calc(100% - 40px);
+	}
+}
+
+@media (max-width: 380px) {
+	.landing-title {
+		font-size: 36pt;
+	}
+	.landing-text {
+		font-size: 16pt;
+	}
+	.project-card h2 {
+		font-size: 18pt;
+	}
+	.contact-title {
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 340px) {
+		h1 {
+		font-size: 16pt;
+	}
+	.moz-prim {
+		font-size: 10pt;
+	}
+	.landing-title {
+		padding-top: 15vh;
+		font-size: 28pt;
+	}
+	.skill-list {
+		font-size: 14pt;
+	}
+	.skill-list li {
+		padding: 10px 15px;
+	}
+	.project-card h2 {
+		font-size: 14pt;
+	}
+	.project-card h3 {
+		font-size: 14pt;
+	}
+	.project-card p, .project-card ul li {
+		font-size: 12pt;
+	}
+	.card-header img {
+		width: 40px;
+	}
+	.submit-btn {
+		width: calc(100% - 40px);
+	}
+}
+
+
+
+
+@media (max-height: 860px) {
+	.contact-inner {
+		padding-bottom: 200px;
+		padding-top: 10px;
+	}
+}
+
+
 
 @media (prefers-color-scheme: dark) {
 body {
@@ -638,6 +609,14 @@ body {
 	border-left: 5px solid #ff5e5f;
 }
 
+li a {
+	color: #ffffff;
+}
+
+li a:hover {
+	color: #3fe1b0;
+}
+
 contact-input, textarea {
 	color: #101115;
 }
@@ -655,5 +634,15 @@ contact-input, textarea {
 .submit-btn {
 	color: #101115;
 	background-color: #ffffff;
+}
+
+.github-text .a {
+	fill: #ffffff;
+}
+.email-text {
+	color: #9552b9
+}
+html {
+	border-top-color: #9552b9;
 }
 }
