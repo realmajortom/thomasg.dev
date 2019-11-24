@@ -296,7 +296,7 @@ li a:hover {
 	fill: #100e0f;
 }
 
-.linkedin-text {
+.ltext {
 	width: 140px;
 	margin-bottom: -4px;
 }
@@ -449,7 +449,7 @@ textarea {
 	.github-text {
 		width: 70px;
 	}
-	.linkedin-text {
+	.ltext {
 		width: 90px;
 	}
 	.email-text {
