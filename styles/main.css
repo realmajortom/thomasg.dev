@@ -1,6 +1,6 @@
 /****************** site-wide rules ******************/
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 	width: 100vw;
 	border-top: 5px solid #952bb9;
 }
@@ -15,18 +15,25 @@ body {
 	background-color: #ffffff;
 }
 
-h1 {
-	font-size: 2rem;
+h1, h2 {
+	font-family: 'Metropolis', monospace;
 	margin: 0;
 	padding: 0;
 }
 
+h1 {
+	font-size: 2rem;
+}
+
 h2 {
-	font-family: 'Metropolis', monospace;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: 700;
-	margin: 0;
-	padding: 0;
+}
+
+p {
+	font-size: 1.7rem;
+	color: #6f6f6f;
+	font-weight: 200;
 }
 
 .moz-btn {
@@ -95,17 +102,29 @@ header {
 
 
 /************* about section ************/
+.landing-background {
+	opacity: 0.15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: -10;
+	background-image: url('../img/patterns/pipes.png');
+	/*background-attachment: fixed;*/
+	background-repeat: repeat;
+}
+
 .landing-section {
 	height: calc(100vh - 95px);
 }
 
 .landing-title {
 	padding-top: 30vh;
+	font-size: 4rem;
 }
 
 .landing-text {
-	font-size: 1.7rem;
-	font-weight: 300;
 	margin-bottom: 80px;
 }
 
@@ -134,7 +153,7 @@ header {
 
 .skill-list {
 	list-style-type: none;
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -169,93 +188,71 @@ header {
 	width: 100%;
 }
 
-.project-card {
-	width: calc(100% - 80px);
-	box-shadow: 0 0 0 4px #ededf0;
-	border-radius: 4px;
-	margin: 60px 0;
-	padding: 20px 40px;
-	transition: box-shadow 100ms ease-out 0s;
+.pc {
+	display: flex;
+	height: 70vh;
+	align-items: center;
 }
 
-.project-card:hover {
-	box-shadow: 0 0 0 4px rgba(57,160,237,1.0);
-}
-
-.project-card:first-of-type {
-	margin-top: 0;
-}
-
-.project-card:last-of-type {
-	margin-bottom: 0;
-}
-
-
-.card-header {
+.pc-img-wrap {
+	width: 60%;
 	display: flex;
 	align-items: center;
 }
 
-.card-header img {
-	width: 50px;
+.pc-img {
+	width: 80%;
+	border-radius: 4px;
+	transition: width 600ms ease;
+	box-shadow: 0 10px 60px 0 rgba(0,0,0,.2);;
 }
 
-.project-card h2 {
-	font-size: 30pt;
-	margin-left: 20px;
+.pc-img:hover {
+	width: 85%;
 }
 
-.project-card h3 {
-	font-family: 'Metropolis', sans-serif;
-	font-weight: 600;
-	font-size: 16pt;
-	margin: 30px 0 10px 0;
+.pc-img-right {
+	justify-content: flex-end;
 }
 
-.project-card p {
-	font-size: 14pt;
-	font-weight: 300;
-	line-height: 1.4;
-	margin: 0 0 30px 0;
+.pc-info-wrap {
+	flex-shrink: 2;
+	width: 40%;
 }
 
-.project-card ul {
-	margin: 0;
+.pc-info-wrap  h2 {
+	font-size: 2.5rem;
+}
+
+.pc-info-wrap p {
+	font-size: 1.5rem;
+}
+
+.pc-info-wrap span {
+	white-space: nowrap;
+}
+
+.pc-info-wrap ul {
 	list-style-type: none;
-	padding-left: 20px;
-}
-
-.project-card ul li {
-	margin: 6px;
-	font-size: 14pt;
-	font-weight: 300;
-}
-
-.card-body_right {
+	margin: 0 0 40px -6px;
+	padding: 0;
 	display: flex;
-	flex-direction: row;
-	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+.pc-info-wrap ul li {
+	background-color: #f7f7f7;
+	border-radius: 30px;
+	font-weight: 200;
+	padding: 5px 15px;
+	font-size: 0.9rem;
+	margin: 6px;
 }
 
 .card-link {
 	text-decoration: none;
 	white-space: nowrap;
 }
-
-.card-link:first-of-type {
-	margin-right: 30px;
-}
-
-
-li a {
-	text-decoration: none;
-	color: #000;
-}
-
-li a:hover {
-	color: #3fe1b0;
-}
-
 
 
 /*************** contact section ***************/
@@ -288,25 +285,16 @@ li a:hover {
 	align-items: center;
 }
 
-
-.github-text {
-	width: 100px;
-}
-.github-text .a {
-	fill: #100e0f;
-}
-
-.ltext {
-	width: 140px;
-	margin-bottom: -4px;
-}
-
 .email-text {
 	text-decoration: none;
-	color: #952bb9;
+	color: #39a0ed;
 	font-family: "Metropolis", serif;
-	font-size: 1.9rem;
-	font-weight: 600;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.contact-divider {
+	user-select: none;
 }
 
 
@@ -338,10 +326,11 @@ label {
 	font-family: "Inter var", sans-serif;
 	font-weight: 400;
 	color: #101115;
-	border: 2px solid #3fe1b0;
+	/*border: 2px solid #3fe1b0;*/
+	border: 2px solid #39a0ed;
 	border-radius: 2px;
 	display: block;
-		margin-top: 6px;
+	margin-top: 6px;
 	transition: background-color 100ms, box-shadow 100ms, color 100ms, transform 100ms;
 	transition-property: background-color, box-shadow, color, transform;
 	transition-duration: 100ms, 100ms, 100ms, 100ms;
@@ -382,10 +371,11 @@ textarea {
 	display: flex;
 	justify-content: space-around;
 }
+
 .submit-btn {
 	color: #fff;
 	font-family: "Inter var", sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 1.2rem;
 	padding: 10px 20px;
 	border: none;
@@ -393,8 +383,8 @@ textarea {
 	background-color: #101115;
 }
 
-.submit-btn:hover {
-	background-color: #3fe1b0;
+.submit-btn:hover, .submit-btn:active, .submit-btn:focus {
+	background-color: #39a0ed;
 	cursor: pointer;
 }
 
@@ -409,9 +399,18 @@ textarea {
 	align-items: center;
 }
 
+.pc-info-wrap .card-link {
+	background-color: #3fe1b0;
+}
+
+.card-link:hover, .card-link:active, .card-link:focus {
+	background-color: #3fe1b0;
+	cursor: pointer;
+}
 
 
-@media (max-width: 1156px) {
+
+@media (max-width: 1400px) {
 	body {
 		width: 80vw;
 	}
@@ -441,33 +440,59 @@ textarea {
 	}
 }
 
+@media (max-width: 860px) {
+	.pc {
+		flex-direction: column;
+		height: auto;
+		margin: 80px 0;
+		align-items: flex-start;
+	}
+
+	.pc:first-of-type {
+		margin-top: 40px;
+	}
+
+	.pc-reverse {
+		flex-direction: column-reverse;
+	}
+
+	.pc-img-wrap {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.pc-img {
+		width: 90%;
+	}
+
+	.pc-img:hover {
+		width: 95%;
+	}
+
+	.pc-info-wrap {
+		/*margin-top: 30px;*/
+		flex-shrink: 0;
+		width: 90%;
+		margin: 30px 5%;
+	}
+}
+
+
 @media (max-width: 540px) {
+	#contact-float {
+		padding: 10px 20px;
+	}
 	.contact-links {
 		flex-direction: column;
 		height: 100px;
 	}
-	.github-text {
-		width: 70px;
-	}
-	.ltext {
-		width: 90px;
+	.contact-divider {
+		display: none;
 	}
 	.email-text {
 		font-size: 16pt;
-		font-weight: 600;
-	}
-	.card-body_right {
-		flex-direction: column;
-		height: 110px;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.card-link {
-		width: 220px;
-		text-align: center;
-	}
-	.card-link:first-of-type {
-		margin: 0;
+		/*font-weight: 600;*/
 	}
 }
 
@@ -475,12 +500,18 @@ textarea {
 	h1 {
 		font-size: 18pt;
 	}
+	.pc-info-wrap h2, h2 {
+		font-size: 20pt
+	}
+	.pc-info-wrap p, p {
+		font-size: 1.4rem;
+	}
 	.moz-prim {
 		font-size: 12pt;
 	}
 	.landing-title {
 		padding-top: 20vh;
-		font-size: 42pt;
+		font-size: 36pt;
 	}
 	.skill-list {
 		font-size: 16pt;
@@ -488,45 +519,24 @@ textarea {
 	.skill-list li {
 		padding: 15px 20px;
 	}
-	.project-card {
-		width: calc(100% - 40px);
-		padding: 20px;
-	}
-	.project-card h2 {
-		font-size: 20pt;
-	}
-	.project-card h3 {
-		font-size: 14pt;
-	}
-	.project-card p, .project-card ul li {
-		font-size: 12pt;
-	}
-	.card-header img {
-		width: 40px;
-	}
 	.submit-btn {
 		width: calc(100% - 40px);
 	}
 }
 
-@media (max-width: 380px) {
-	.landing-title {
-		font-size: 36pt;
-	}
-	.landing-text {
-		font-size: 16pt;
-	}
-	.project-card h2 {
-		font-size: 18pt;
-	}
-	.contact-title {
-		padding: 10px 0;
-	}
-}
-
 @media (max-width: 340px) {
-		h1 {
+	h1 {
 		font-size: 16pt;
+	}
+	.pc-info-wrap h2, h2 {
+		font-size: 18pt
+	}
+	.pc-info-wrap p, p {
+		font-size: 1.25rem;
+		margin: 10px 0;
+	}
+	.pc-info-wrap ul li {
+		font-size: 0.75rem;
 	}
 	.moz-prim {
 		font-size: 10pt;
@@ -541,24 +551,14 @@ textarea {
 	.skill-list li {
 		padding: 10px 15px;
 	}
-	.project-card h2 {
-		font-size: 14pt;
-	}
-	.project-card h3 {
-		font-size: 14pt;
-	}
-	.project-card p, .project-card ul li {
-		font-size: 12pt;
-	}
-	.card-header img {
-		width: 40px;
-	}
 	.submit-btn {
 		width: calc(100% - 40px);
+		font-size: 1rem;
+	}
+	.contact-input {
+		font-size: 14pt;
 	}
 }
-
-
 
 
 @media (max-height: 860px) {
@@ -571,78 +571,89 @@ textarea {
 
 
 @media (prefers-color-scheme: dark) {
-body {
-	color: #ffffff;
-	background-color: #101115;
+	html {
+		border-top-color: #9552b9;
+	}
+
+	body {
+		color: #ffffff;
+		background-color: #111111;
+	}
+
+	p {
+		color: #d4d4d4;
+	}
+
+	.moz-btn {
+		border: 2px solid #ffffff;
+	}
+	.moz-btn:hover {
+		color: #ffffff;
+		background-color: #0e0e0e;
+		box-shadow: 4px 4px 0 0 #ffffff;
+	}
+	.moz-prim {
+		color: #111111;
+		background-color: #ffffff;
+	}
+	.moz-sec {
+		background-color: #0e0e0e;
+		color: #ffffff;
+	}
+	.moz-dark {
+		background-color: #0e0e0e;
+		color: #ffffff;
+		border-color: #0e0e0e;
+	}
+	.moz-dark:hover {
+		background-color: #ffffff;
+		color: #111111;
+		box-shadow: 4px 4px 0 0 #111111;
+	}
+
+	.tools-wrapper {
+		background-color: #ffffff;
+		color: #111111;
+		border-left: 5px solid #ff5e5f;
+	}
+
+	li a {
+		color: #ffffff;
+	}
+
+	li a:hover {
+		color: #3fe1b0;
+	}
+
+	.pc-info-wrap ul li {
+		background-color: #383737;
+	}
+
+	.contact-input, textarea {
+		background-color: #0e0e0e;
+		color: #ffffff;
+	}
+
+	.contact-input:invalid, textarea:invalid, .contact-input:focus, textarea:focus {
+		border-color: #ffffff;
+		box-shadow: 4px 4px 0 0 #ffffff;
+	}
+
+	.submit-btn {
+		color: #111111;
+		background-color: #ffffff;
+	}
+
+	.github-text .a {
+		fill: #ffffff;
+	}
+
+	.email-text {
+		color: #39a0ed
+	}
+
+	.landing-background {
+		background-image: url("../img/patterns/pipes-dark.png");
+	}
 }
 
-.moz-btn {
-	border: 2px solid #ffffff;
-}
-.moz-btn:hover {
-	color: #ffffff;
-	background-color: #101115;
-	box-shadow: 4px 4px 0 0 #ffffff;
-}
-.moz-prim {
-	color: #101115;
-	background-color: #ffffff;
-}
-.moz-sec {
-	background-color: #101115;
-	color: #ffffff;
-}
-.moz-dark {
-	background-color: #101115;
-	color: #ffffff;
-	border-color: #101115;
-}
-.moz-dark:hover {
-	background-color: #ffffff;
-	color: #101115;
-	box-shadow: 4px 4px 0 0 #101115;
-}
-
-.tools-wrapper {
-	background-color: #ffffff;
-	color: #101115;
-	border-left: 5px solid #ff5e5f;
-}
-
-li a {
-	color: #ffffff;
-}
-
-li a:hover {
-	color: #3fe1b0;
-}
-
-contact-input, textarea {
-	color: #101115;
-}
-
-.contact-input, textarea {
-	background-color: #101115;
-	color: #ffffff;
-}
-
-.contact-input:invalid, textarea:invalid, .contact-input:focus, textarea:focus {
-	border-color: #ffffff;
-	box-shadow: 4px 4px 0 0 #ffffff;
-}
-
-.submit-btn {
-	color: #101115;
-	background-color: #ffffff;
-}
-
-.github-text .a {
-	fill: #ffffff;
-}
-.email-text {
-	color: #9552b9
-}
-html {
-	border-top-color: #9552b9;
-}
-}
