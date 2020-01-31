@@ -12,6 +12,8 @@
 
 <body>
 
+	<div id='header-box' class='header-box no-header-box'></div>
+
 
 <header>
 	<h1 class='header-title'>Thomas Girgenti</h1>
@@ -23,7 +25,7 @@
 
 	<div class='landing-background'></div>
 
-	<div class='landing-section'>
+	<div class='landing-section' id='landing-section'>
 		<h2 class='landing-title'>FULL STACK DEVELOPER</h2>
 		<p class='landing-text'>I create serverless web applications built with React, Node, and NoSQL.</p>
 		<a class='moz-btn moz-sec' href='#portfolio'>View Portfolio</a>
@@ -56,7 +58,6 @@
 
 			<h1 class='portfolio-title' id='portfolio'>Portfolio</h1>
 
-
 			<div class='pc'>
 
 				<a href='https://ultraotp.com' rel='noopener' target='_blank' class='pc-img-wrap'>
@@ -82,7 +83,7 @@
 						<li>Google App Engine</li>
 					</ul>
 
-					<a class='submit-btn card-link'
+					<a class='card-link'
 						 href='https://github.com/tggir1/ultraotp'
 						 rel='noopener'
 						 target='_blank'> View code </a>
@@ -107,7 +108,7 @@
 						<li>Google App Engine</li>
 					</ul>
 
-					<a class='submit-btn card-link'
+					<a class='card-link'
 						 href='https://github.com/tggir1/whisperas'
 						 rel='noopener'
 						 target='_blank'> View code </a>
@@ -146,7 +147,7 @@
 						<li>Google App Engine</li>
 					</ul>
 
-					<a class='submit-btn card-link'
+					<a class='card-link'
 						 href='https://github.com/tggir1/astrostore'
 						 rel='noopener'
 						 target='_blank'> View code </a>
@@ -169,7 +170,7 @@
 						<li>Google App Engine</li>
 					</ul>
 
-					<a class='submit-btn card-link'
+					<a class='card-link'
 						 href='https://github.com/tggir1/hackerzeus'
 						 rel='noopener'
 						 target='_blank'> View code </a>
@@ -189,7 +190,7 @@
 	</div>
 
 
-	<div class='contact-wrapper'>
+	<div class='contact-wrapper' id='contact-wrapper'>
 
 		<div class='contact-section' id='contact'>
 
@@ -226,7 +227,7 @@
 						</li>
 
 						<li class='submit-btn_wrap'>
-							<button class='submit-btn' type='submit'>Submit</button>
+							<button class='submit-btn form-btn' type='submit'>Submit</button>
 						</li>
 					</ul>
 
@@ -235,17 +236,17 @@
 			</div>
 
 
-			<div class='contact-links'>
+			<div class='contact-links-wrap'>
 
-				<a class='email-text' href='https://github.com/tggir1' target='_blank' rel='noopener'>GitHub</a>
-
-				<p class='contact-divider'>|</p>
-
-				<a class='email-text' href='mailto:thomas@thomasg.dev'>thomas@thomasg.dev</a>
+				<a class='contact-link' href='https://github.com/tggir1' target='_blank' rel='noopener'>GitHub</a>
 
 				<p class='contact-divider'>|</p>
 
-				<a class='email-text' href='https://linkedin.com/in/tgirgenti' target='_blank' rel='noopener'>LinkedIn</a>
+				<a class='contact-link' href='mailto:thomas@thomasg.dev'>thomas@thomasg.dev</a>
+
+				<p class='contact-divider'>|</p>
+
+				<a class='contact-link' href='https://linkedin.com/in/tgirgenti' target='_blank' rel='noopener'>LinkedIn</a>
 
 			</div>
 
@@ -254,10 +255,13 @@
 
 	</div>
 
+	<footer id='footer' class='footer-box no-footer'></footer>
+
 </main>
 
 <script src='scripts/button.js'></script>
 <script src='scripts/img-grow.js'></script>
+<script src='scripts/headerFooter.js'></script>
 
 </body>
 </html>

@@ -1,7 +1,6 @@
 let pcImgs;
 
-window.addEventListener("load", (event) => {
-
+window.addEventListener("load", event => {
     let noHover = window.matchMedia('(hover: none)').matches;
 
     if (noHover) {
@@ -17,15 +16,13 @@ function createObserver() {
 
     let options = {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.75
+        rootMargin: '0px',
+        threshold: 1
     };
 
     observer = new IntersectionObserver(handleIntersect, options);
 
-    pcImgs.forEach(image => {
-        observer.observe(image);
-    });
+    pcImgs.forEach(image => observer.observe(image));
 }
 
 
