@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
 	width: 100vw;
+	overflow-x: hidden;
 }
 
 .header-box {
@@ -74,6 +75,13 @@ p {
 	position: fixed;
 	top: 14px;
 	right: 15vw;
+	font-size: 14pt;
+	padding: 6px 14px;
+	color: #ffffff;
+	background-color: #101115;
+}
+
+.moz-sub {
 	font-size: 14pt;
 	padding: 6px 14px;
 	color: #ffffff;
@@ -270,8 +278,17 @@ header {
 	margin: 6px;
 }
 
+.project-link {
+	color: #101115;
+	text-decoration: none;
+}
+
+.project-link:hover, .project-link:focus, .project-link:active {
+	text-decoration: underline;
+}
+
 .card-link {
-	color: #fff;
+	color: #101115;
 	font-size: 1.2rem;
 	padding: 10px 20px;
 	border-radius: 2px;
@@ -282,9 +299,7 @@ header {
 
 .card-link:hover, .card-link:active, .card-link:focus {
 	cursor: pointer;
-	padding: 8px 18px;
-	border: 2px solid #101115;
-	outline: none !important;
+	text-decoration: underline;
 }
 
 
@@ -334,10 +349,10 @@ header {
 
 .contact-link {
 	text-decoration: none;
-	color: #39a0ed;
+	color: #137AC9;
 	font-family: "Metropolis", serif;
 	font-size: 1.5rem;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .contact-link:hover, .contact-link:active, .contact-link:focus {
@@ -441,7 +456,7 @@ textarea {
 .contact-links-wrap {
 	position: absolute;
 	bottom: 30px;
-	width: 70vw;
+	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -629,7 +644,7 @@ textarea {
 		background-color: #0e0e0e;
 		box-shadow: 4px 4px 0 0 #ffffff;
 	}
-	.moz-prim {
+	.moz-prim, .moz-sub {
 		color: #111111;
 		background-color: #ffffff;
 	}
@@ -662,6 +677,9 @@ textarea {
 	.pc-info-wrap ul li {
 		background-color: #383737;
 	}
+	.project-link {
+		color: #fff;
+	}
 	.contact-input, textarea {
 		background-color: #0e0e0e;
 		color: #ffffff;
@@ -688,10 +706,6 @@ textarea {
 	}
 	.card-link {
 		color: #111111;
-	}
-	.card-link:hover, .card-link:active, .card-link:focus {
-		padding: 7px 17px;
-		border: 3px solid #ffffff;
 	}
 }
 
