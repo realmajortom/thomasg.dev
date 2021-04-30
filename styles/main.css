@@ -176,7 +176,7 @@ header {
 	font-size: 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -35px;
+	margin-left: -70px;
 }
 
 .skill-list li {
@@ -187,19 +187,19 @@ header {
 
 
 /*************** projects section ************/
-.portfolio-wrapper {
+.projects-wrapper {
 	padding: 5vh 0;
 	width: calc(100vw - 5px);
 	margin-left: -15vw;
 	border-left: 5px solid #3fe1b0;
 }
 
-.portfolio-section {
+.projects-section {
 	width: 70vw;
 	margin: auto;
 }
 
-.portfolio-title {
+.projects-title {
 	padding: 20px 0;
 }
 
@@ -469,10 +469,10 @@ textarea {
 	body {
 		width: 80vw;
 	}
-	.tools-wrapper, .portfolio-wrapper, .contact-wrapper {
+	.tools-wrapper, .projects-wrapper, .contact-wrapper {
 		margin-left: -10vw;
 	}
-	.tools-section, .portfolio-section, .contact-section,	.contact-link-wrap {
+	.tools-section, .projects-section, .contact-section,	.contact-link-wrap {
 		width: 80vw;
 	}
 	.moz-prim {
@@ -484,10 +484,10 @@ textarea {
 	body {
 		width: 90vw;
 	}
-	.tools-wrapper, .portfolio-wrapper, .contact-wrapper {
+	.tools-wrapper, .projects-wrapper, .contact-wrapper {
 		margin-left: -5vw;
 	}
-	.tools-section, .portfolio-section, .contact-section,	.contact-links-wrap {
+	.tools-section, .projects-section, .contact-section,	.contact-links-wrap {
 		width: 90vw;
 	}
 	.moz-prim {
